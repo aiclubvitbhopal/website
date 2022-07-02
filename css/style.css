@@ -1,9 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Event Slider */
 .Events-slider {
     overflow: hidden;
     display: flex;
     height: 100px;
     width: 150vw;
-    background-color: green;
 }
 
 .Events-slider div {
@@ -21,7 +28,7 @@
         transform: translate3d(0, 0, 0);
     }
     100% {
-        transform: translate3d(-500px, 0, 0); /* The image width */
+        transform: translate3d(-500px, 0, 0);
     }
 }
 
@@ -31,3 +38,5 @@
     margin-left: 50px;
     animation: slide 15s linear infinite;
 }
+
+/* Event Slider end */
