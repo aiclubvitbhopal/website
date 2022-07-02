@@ -35,6 +35,7 @@ header{
 
 .Events-slider div {
     height: 30px;
+    display: inline;
     min-width: 400px;
     margin-left: 10px;
     animation: slide 25s linear infinite;
