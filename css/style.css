@@ -5,6 +5,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    background-color: pink;
+}
+
 /* Event Slider */
 
 header{
@@ -53,8 +57,6 @@ header{
 /* Event Slider end */
 
 section{
-    position: absolute;
-    top:0px;
     height: 100vh;
     width: 100vw;
     background-color: pink;
