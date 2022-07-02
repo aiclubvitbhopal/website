@@ -10,6 +10,10 @@
 header{
     position:sticky;
     top:20px;
+    z-index: 1;
+    background-color: transparent;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .Events-slider {
@@ -49,6 +53,8 @@ header{
 /* Event Slider end */
 
 section{
+    position: absolute;
+    top:0px;
     height: 100vh;
     width: 100vw;
     background-color: pink;
