@@ -7,78 +7,11 @@
 
 body{
     background-color: pink;
-}
-
-/* Event Slider */
-
-header{
-    position:sticky;
-    top:5px;
-    z-index: 1;
-    background-color: transparent;
-    width: 100vw;
+    width:100vw;
     overflow: hidden;
-    margin-bottom: 15px;
 }
 
-.Events-slider {
-    overflow: hidden;
-    display: flex;
-    height: 23px;
-    width: 70vw;
-    margin: 2px auto;
-    border-bottom: 2px solid white;
-}
 
-.Events-slider div {
-    height: 50px;
-    min-width: 300px;
-    margin-left: 100px;
-}
-
-.Events-slider div span {
-    color: orange;
-}
-
-@keyframes slide {
-    0% {
-        transform: translate3d(0, 0, 0);
-    }
-    100% {
-        transform: translate3d(-500px, 0, 0);
-    }
-}
-
-.Events-slider div {
-    height: 100px;
-    min-width: 200px;
-    margin-left: 50px;
-    animation: slide 15s linear infinite;
-}
-
-@media screen and (max-width: 420px){
-    .Events-slider{
-        transform: rotate(-90deg);
-        border: none;
-        position: absolute;
-        top:300px;
-        left:calc(100vh*15/100);
-        width:80vh;
-        height:30px;
-    }
-
-    .Events-slider div {
-        height: auto;
-        min-width: 200px;
-        margin-left: 50px;
-    }
-
-    header{
-        overflow: visible;
-    }
-}
-
-/* Event Slider end */
 
 section{
     height: 100vh;
