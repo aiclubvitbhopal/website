@@ -6,11 +6,18 @@
 }
 
 /* Event Slider */
+
+header{
+    position:sticky;
+    top:20px;
+}
+
 .Events-slider {
     overflow: hidden;
     display: flex;
     height: 100px;
     width: 150vw;
+    margin-top: 5px;
 }
 
 .Events-slider div {
