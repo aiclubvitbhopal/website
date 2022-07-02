@@ -1,0 +1,33 @@
+.Events-slider {
+    overflow: hidden;
+    display: flex;
+    height: 100px;
+    width: 150vw;
+    background-color: green;
+}
+
+.Events-slider div {
+    height: 400px;
+    min-width: 300px;
+    margin-left: 100px;
+}
+
+.Events-slider div span {
+    color: orange;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-500px, 0, 0); /* The image width */
+    }
+}
+
+.Events-slider div {
+    height: 100px;
+    min-width: 200px;
+    margin-left: 50px;
+    animation: slide 15s linear infinite;
+}
