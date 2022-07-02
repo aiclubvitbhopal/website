@@ -13,23 +13,25 @@ body{
 
 header{
     position:sticky;
-    top:20px;
+    top:5px;
     z-index: 1;
     background-color: transparent;
     width: 100vw;
     overflow: hidden;
+    margin-bottom: 15px;
 }
 
 .Events-slider {
     overflow: hidden;
     display: flex;
-    height: 50px;
-    width: 150vw;
-    margin-top: 5px;
+    height: 23px;
+    width: 70vw;
+    margin: 2px auto;
+    border-bottom: 2px solid white;
 }
 
 .Events-slider div {
-    height: 400px;
+    height: 50px;
     min-width: 300px;
     margin-left: 100px;
 }
@@ -52,6 +54,28 @@ header{
     min-width: 200px;
     margin-left: 50px;
     animation: slide 15s linear infinite;
+}
+
+@media screen and (max-width: 420px){
+    .Events-slider{
+        transform: rotate(-90deg);
+        border: none;
+        position: absolute;
+        top:300px;
+        left:calc(100vh*15/100);
+        width:80vh;
+        height:30px;
+    }
+
+    .Events-slider div {
+        height: auto;
+        min-width: 200px;
+        margin-left: 50px;
+    }
+
+    header{
+        overflow: visible;
+    }
 }
 
 /* Event Slider end */
