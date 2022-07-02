@@ -1,13 +1,14 @@
 /* Event Slider */
 
 header{
-    position:sticky;
+    position:fixed;
     top:5px;
     z-index: 1;
     background-color: transparent;
     width: 100vw;
     overflow: hidden;
     margin-bottom: 15px;
+    color:white;
 }
 
 .Events-slider {
