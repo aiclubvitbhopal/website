@@ -6,7 +6,6 @@
 }
 
 body{
-    background-color: pink;
     width:100vw;
     overflow: hidden;
 }
@@ -64,7 +63,11 @@ section{
     height:100%;
 }
 
-
+@media screen and (max-width: 912px) {
+    .bg-txt {
+        right: 25%;
+    }
+}
 
 @media screen and (max-width: 420px) {
     .wave {
@@ -75,7 +78,6 @@ section{
         flex-direction: column;
         height: 50%;
         width: 50%;
-
     }
 
     .bg-txt img{
