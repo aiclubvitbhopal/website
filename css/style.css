@@ -60,7 +60,7 @@ section{
 }
 
 .bg-txt img{ 
-    height: 100%;
+    height:100%;
 }
 
 
@@ -72,7 +72,10 @@ section{
 
     .bg-txt {
         flex-direction: column;
+        height: 50%;
+    }
 
-        height: 35%;
+    .bg-txt img{
+        height: 50%;
     }
 }
