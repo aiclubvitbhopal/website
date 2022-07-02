@@ -27,6 +27,7 @@ section{
     position: relative;
 
     background: linear-gradient(90deg,rgba(63, 2, 100, 1),rgba(15, 0, 24, 0.86));
+    overflow-x: hidden;
 }
 
 .wave {
@@ -73,9 +74,11 @@ section{
     .bg-txt {
         flex-direction: column;
         height: 50%;
+        width: 50%;
+
     }
 
     .bg-txt img{
-        height: 50%;
+        height: 100%;
     }
 }
