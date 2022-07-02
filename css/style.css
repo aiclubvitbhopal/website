@@ -85,3 +85,61 @@ section{
     width: 100vw;
     background-color: pink;
 }
+
+/* Hero Section :- Saksham */
+
+.hero-section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+
+    background: linear-gradient(90deg,rgba(63, 2, 100, 1),rgba(15, 0, 24, 0.86));
+}
+
+.wave {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.one {
+    z-index: 11;
+    opacity: 0.9;
+}
+
+.two {
+    z-index: 10;
+    opacity: 0.08;
+}
+
+.bg-txt {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    bottom: 20%;
+    right: 15%;
+
+    height: 50%;
+}
+
+.bg-txt img{ 
+    height: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .wave {
+        display: none;
+    }
+
+    .bg-txt {
+        flex-direction: column;
+
+        height: 35%;
+    }
+}
