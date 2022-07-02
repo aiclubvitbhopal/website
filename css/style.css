@@ -15,7 +15,7 @@ header{
 .Events-slider {
     overflow: hidden;
     display: flex;
-    height: 100px;
+    height: 50px;
     width: 150vw;
     margin-top: 5px;
 }
@@ -47,3 +47,9 @@ header{
 }
 
 /* Event Slider end */
+
+section{
+    height: 100vh;
+    width: 100vw;
+    background-color: pink;
+}
