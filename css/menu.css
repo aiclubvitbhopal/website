@@ -1,0 +1,18 @@
+.menu-btn:focus{
+    background-color: yellow;
+    position: absolute;
+    width:95vw;
+    height:70vh;
+    top:0px;
+    right:-80px;
+}
+
+.menu-btn:focus svg{
+    display: none;
+}
+
+@media screen and (max-width: 540px) {
+    .menu-btn:focus{
+        right:-5px;
+    }
+}
