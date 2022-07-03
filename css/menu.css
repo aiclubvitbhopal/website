@@ -1,3 +1,7 @@
+.menu{
+    transition: all 0.3s ease-out 1s;
+}
+
 .menu-btn:focus{
     background-color: yellow;
     position: absolute;
