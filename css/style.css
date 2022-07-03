@@ -154,6 +154,7 @@ section{
     .tagline{
         left:50px;
         top:70px;
+        font-size: clamp(3rem,40vw,1rem);
     }
 }
 /* Hero Section End*/
