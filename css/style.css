@@ -129,11 +129,17 @@ section{
 
 .tagline{
     color:white;
-    font-size: clamp(3rem,40vw,1rem);
     position: relative;
     left:200px;
     top:100px;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap:25px;
+}
+
+.tagline p{
+    font-size: clamp(3rem,40vw,1rem);
     width: min(500px,70vw);
 }
 
@@ -145,12 +151,15 @@ section{
     .tagline{
         left:80px;
         top:150px;
+    }
+
+    .tagline p{
         font-size: clamp(4rem,40vw,3rem);
         width: min(600px,70vw);
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 540px) {
     .logo-head{
         top:55px;
         width:clamp(120px,30%,100px);
@@ -159,7 +168,26 @@ section{
     .tagline{
         left:50px;
         top:70px;
+    }
+
+    .tagline p{
         font-size: clamp(3rem,40vw,1rem);
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .logo-head{
+        top:55px;
+        width:clamp(120px,30%,100px);
+    }
+
+    .tagline{
+        left:50px;
+        top:70px;
+    }
+
+    .tagline p{
+        font-size: 2.2rem;
     }
 }
 /* Hero Section End*/
