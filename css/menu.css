@@ -1,22 +1,45 @@
 .menu{
-    transition: all 0.3s ease-out 1s;
+    transition: all 0.3s ease-out 0.2s;
+}
+
+.menu-btn{
+    border-radius: 70vw;
 }
 
 .menu-btn:focus{
+    transition: all 1s ease-out 0.2s;
     background-color: yellow;
-    position: absolute;
-    width:95vw;
+    position: fixed;
+    width:96vw;
     height:70vh;
-    top:0px;
-    right:-80px;
+    top:10px;
+    right:10px;
+    margin: 10px auto;
+    border-radius: 20px;
+    z-index: 6;
 }
 
-.menu-btn:focus svg{
+.menu-btn:focus .menu-logo{
     display: none;
+}
+
+.cross{
+    display: none;
+    height:40px;
+    transition: all 0.7s ease-out 0.3s;
+}
+
+.cross:hover{
+    transform: rotate(600deg);
+}
+
+.menu-btn:focus .cross{
+    display: block;
+    /* position: */
 }
 
 @media screen and (max-width: 540px) {
     .menu-btn:focus{
-        right:-5px;
+        right:10px;
     }
 }

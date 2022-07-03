@@ -84,7 +84,7 @@ header{
     align-items: center;
 }
 
-.menu-btn svg{
+.menu-btn .menu-logo{
     height:20px;
 }
 
