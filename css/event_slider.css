@@ -55,6 +55,9 @@ header{
 @media screen and (max-width: 420px){
     .Events-slider{
         border: none;
+    }
+    /* .Events-slider{
+        border: none;
         flex-direction: column;
         position: fixed;
         top:100px;
@@ -94,7 +97,7 @@ header{
 
     header{
         overflow: visible;
-    }
+    } */
 }
 
 /* Event Slider end */

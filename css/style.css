@@ -7,15 +7,18 @@
 
 body{
     width:100vw;
-    overflow: hidden;
+    overflow-x: hidden;
+    background-color: #1B0B26;
 }
-
-
 
 section{
     height: 100vh;
     width: 100vw;
-    background-color: pink;
+}
+
+.Quickies{
+    /* background: linear-gradient(317.44deg, #1B0B26 23.92%, #1A012A 49.85%, #2A0242 100%); */
+    background: linear-gradient(313.77deg, #1B0B26 22.03%, #1F0130 47.32%, #230138 77.98%, #28013F 100%);
 }
 
 /* Hero Section*/
@@ -24,9 +27,32 @@ section{
     width: 100vw;
     height: 100vh;
     position: relative;
+    background: linear-gradient(107.66deg, #3F0264 -50.23%, rgba(15, 0, 24, 0.94) 139.14%);
+    overflow: hidden;
+}
 
-    background: linear-gradient(90deg,rgba(63, 2, 100, 1),rgba(15, 0, 24, 0.86));
-    overflow-x: hidden;
+@keyframes wavy1 {
+    0% {
+        transform: translate3d(-340px, 0, 0);
+    }
+    50% {
+        transform: translate3d(0px, 0, 0);
+    }
+    100% {
+        transform: translate3d(-340px, 0, 0);
+    }
+}
+
+@keyframes wavy2 {
+    0% {
+        transform: translate3d(-240px, 0, 0);
+    }
+    50% {
+        transform: translate3d(0px,0, 0);
+    }
+    100% {
+        transform: translate3d(-240px, 0, 0);
+    }
 }
 
 .wave {
@@ -36,26 +62,28 @@ section{
 }
 
 .one {
-    z-index: 11;
-    opacity: 0.9;
+    z-index: 10;
+    opacity: 0.5;
+    animation: wavy1 35s linear infinite;
 }
 
 .two {
-    z-index: 10;
-    opacity: 0.08;
+    z-index: 11;
+    opacity: 0.3;
+    animation: wavy2 25s ease-in infinite;
 }
 
+.hero-bottom{
+    overflow-x: hidden;
+}
 .bg-txt {
     display: flex;
     width: 30%;
     justify-content: center;
     align-items: center;
-
     position: absolute;
-
     bottom: 20%;
     right: 15%;
-
     height: 60%;
 }
 
