@@ -3,10 +3,10 @@
 header{
     position:fixed;
     top:5px;
-    z-index: 1;
+    z-index: 5;
     background-color: transparent;
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-bottom: 15px;
     color:white;
 }
@@ -50,6 +50,56 @@ header{
     padding:2px;
     text-align: center;
     margin-left: 20px;
+}
+
+.menu{
+    position:absolute;
+    top:50px;
+    right:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+}
+
+.menu p{
+    color:white;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid white;
+    padding:3px;
+    letter-spacing: 1.5px;
+    position: relative;
+    top:4px;
+    font-size: 15px;
+}
+
+.menu-btn{
+    height:35px;
+    width: 35px;
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 5px;
+}
+
+@media screen and (max-width: 540px) {
+    .menu{
+        top:30px;
+        right:15px;
+    }
+
+    .menu p{
+        border-bottom: 2px solid white;
+        padding:2px;
+        letter-spacing: 1.5px;
+        position: relative;
+        top:3px;
+        font-size: 15px;
+    }
+
+    .menu-btn{
+        height:30px;
+        width:30px;
+    }
 }
 
 @media screen and (max-width: 420px){
