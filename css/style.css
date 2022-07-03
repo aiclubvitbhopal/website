@@ -17,8 +17,7 @@ section{
 }
 
 .Quickies{
-    /* background: linear-gradient(317.44deg, #1B0B26 23.92%, #1A012A 49.85%, #2A0242 100%); */
-    background: linear-gradient(313.77deg, #1B0B26 22.03%, #1F0130 47.32%, #230138 77.98%, #28013F 100%);
+    background: linear-gradient(317.44deg, #1B0B26 23.92%, #1A012A 49.85%, #2A0242 100%);
 }
 
 /* Hero Section*/
@@ -85,6 +84,7 @@ section{
     bottom: 20%;
     right: 15%;
     height: 60%;
+    z-index: 1;
 }
 
 .bg-txt img{ 
@@ -113,6 +113,47 @@ section{
     .bg-txt img{
         height: 100%;
     }
+
+    .Quickies{
+        background: linear-gradient(313.77deg, #1B0B26 22.03%, #1F0130 47.32%, #230138 77.98%, #28013F 100%);
+    }
 }
 
+.logo-head{
+    position: relative;
+    top:30px;
+    left:20px;
+    width:clamp(120px,30%,100px);
+    z-index: 2;
+}
+
+.tagline{
+    color:white;
+    font-size: clamp(3rem,40vw,1rem);
+    position: relative;
+    left:200px;
+    top:100px;
+    z-index: 2;
+    width: min(500px,70vw);
+}
+
+@media screen and (max-width: 912px) {
+    .logo-head{
+        width:clamp(200px,30%,100px);
+    }
+
+    .tagline{
+        left:80px;
+        top:150px;
+        font-size: clamp(4rem,40vw,3rem);
+        width: min(600px,70vw);
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .tagline{
+        left:50px;
+        top:70px;
+    }
+}
 /* Hero Section End*/
