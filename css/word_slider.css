@@ -45,8 +45,8 @@
     animation-timing-function: ease-out;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
-    -webkit-animation-duration: 12s;
-    animation-duration: 12s;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
 }
 
 @-webkit-keyframes wordSlider {
@@ -145,11 +145,11 @@
 
 @media screen and (max-width: 540px) {
     .text-slider {
-        height: clamp(3rem,40vw,1rem);
+        height: clamp(2.5rem,40vw,1rem);
     }
 
     .title {
-        font-size: clamp(3rem,40vw,1rem);
+        font-size: clamp(2.5rem,40vw,1rem);
     }
 }
 
