@@ -151,6 +151,11 @@ section{
 }
 
 @media screen and (max-width: 420px) {
+    .logo-head{
+        top:55px;
+        width:clamp(120px,30%,100px);
+    }
+
     .tagline{
         left:50px;
         top:70px;
