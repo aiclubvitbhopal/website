@@ -63,13 +63,13 @@ section{
 .one {
     z-index: 3;
     opacity: 0.5;
-    animation: wavy1 35s linear infinite;
+    animation: wavy1 25s linear infinite;
 }
 
 .two {
     z-index: 2;
     opacity: 0.3;
-    animation: wavy2 25s ease-in infinite;
+    animation: wavy2 15s ease-in infinite;
 }
 
 .hero-bottom{
