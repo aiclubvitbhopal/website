@@ -79,6 +79,13 @@ header{
     border-radius: 30px;
     background-color: white;
     margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn svg{
+    height:20px;
 }
 
 @media screen and (max-width: 540px) {
