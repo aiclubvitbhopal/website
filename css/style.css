@@ -34,6 +34,67 @@ section{
     align-items: center;
 }
 
+.soc-link {
+    /* position: relative; */
+    
+    color: #000000;
+}
+
+.soc-popup {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -24px;
+    left: -12px;
+}
+
+.tilted {
+    display: none;
+
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+
+    background-color: #fd9207;
+
+    position: absolute;
+/*     
+    top: -28px;
+    left: -18px; */
+    /* top: 0;
+    right: 36%; */
+}
+
+.text-box {
+    display: none;
+
+    font-size: 0.8rem;
+
+    padding: 0.5em 1em;
+    border-radius: 25px;
+
+    background-color: #fd9207;
+    
+    position: absolute;
+
+    top: -26px;
+/* 
+    top: -56px;
+    left: -56px; */
+    /* top: -30px;
+    left: -20%; */
+}
+
+.soc-link:hover .soc-popup *{
+    display: block;
+}
+
+.soc-link:hover {
+    cursor: pointer;
+}
+
 @keyframes wavy1 {
     0% {
         transform: translate3d(-340px, 0, 0);
