@@ -130,6 +130,15 @@ header{
         height:30px;
         width:30px;
     }
+
+    .socials{
+        display:flex;
+        flex-direction: row;
+        gap:20px;
+        position:fixed;
+        right:20px;
+        bottom:35px;
+    }
 }
 
 @media screen and (max-width: 420px){
