@@ -29,6 +29,9 @@ section{
     position: relative;
     background: linear-gradient(107.66deg, #3F0264 -50.23%, rgba(15, 0, 24, 0.94) 139.14%);
     overflow: hidden;
+    display:flex;
+    /* justify-content: center; */
+    align-items: center;
 }
 
 @keyframes wavy1 {
@@ -121,7 +124,7 @@ section{
 }
 
 .logo-head{
-    position: relative;
+    position: absolute;
     top:30px;
     left:20px;
     width:clamp(120px,30%,100px);
@@ -259,10 +262,16 @@ section{
     .tagline{
         left:50px;
         top:70px;
+        gap:10px;
     }
 
     .tagline p{
         font-size: 2.2rem;
+    }
+
+    .get{
+        position: relative;
+        bottom:30px;
     }
 
     .get p{
