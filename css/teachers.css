@@ -1,37 +1,43 @@
 /* teacher_section starts here */
 
 .teacher_section{   
-    padding: 2rem;
-    height: fit-content;
+    position: relative;
+    height:100vh;
+    width:100vw;
     background-color: #1B0B26;
-    display:grid;
-    place-items:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+    overflow-x: hidden;
 }
 
 .teacher_contents{
-    margin-left: 120px;
     text-align:center;
     color:white;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     font-size: 35px;
     letter-spacing: 0.09em;
+    width:40vw;
 }
   
 .teacher_cards-container{
     margin-top:3rem;
     display:flex;  
     min-width:60vw;
-    justify-content:space-between;  
-  }
+    justify-content:space-between; 
+    align-items: center; 
+    flex-wrap: wrap;
+}
 
 .teacher_card{
     width: 200px; 
     display:flex;
     flex-direction:column;
-    transition: all .2s ease-in-out;
-    
-  }
+    transition: all .2s ease-in-out;    
+}
   
 .teacher1{
     padding: 0;
@@ -47,6 +53,7 @@
     background-size: cover;
     background-image: url('https://aiclub.aivit.tech/images/DrSuthir.jpg');
 }
+
 .teacher2{
     width:260px;
     height:300px;
@@ -58,20 +65,19 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-image: url('https://aiclub.aivit.tech/images/DrMayuri.jpg');
+    background-image: url('../images/DrMayuri.jpg');
 }
+
 .teacher_card img{
-    align-self: flex-end;
+    /* align-self: flex-end; */
     position:absolute;
     right:-110px;
     top:-40px;
 }
 
-
-.teacher_card .teacher:nth-of-child(1){
-    background-image: url('https://aiclub.aivit.tech/images/DrSuthir.jpg');
-}
-
+/* .teacher_card .teacher:nth-of-child(1){
+    background-image: url('../images/DrSuthir.jpg');
+} */
 
 .teacher_card:nth-of-type(1){
     transform: rotate(-4.5deg);
@@ -81,14 +87,13 @@
     transform: rotate(4.5deg);
 }
 
-
 .teacher_card:nth-of-type(1):hover{
     transform: rotate(1deg);
 }
+
 .teacher_card:nth-of-type(2):hover{
     transform: rotate(1deg);
 }
-
 
 .teacher_info{
     padding:0 0.6rem ;
@@ -114,6 +119,66 @@
     font-weight: 500;
     font-size: 12px;
     letter-spacing: 0.09em;
+}
+
+@media screen and (max-width: 912px) {
+    .teacher_contents{
+        width:60vw;
+    }
+
+    .teacher_cards-container{
+        gap:150px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .teacher_section{  
+        height: fit-content; 
+    }
+    .teacher_contents h1{
+        text-align: left;
+    }
+
+    .teacher_card:nth-of-type(1){
+        transform: rotate(0deg);
+    }
+    
+    .teacher_card:nth-of-type(2){
+        transform: rotate(0deg);
+    }
+    
+    .teacher_card:nth-of-type(1):hover{
+        transform: rotate(0deg);
+    }
+    
+    .teacher_card:nth-of-type(2):hover{
+        transform: rotate(0deg);
+    }
+
+    .teacher_contents{
+        margin-right: 30px;
+        gap:50px;
+        position:relative;
+        right:30px;
+    }
+
+
+    .teacher_cards-container{
+        gap:50px;
+        position:relative;
+        right:30px;
+    }
+
+    .teacher_contents{
+        margin-top: 30px;
+        padding:5px;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .teacher_card img{
+        display:none;
+    }
 }
 
 /* teacher section ends here */
