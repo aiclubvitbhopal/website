@@ -88,6 +88,29 @@ header{
     height:20px;
 }
 
+.socials{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    position:fixed;
+    right:20px;
+    bottom:100px;
+}
+
+.soc-link{
+    width:35px;
+    height:35px;
+    background-color: #FD9207;
+    border-radius: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc-link svg{
+    height:25px;
+}
+
 @media screen and (max-width: 540px) {
     .menu{
         top:30px;
