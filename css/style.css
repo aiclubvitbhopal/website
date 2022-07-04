@@ -144,11 +144,16 @@ section{
     width: min(500px,70vw);
 }
 
+.get{
+    width:150px;
+}
+
 .get p{
     position: relative;
     top:30px;
     left:50px;
     font-size: 15px;
+    width:150px;
 }
 
 .get-btn{
