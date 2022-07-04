@@ -135,7 +135,7 @@ header{
         display:flex;
         flex-direction: row;
         gap:20px;
-        position:fixed;
+        position:absolute;
         right:20px;
         bottom:35px;
     }
