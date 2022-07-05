@@ -19,6 +19,8 @@
     /* margin: 10px; */
     border-radius: 0px;
     z-index: 6;
+    flex-direction: column;
+    gap:30px;
 }
 
 .menu-btn:focus .menu-logo{
@@ -26,9 +28,16 @@
 }
 
 .cross{
-    display: none;
     height:40px;
-    transition: all 0.7s ease-out;
+    transition: all 0.9s ease-out 0.2s;
+}
+
+.menu-items{
+    display: none;
+}
+
+.menu-btn:focus .menu-items{
+    display: block;
 }
 
 .cross:hover{
@@ -36,10 +45,24 @@
 }
 
 .menu-btn:focus .cross{
-    display: block;
     position:absolute;
     top:20px;
     right:30px;
+}
+
+.menu-btn h1{
+    font-size:2rem;
+}
+
+.options{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:fit-content;
+}
+
+.options h4{
+    text-align: left;
 }
 
 @media screen and (max-width: 540px) {
