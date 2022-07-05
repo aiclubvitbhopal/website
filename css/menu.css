@@ -53,6 +53,8 @@
 
 .menu-btn h1{
     font-size:2.5rem;
+    border-bottom: 5px solid white;
+    padding-bottom: 10px;
 }
 
 .menu-btn:focus .options{
@@ -88,7 +90,7 @@
 
 .menu-btn:focus .menu-link:hover{
     cursor: pointer;
-    background: linear-gradient(-45deg, rgba(256,165,0,0.83), white);
+    background: linear-gradient(-45deg, rgba(256,165,0,0.83),rgba(256,256,256,0.7),rgba(256,256,256,0.8),rgba(256,256,256,0.9),rgba(256,256,256,0.9) ,white);
 	background-size: 200% 200%;
 	animation: gradient 0.5s ease;
     color:black;
