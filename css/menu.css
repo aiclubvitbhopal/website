@@ -54,14 +54,14 @@
     font-size:2rem;
 }
 
-.options{
+.menu-btn:focus .options{
     display:flex;
     flex-direction: column;
     width:100%;
     height:fit-content;
 }
 
-.options h4{
+.menu-btn:focus .options h4{
     text-align: left;
 }
 
