@@ -7,15 +7,17 @@
 }
 
 .menu-btn:focus{
-    transition: all 1s ease-out 0.2s;
-    background-color: yellow;
+    transition: all 1s ease-out;
+    background-color: orange;
+    opacity: 0.83;
     position: fixed;
-    width:96vw;
-    height:70vh;
-    top:10px;
-    right:10px;
-    margin: 10px auto;
-    border-radius: 20px;
+    width:100vw;
+    height:100vh;
+    top: 50vh; 
+    left: 49.55vw; 
+    transform: translate(-50vw, -50vh);
+    /* margin: 10px; */
+    border-radius: 0px;
     z-index: 6;
 }
 
@@ -26,7 +28,7 @@
 .cross{
     display: none;
     height:40px;
-    transition: all 0.7s ease-out 0.3s;
+    transition: all 0.7s ease-out;
 }
 
 .cross:hover{
@@ -35,7 +37,9 @@
 
 .menu-btn:focus .cross{
     display: block;
-    /* position: */
+    position:absolute;
+    top:20px;
+    right:30px;
 }
 
 @media screen and (max-width: 540px) {
