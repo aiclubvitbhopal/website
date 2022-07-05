@@ -18,7 +18,7 @@
     color:white;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
-    font-size: 35px;
+    font-size: clamp(2rem,10vw,0.5rem);
     letter-spacing: 0.09em;
     width:40vw;
 }
@@ -134,9 +134,13 @@
 @media screen and (max-width: 540px) {
     .teacher_section{  
         height: fit-content; 
+        display:flex;
+        justify-content:center;
+        align-items: center;
     }
+
     .teacher_contents h1{
-        text-align: left;
+        text-align: center;
     }
 
     .teacher_card:nth-of-type(1){
@@ -159,25 +163,34 @@
         margin-right: 30px;
         gap:50px;
         position:relative;
-        right:30px;
+        /* right:30px; */
+        margin-top: 30px;
+        padding:5px;
     }
-
 
     .teacher_cards-container{
         gap:50px;
         position:relative;
         right:30px;
     }
-
-    .teacher_contents{
-        margin-top: 30px;
-        padding:5px;
-    }
 }
 
 @media screen and (max-width: 280px) {
     .teacher_card img{
         display:none;
+    }
+
+    .teacher_contents{
+        margin-right: 30px;
+        gap:50px;
+        position:relative;
+        right:30px;
+        margin-top: 30px;
+        padding:5px;
+    }
+
+    .teacher_contents h1{
+        text-align: left;
     }
 }
 

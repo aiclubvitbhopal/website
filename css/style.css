@@ -211,6 +211,8 @@ section{
 
 .get{
     width:150px;
+    position:relative;
+    bottom: 30px;
 }
 
 .get p{
@@ -287,7 +289,7 @@ section{
 
     .tagline{
         left:50px;
-        top:70px;
+        top:40px;
         gap:22px;
     }
 
