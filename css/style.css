@@ -30,7 +30,6 @@ section{
     background: linear-gradient(107.66deg, #3F0264 -50.23%, rgba(15, 0, 24, 0.94) 139.14%);
     overflow: hidden;
     display:flex;
-    /* justify-content: center; */
     align-items: center;
 }
 

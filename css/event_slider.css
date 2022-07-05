@@ -39,6 +39,7 @@ header{
     min-width: 400px;
     margin-left: 10px;
     animation: slide 25s linear infinite;
+    animation-direction: alternate-reverse;
 }
 
 .Events-slider .current{

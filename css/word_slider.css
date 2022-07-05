@@ -1,10 +1,7 @@
 .container {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
     position: relative;
-    /* left:-200px; */
-    /* top:100px; */
     z-index: 2;
 }
 
@@ -46,6 +43,7 @@
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-duration: 7s;
+    -webkit-animation-direction: alternate-reverse;
     animation-duration: 7s;
 }
 
