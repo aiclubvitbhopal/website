@@ -20,6 +20,7 @@
     border-radius: 0px;
     z-index: 6;
     flex-direction: column;
+    justify-content: space-around;
     gap:30px;
 }
 
@@ -51,7 +52,7 @@
 }
 
 .menu-btn h1{
-    font-size:2rem;
+    font-size:2.5rem;
 }
 
 .menu-btn:focus .options{
@@ -59,10 +60,38 @@
     flex-direction: column;
     width:100%;
     height:fit-content;
+    justify-content: space-between;
+    padding-left: 15vw;
+    line-height: 50px;
 }
 
 .menu-btn:focus .options h4{
     text-align: left;
+    font-size: 2rem;
+    padding-left: 30px;
+}
+
+.menu-link{
+    /* transition: all 0.3s ease-out 0.01s; */
+    border-radius: 25px;
+    /* background: linear-gradient(-90deg, rgba(256,165,0,0.83) 100%); */
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 100% 0%;
+	}
+	100% {
+		background-position: 200% 0%;
+	}
+}
+
+.menu-btn:focus .menu-link:hover{
+    cursor: pointer;
+    background: linear-gradient(-45deg, rgba(256,165,0,0.83), white);
+	background-size: 200% 200%;
+	animation: gradient 0.5s ease;
+    color:black;
 }
 
 @media screen and (max-width: 540px) {
