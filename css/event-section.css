@@ -68,6 +68,7 @@ div .sticky {
     }
 .flexbox-img{
   display: flex;
+  overflow-x: hidden;
 }    
 @media screen and (max-width: 1200px) {
   .flexbox-img{
@@ -81,7 +82,7 @@ div .sticky {
 .img-container {
   position:relative;
   width: 50%;
-  
+  margin: auto;
 }
 
 .overlay {
@@ -127,5 +128,14 @@ div .sticky {
 @media screen and (max-width: 420px) {
     div.sticky {
         width: 100%;
+    }
+
+    .econtent, .text {
+        width: 50%;
+        left: 30%;
+    }
+
+    .card {
+        padding: 40px 0;
     }
 }
