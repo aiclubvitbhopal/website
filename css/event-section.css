@@ -1,0 +1,131 @@
+.event-section{
+    background-color: #1B0B26;
+}
+
+.flex{
+    display:flex;
+    background-color: #291C33;
+    border-radius: 30px 0px 0px 30px;
+    margin-left: 115px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    @media screen and (max-width: 420px) {
+      .flex{
+        /* display:block; */
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 40px;
+        } 
+      div .sticky {
+        height: min-content;
+      }
+    }    
+.sticky h2{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 300;
+      font-size: max(5vw,2rem);
+      line-height: 4vmax;
+      display: flex;
+      align-items: center;
+      /* text-align: justify; */
+      letter-spacing: 0.09em;
+      color: #FFFFFF;
+    }
+    .sticky p{
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 300;
+      font-size: max(2vw,1rem);
+      line-height: 3vmax;
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      /* text-align: justify; */
+      letter-spacing: 0.09em;
+      color: #FFFFFF;
+    }
+div .sticky {
+      top: 0;
+      height:50vh;
+      padding: 50px;
+      font-size: 20px;
+      width: 50%;
+    }
+.img-container img{
+      width: 200px;
+      height: 266px;
+      filter: drop-shadow(0px 4px 32px rgba(0, 0, 0, 0.62));
+    }
+.flex-img{
+      overflow-y: scroll;
+      height: 95vh;
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;
+        }
+.flex-img::-webkit-scrollbar{ /* Chrome, Safari and Opera*/
+      display: none;
+    }
+.flexbox-img{
+  display: flex;
+}    
+@media screen and (max-width: 1200px) {
+  .flexbox-img{
+    display:block;
+  }  
+}
+.card{
+  padding: 40px;
+  z-index: 3;
+}
+.img-container {
+  position:relative;
+  width: 50%;
+  
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #291C33;
+  overflow: hidden;
+  width: 200%;
+  height: 0;
+  transition: .5s ease;
+  
+}
+
+.img-container:hover .overlay {
+  height: 100%;
+  opacity: 0.8;
+}
+.img-container:hover img {
+  opacity: 0.1;
+  transition: .5s ease;
+}
+
+.econtent, .text {
+  color: white;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+}
+.econtent, .text h3{
+  font-size: 20px;
+}
+.econtent, .text p{
+  font-size: 15px;
+}
+
+@media screen and (max-width: 420px) {
+    div.sticky {
+        width: 100%;
+    }
+}
