@@ -42,6 +42,11 @@ section{
     background: linear-gradient(317.44deg, #1B0B26 23.92%, #1A012A 49.85%, #2A0242 100%);
 }
 
+.highlight:hover{
+    outline: 2px solid white;
+    outline-offset: 10px;
+    border-radius: 10px;
+}
 /* Hero Section*/
 
 .hero-section {
