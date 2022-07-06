@@ -194,6 +194,10 @@ section{
         right: 33%;
         height: 60%;
     }
+
+    #circle{
+        display:none;
+    }
 }
 
 @media screen and (max-width: 420px) {
