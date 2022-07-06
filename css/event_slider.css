@@ -64,7 +64,7 @@ header{
     cursor: pointer;
 }
 
-.menu p{
+/* .menu p{
     color:white;
     border-bottom: 2px solid white;
     padding:3px;
@@ -72,6 +72,39 @@ header{
     position: relative;
     top:4px;
     font-size: 15px;
+} */
+
+.loader {
+    position: relative;
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+}
+
+.loader span {
+    color: #fff;
+    display: inline-block;
+    color:white;
+    position: relative;
+    top:4px;
+    font-size: 14px
+}
+
+.loader:hover span {
+  animation: animate 0.8s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
 }
 
 .menu-btn{

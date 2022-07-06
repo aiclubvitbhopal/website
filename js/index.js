@@ -5,3 +5,7 @@ const close_menu = ()=>{
     menu.blur();
 }
 cross.addEventListener('click',close_menu);
+
+const onscroll = (el, listener) => {
+    el.addEventListener('scroll', listener)
+}
