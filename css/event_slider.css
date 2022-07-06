@@ -86,15 +86,15 @@ header{
     color:white;
     position: relative;
     top:4px;
-    font-size: 14px
+    font-size: 15px
 }
 
 .loader:hover span {
-  animation: animate 0.8s ease-in-out infinite;
+  animation: jumping 0.8s ease-in-out infinite;
   animation-delay: calc(0.1s * var(--i));
 }
 
-@keyframes animate {
+@keyframes jumping {
 
     0%,
     40%,
