@@ -122,6 +122,8 @@ div .sticky {
 }
 .econtent, .text h3{
   font-size: 20px;
+
+  margin: 5px 0;
 }
 .econtent, .text p{
   font-size: 15px;
@@ -139,10 +141,5 @@ div .sticky {
 
     .flex-img {
         width: 100%;
-    }
-
-    .card {
-        padding: 40px 0;
-        margin: auto;
     }
 }
