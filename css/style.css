@@ -68,11 +68,48 @@ section{
     align-items: center;
 }
 
-.soc-link {
+.socials .soc-link{
     /* position: relative; */
     
-    color: #000000;
+    background: #fff;
 }
+
+.socials .icon .soc-link{
+    position: relative;
+    text-align: center;
+    color: orange;
+    font-size: 22px;
+}
+
+
+.socials .icon:hover span{
+    color: #fff;
+}
+
+.socials .github:hover .soc-link,
+.socials .soc-link:hover .text-box,
+.socials .soc-link:hover .tilted,
+.socials .soc-link:hover .text-box::before{
+    background: #333;
+}
+.socials .facebook:hover .soc-link,
+.socials .soc-link:hover .text-box,
+.socials .soc-link:hover .tilted,
+.socials .soc-link:hover .text-box::before{
+    background: #3B5999;
+}
+.socials .instagram:hover .soc-link,
+.socials .instagram:hover .tilted,
+.socials .instagram:hover .tilted:before{
+    background: #e1306c;
+}
+.socials .linkedin:hover .soc-link,
+.socials .soc-link:hover .text-box,
+.socials .soc-link:hover .tilted,
+.socials .soc-link:hover .text-box::before{
+    background: #46c1f6;
+}
+
 
 .soc-popup {
     position: relative;
@@ -91,7 +128,7 @@ section{
     height: 10px;
     transform: rotate(45deg);
 
-    background-color: #fd9207;
+    background-color: #fff;
 
     position: absolute;
 /*     
@@ -108,8 +145,8 @@ section{
 
     padding: 0.5em 1em;
     border-radius: 25px;
-
-    background-color: #fd9207;
+    color: #fff;
+    background-color: #fff;
     
     position: absolute;
 
@@ -120,6 +157,8 @@ section{
     /* top: -30px;
     left: -20%; */
 }
+
+
 
 .soc-link:hover .soc-popup *{
     display: block;
