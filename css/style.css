@@ -12,7 +12,7 @@ body{
     width:100vw;
     overflow-x: hidden;
     background-color: #1B0B26;
-    cursor: none;
+    /* cursor: none; */
 }
 
 #circle{
@@ -49,6 +49,13 @@ section{
     outline-offset: 10px;
     border-radius: 10px;
 }
+
+.highlight-sm:hover{
+    outline: 2px solid white;
+    outline-offset: 5px;
+    border-radius: 100px;
+}
+
 /* Hero Section*/
 
 .hero-section {
@@ -177,7 +184,7 @@ section{
     bottom: 20%;
     right: 15%;
     height: 60%;
-    z-index: 1;
+    z-index: 0;
 }
 
 .bg-txt img{ 
@@ -188,6 +195,10 @@ section{
     .bg-txt {
         right: 33%;
         height: 60%;
+    }
+
+    #circle{
+        display:none;
     }
 }
 

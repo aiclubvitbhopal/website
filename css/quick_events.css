@@ -28,6 +28,7 @@
     font-family: 'Inter', sans-serif;
     position:relative;
     overflow:hidden;
+    z-index: 1;
 }
   
 .jumbotron::before{
@@ -53,7 +54,8 @@
 }
   
 .content{   
-    position:relative;  
+    position:relative; 
+    z-index: 10;
 }
   
 .content h1{
