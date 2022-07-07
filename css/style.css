@@ -1,56 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body{
-    width:100vw;
+body {
+    width: 100vw;
     overflow-x: hidden;
     background-color: #1B0B26;
     /* cursor: none; */
 }
 
-#circle{
-    position:absolute;
-    transform:translate(-50%,-50%);
-    height:40px;
-    width:40px;
-    border-radius:50%;
-    border:2px solid white;
+#circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
     z-index: 1;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.dot{
+.dot {
     height: 7px;
-    width:7px;
+    width: 7px;
     background-color: red;
     border-radius: 5px;
 }
 
-section{
+section {
     height: 100vh;
     width: 100vw;
 }
 
-.Quickies{
+.Quickies {
     background: linear-gradient(317.44deg, #1B0B26 23.92%, #1A012A 49.85%, #2A0242 100%);
 }
 
-.highlight:hover{
+.highlight:hover {
     outline: 2px solid white;
     outline-offset: 10px;
     border-radius: 10px;
 }
 
-.highlight-sm:hover{
+.highlight-sm:hover {
     outline: 2px solid white;
     outline-offset: 5px;
     border-radius: 100px;
@@ -64,17 +64,17 @@ section{
     position: relative;
     background: linear-gradient(107.66deg, #3F0264 -50.23%, rgba(15, 0, 24, 0.94) 139.14%);
     overflow: hidden;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
-.socials .soc-link{
+.socials .soc-link {
     /* position: relative; */
-    
+
     background: #fff;
 }
 
-.socials .icon .soc-link{
+.socials .icon .soc-link {
     position: relative;
     text-align: center;
     color: orange;
@@ -82,31 +82,34 @@ section{
 }
 
 
-.socials .icon:hover span{
+.socials .icon:hover span {
     color: #fff;
 }
 
 .socials .github:hover .soc-link,
 .socials .soc-link:hover .text-box,
 .socials .soc-link:hover .tilted,
-.socials .soc-link:hover .text-box::before{
+.socials .soc-link:hover .text-box::before {
     background: #333;
 }
+
 .socials .facebook:hover .soc-link,
 .socials .soc-link:hover .text-box,
 .socials .soc-link:hover .tilted,
-.socials .soc-link:hover .text-box::before{
+.socials .soc-link:hover .text-box::before {
     background: #3B5999;
 }
+
 .socials .instagram:hover .soc-link,
 .socials .instagram:hover .tilted,
-.socials .instagram:hover .tilted:before{
+.socials .instagram:hover .tilted:before {
     background: #e1306c;
 }
+
 .socials .linkedin:hover .soc-link,
 .socials .soc-link:hover .text-box,
 .socials .soc-link:hover .tilted,
-.socials .soc-link:hover .text-box::before{
+.socials .soc-link:hover .text-box::before {
     background: #46c1f6;
 }
 
@@ -131,7 +134,7 @@ section{
     background-color: #fff;
 
     position: absolute;
-/*     
+    /*     
     top: -28px;
     left: -18px; */
     /* top: 0;
@@ -147,11 +150,11 @@ section{
     border-radius: 25px;
     color: #fff;
     background-color: #fff;
-    
+
     position: absolute;
 
     top: -26px;
-/* 
+    /* 
     top: -56px;
     left: -56px; */
     /* top: -30px;
@@ -160,7 +163,7 @@ section{
 
 
 
-.soc-link:hover .soc-popup *{
+.soc-link:hover .soc-popup * {
     display: block;
 }
 
@@ -172,9 +175,11 @@ section{
     0% {
         transform: translate3d(-340px, 0, 0);
     }
+
     50% {
         transform: translate3d(0px, 0, 0);
     }
+
     100% {
         transform: translate3d(-340px, 0, 0);
     }
@@ -184,9 +189,11 @@ section{
     0% {
         transform: translate3d(-240px, 0, 0);
     }
+
     50% {
-        transform: translate3d(0px,0, 0);
+        transform: translate3d(0px, 0, 0);
     }
+
     100% {
         transform: translate3d(-240px, 0, 0);
     }
@@ -196,7 +203,7 @@ section{
     position: absolute;
     bottom: 0px;
     width: 100%;
-    left:0px;
+    left: 0px;
 }
 
 .one {
@@ -211,9 +218,10 @@ section{
     animation: wavy2 15s ease-in-out infinite;
 }
 
-.hero-bottom{
+.hero-bottom {
     overflow-x: hidden;
 }
+
 .bg-txt {
     display: flex;
     width: 30%;
@@ -226,8 +234,8 @@ section{
     z-index: 0;
 }
 
-.bg-txt img{ 
-    height:100%;
+.bg-txt img {
+    height: 100%;
 }
 
 @media screen and (max-width: 912px) {
@@ -236,8 +244,8 @@ section{
         height: 60%;
     }
 
-    #circle{
-        display:none;
+    #circle {
+        display: none;
     }
 }
 
@@ -253,59 +261,59 @@ section{
         right: 25%;
     }
 
-    .bg-txt img{
+    .bg-txt img {
         height: 90%;
     }
 
-    .Quickies{
+    .Quickies {
         background: linear-gradient(313.77deg, #1B0B26 22.03%, #1F0130 47.32%, #230138 77.98%, #28013F 100%);
     }
 }
 
-.logo-head{
+.logo-head {
     position: absolute;
-    top:30px;
-    left:20px;
-    width:clamp(120px,30%,100px);
+    top: 30px;
+    left: 20px;
+    width: clamp(120px, 30%, 100px);
     z-index: 2;
 }
 
-.tagline{
-    color:white;
+.tagline {
+    color: white;
     position: relative;
-    left:200px;
-    top:60px;
+    left: 200px;
+    top: 60px;
     z-index: 4;
     display: flex;
     flex-direction: column;
-    gap:30px;
+    gap: 30px;
 }
 
-.tagline p{
-    font-size: clamp(3rem,40vw,1rem);
-    width: min(500px,70vw);
+.tagline p {
+    font-size: clamp(3rem, 40vw, 1rem);
+    width: min(500px, 70vw);
 }
 
-.get{
-    width:150px;
-    position:relative;
+.get {
+    width: 150px;
+    position: relative;
     bottom: 30px;
     cursor: pointer;
 }
 
-.get p{
+.get p {
     position: relative;
-    top:30px;
-    left:50px;
+    top: 30px;
+    left: 50px;
     font-size: 15px;
-    width:150px;
+    width: 150px;
 }
 
-.get-btn{
+.get-btn {
     position: relative;
-    top:61px;
-    left:45px;
-    width:50px;
+    top: 61px;
+    left: 45px;
+    width: 50px;
     height: 50px;
     background-color: black;
     opacity: 0.5;
@@ -314,43 +322,43 @@ section{
     transition: all 0.3s ease-out 0.05s;
 }
 
-.get:hover .get-btn{
-    width:160px;
-    left:41px;
+.get:hover .get-btn {
+    width: 160px;
+    left: 41px;
 }
 
 @media screen and (max-width: 912px) {
-    .logo-head{
-        width:clamp(200px,30%,100px);
+    .logo-head {
+        width: clamp(200px, 30%, 100px);
     }
 
-    .tagline{
-        left:80px;
-        top:150px;
+    .tagline {
+        left: 80px;
+        top: 150px;
     }
 
-    .tagline p{
-        font-size: clamp(4rem,40vw,3rem);
-        width: min(600px,70vw);
+    .tagline p {
+        font-size: clamp(4rem, 40vw, 3rem);
+        width: min(600px, 70vw);
     }
 
-    .get p{
+    .get p {
 
-        top:30px;
-        left:0px;
+        top: 30px;
+        left: 0px;
         font-size: 15px;
     }
 
-    .get-btn{
-        top:61px;
-        left:-5px;
-        width:50px;
+    .get-btn {
+        top: 61px;
+        left: -5px;
+        width: 50px;
         height: 50px;
     }
 
-    .get:hover .get-btn{
-        width:160px;
-        left:-9px;
+    .get:hover .get-btn {
+        width: 160px;
+        left: -9px;
     }
 }
 
@@ -360,79 +368,159 @@ section{
         overflow-y: visible;
     }
 
-    .logo-head{
-        top:50px;
-        width:clamp(120px,30%,100px);
+    .logo-head {
+        top: 50px;
+        width: clamp(120px, 30%, 100px);
     }
 
-    .tagline{
-        left:50px;
-        top:40px;
-        gap:22px;
+    .tagline {
+        left: 50px;
+        top: 40px;
+        gap: 22px;
     }
 
-    .tagline p{
-        font-size: clamp(2rem,10vw,0.5rem);
+    .tagline p {
+        font-size: clamp(2rem, 10vw, 0.5rem);
     }
 
-    .get p{
+    .get p {
 
-        top:10px;
-        left:0px;
+        top: 10px;
+        left: 0px;
         font-size: 15px;
     }
 
-    .get-btn{
-        top:41px;
-        left:-5px;
-        width:50px;
+    .get-btn {
+        top: 41px;
+        left: -5px;
+        width: 50px;
         height: 50px;
     }
 
-    .get:hover .get-btn{
-        width:160px;
-        left:-9px;
+    .get:hover .get-btn {
+        width: 160px;
+        left: -9px;
     }
 }
 
 @media screen and (max-width: 280px) {
-    .logo-head{
-        top:55px;
-        width:clamp(120px,30%,100px);
+    .logo-head {
+        top: 55px;
+        width: clamp(120px, 30%, 100px);
     }
 
-    .tagline{
-        left:50px;
-        top:70px;
-        gap:10px;
+    .tagline {
+        left: 50px;
+        top: 70px;
+        gap: 10px;
     }
 
-    .tagline p{
+    .tagline p {
         font-size: 2.2rem;
     }
 
-    .get{
+    .get {
         position: relative;
-        bottom:30px;
+        bottom: 30px;
     }
 
-    .get p{
+    .get p {
 
-        top:30px;
-        left:0px;
+        top: 30px;
+        left: 0px;
         font-size: 15px;
     }
 
-    .get-btn{
-        top:61px;
-        left:-5px;
-        width:50px;
+    .get-btn {
+        top: 61px;
+        left: -5px;
+        width: 50px;
         height: 50px;
     }
 
-    .get:hover .get-btn{
-        width:160px;
-        left:-9px;
+    .get:hover .get-btn {
+        width: 160px;
+        left: -9px;
     }
 }
+
 /* Hero Section End*/
+
+
+/* footer */
+.footer {
+
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;  
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+}
+  
+h1:before,
+h1:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin: auto;
+}
+  
+footer img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+@media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+}
