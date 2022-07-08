@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.leads-section{
+    background-color: #1B0B26;
+    min-height: 800px;
+
+    height: fit-content;
+
+    padding: 5em 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-family: "Roboto",sans-serif;
+}
+
+.lead-container {
+  position: relative;
+  background-color: #291C33;
+  
+  width: 80vw;
+  min-height: 900px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  
+  color: #fff;
+  text-align: center;
+  
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.lead-container h1 {
+  font-family: "Lato";
+  font-size: max(2vw,1rem);
+}
+
+.card-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  row-gap: 40px;
+  
+  flex-wrap: wrap;
+  
+  width: 100%;
+  
+/*   border: 5px solid white; */
+}
+
+.lead-card {
+  width: clamp(250px,22%,400px);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  
+  z-index: 3;
+
+  transition: all 0.15s ease-in-out;
+}
+
+.lead-card h3, .lead-card p {
+  margin: 0;
+  font-size: max(1vw,0.8rem);
+}
+
+.lead-card img {
+  width: 60%;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+}
+
+.lead-card a {
+  color: #fff;
+}
+
+.lead-card:hover {
+  transform: scale(1.12);
+}
+
+.animation {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+
+.small{
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 120px;
+}
+
+.medium{
+  width: 100px;
+  height: 100px;
+  bottom: -60px;
+  left: 20px;
+}
+
+.large{
+  width: 150px;
+  height: 150px;
+  bottom: -60px;
+  left: -80px;
+}
+
+.circle {
+  position: absolute;
+  background-color: #7957a165;
+  
+  border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 820px) {
+  .lead-container {
+    overflow: hidden;
+    padding: 0.5vh;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .animation {
+    display: none;
+  }
+  .circle{
+    display: none;
+  }
+}

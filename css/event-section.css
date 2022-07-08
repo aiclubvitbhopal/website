@@ -1,5 +1,8 @@
 .event-section{
     background-color: #1B0B26;
+    height: fit-content;
+
+    padding: 2em 0;
 }
 
 .flex{
