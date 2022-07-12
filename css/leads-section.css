@@ -37,7 +37,8 @@
 
 .lead-container h1 {
   font-family: "Lato";
-  font-size: max(2vw,1rem);
+  margin: 10px;
+  font-size: max(4vw,2rem);
 }
 
 .card-container{
