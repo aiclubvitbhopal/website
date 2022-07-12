@@ -24,3 +24,42 @@ document.addEventListener(
     }, 
     { passive: true }
 );
+
+var inner = document.querySelector(".interactive img");
+var outer = document.querySelector(".interactive");
+var x = outer.getBoundingClientRect().left;                    
+var y = outer.getBoundingClientRect().top;
+
+const move = (e)=>{
+    if(Math.pow((Math.pow((e.pageX-x-outer.clientWidth/2),2)+Math.pow((e.pageY-y-outer.clientHeight/2),2)),0.5)<=100){
+        console.log("on outer");
+        onouter(e);
+    }
+    else{
+        console.log("off outer");
+        offouter(e);
+    }
+};
+
+const offouter = (event)=> {
+    inner.style.left="-70px";
+    inner.style.top="0px";
+    inner.style.position="relative";
+    x_ = x+outer.clientWidth / 2;
+    y_ = y+outer.clientHeight / 2;
+    let radian = Math.atan2(event.pageX - x_, event.pageY - y_);
+    let rot = radian * (180 / Math.PI) * -1 + 270;
+    console.log(rot);
+    outer.style.transform = "rotate(" + rot + "deg)";
+    inner.style.transform = "rotate(-" + rot + "deg)";
+}
+
+const onouter=(e)=>{
+    inner.style.position="absolute";
+    outer.style.transform = "rotate(" + 0 + "deg)";
+    inner.style.transform = "rotate(" + 0 + "deg)";
+    inner.style.left = (e.pageX-x-inner.clientWidth/2) + 'px';
+    inner.style.top = (e.pageY-y-inner.clientHeight/2) + 'px'; 
+}
+
+document.querySelector(".hero-section").addEventListener("mousemove", move);

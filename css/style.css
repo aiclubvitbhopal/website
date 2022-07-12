@@ -327,6 +327,22 @@ section {
     left: 41px;
 }
 
+.interactive{
+    width:200px;
+    height:200px;
+    /* border: 2px solid red; */
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.interactive img{
+    height:150px;
+    position:relative;
+    left:-70px;
+}
+
 @media screen and (max-width: 912px) {
     .logo-head {
         width: clamp(200px, 30%, 100px);
@@ -359,6 +375,14 @@ section {
     .get:hover .get-btn {
         width: 160px;
         left: -9px;
+    }
+
+    .interactive{
+        display:none;
+    }
+
+    .circle{
+        display:none;
     }
 }
 
