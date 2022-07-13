@@ -4,3 +4,26 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
+body{
+    width:100vw;
+    overflow-x: hidden;
+}
+
+.hero{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width:100vw;
+    height:100vh;
+}
+
+.about{
+    width:100vw;
+    height:100vh;
+}
