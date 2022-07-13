@@ -30,11 +30,11 @@ body{
 }
 
 .wlcm{
-    position: absolute;
+    /* position: absolute; */
     width: 581px;   
     height: 210px;
-    left: 500px;
-    top: 99px;
+    /* left: 500px; */
+    /* top: 99px; */
 
     font-family: 'Bad Script';
     font-style: italic;
@@ -51,11 +51,11 @@ body{
 }
 
 .name{
-    position: absolute;
+    /* position: absolute; */
     width: 581px;
     height: 142px;
-    left: 509px;
-    top: 263px;
+    /* left: 509px;
+    top: 263px; */
     font-family: 'Alatsi';
     font-style: normal;
     font-weight: 400;
@@ -68,11 +68,11 @@ body{
 }
 
 .tagline{
-    position: absolute;
+    /* position: absolute; */
     width: 569px;
     height: 72px;
-    left: 520px;
-    top: 405px;
+    /* left: 520px;
+    top: 405px; */
 
     font-family: 'Alatsi';
     font-style: normal;
@@ -88,11 +88,11 @@ body{
 }
 
 .explore{
-    position: absolute;
+    /* position: absolute; */
     width: 289px;
     height: 73px;
-    left: 815px;
-    top: 596px;
+    /* left: 815px;
+    top: 596px; */
 
     background: rgba(255, 255, 255, 0.7);
     border-radius: 20px;
