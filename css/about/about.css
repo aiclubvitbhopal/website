@@ -11,6 +11,26 @@ body{
     background-color: #1B0B26;
 }
 
+#circle {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    background-color: red;
+    border-radius: 5px;
+}
+
 .hero{
     display:flex;
     justify-content: center;
