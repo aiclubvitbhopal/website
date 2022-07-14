@@ -24,7 +24,7 @@ document.addEventListener(
     'scroll',
     (event) => {
         if (heroText.getBoundingClientRect().top < textTop) {
-            heroText.style.opacity = -window.pageYOffset / 300 + 1;
+            heroText.style.opacity = -window.pageYOffset / 350 + 1;
         }  
     }, 
     { passive: true }

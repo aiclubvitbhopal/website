@@ -63,11 +63,30 @@ body{
     align-items: center;
     color:white;
     font-size: 2rem;
+    position: relative;
 }
 
 .about p{
     margin:50px;
     text-align: justify;
+    position: relative;
+}
+
+.about p::before{
+    content: "\"";
+    position:absolute;
+    bottom:170px;
+    left:-30px;
+    color:orange;
+    font-size: 100px;
+}
+
+.about p::after{
+    content: "\"";
+    position:absolute;
+    top:230px;
+    color:orange;
+    font-size: 100px;
 }
 
 .text{
