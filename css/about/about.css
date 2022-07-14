@@ -57,6 +57,21 @@ body{
     position: relative;
 }
 
+.peck{
+    position: absolute; 
+    bottom:0px;
+    width:100px;
+}
+
+.bottom-bar{
+    width:100vw;
+    height:25px;
+    position: absolute;
+    background-color: #1B0B26;
+    bottom:0px;
+    /* border: 1px solid red; */
+}
+
 .about{
     width:100vw;
     height:100vh;
