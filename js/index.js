@@ -32,11 +32,9 @@ var y = outer.getBoundingClientRect().top;
 
 const move = (e)=>{
     if(Math.pow((Math.pow((e.pageX-x-outer.clientWidth/2),2)+Math.pow((e.pageY-y-outer.clientHeight/2),2)),0.5)<=100){
-        console.log("on outer");
         onouter(e);
     }
     else{
-        console.log("off outer");
         offouter(e);
     }
 };

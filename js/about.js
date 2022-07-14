@@ -18,18 +18,43 @@ document.addEventListener(
 );
 
 const heroText = document.querySelector(".text");
-console.log(heroText);
 const textTop = heroText.getBoundingClientRect().top;
-console.log(textTop,"px");
 
 document.addEventListener(
     'scroll',
     (event) => {
         if (heroText.getBoundingClientRect().top < textTop) {
-            console.log("here");
             heroText.style.opacity = -window.pageYOffset / 300 + 1;
         }  
-        console.log(heroText.getBoundingClientRect().top);      
     }, 
     { passive: true }
 );
+
+var counters = document.querySelectorAll(".counter");
+var counter = [];
+console.log(counters);
+
+for (i = 0; i < 4; i++) {
+    counter[i] = parseInt(counters[i].innerHTML);
+}
+
+var observer = new IntersectionObserver((entries)=>{
+	if(entries[0].isIntersecting === true){
+        console.log("visible");
+        var count = (start, value, id)=> {
+            var localStart = start;
+            setInterval(function() {
+              if (localStart < value) {
+                localStart++;
+                counters[id].innerHTML = localStart;
+              }
+            }, 1);
+        }
+        
+        for (j = 0; j < 4; j++) {
+            count(0, counter[j], j);
+        }
+    }
+}, { threshold: [1] });
+
+observer.observe(counters[0]);
