@@ -60,7 +60,7 @@ observer.observe(counters[0]);
 var explore = document.querySelector(".explore");
 
 explore.addEventListener("click",(e)=>{
-    var about = document.querySelector(".counting");
+    var about = document.querySelector(".about");
     var end = about.getBoundingClientRect().top;
     var start = explore.getBoundingClientRect().top;
     console.log("END  : ",end);
