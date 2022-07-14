@@ -110,6 +110,7 @@ body{
     letter-spacing: 0.3em;
     color: #000000;
     padding: 5px;
+    z-index: 1;
 }
 
 .explore:hover{
