@@ -31,6 +31,16 @@ body{
     border-radius: 5px;
 }
 
+.highlight{
+    z-index: 1;
+}
+
+.highlight:hover {
+    outline: 2px solid white;
+    outline-offset: 10px;
+    border-radius: 10px;
+}
+
 .hero{
     display:flex;
     justify-content: center;
@@ -42,6 +52,7 @@ body{
     background-attachment: fixed;
     width:100vw;
     height:100vh;
+    position: relative;
 }
 
 .about{
@@ -89,7 +100,7 @@ body{
 .explore{
     margin:50px auto;
     background: rgba(255, 255, 255, 0.7);
-    border-radius: 20px;
+    border-radius: 10px;
     width: 270px;
     height: 50px;
     font-family: 'Alatsi';
@@ -101,9 +112,16 @@ body{
     padding: 5px;
 }
 
+.explore:hover{
+    background: orange;
+    color: #000000;
+    cursor: pointer;
+}
+
 .counting{
     width:100vw;
-    height:fit-content;
+    /* height:fit-content; */
+    height: 100vh;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;

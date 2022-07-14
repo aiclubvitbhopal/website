@@ -32,7 +32,6 @@ document.addEventListener(
 
 var counters = document.querySelectorAll(".counter");
 var counter = [];
-console.log(counters);
 
 for (i = 0; i < 4; i++) {
     counter[i] = parseInt(counters[i].innerHTML);
@@ -40,7 +39,6 @@ for (i = 0; i < 4; i++) {
 
 var observer = new IntersectionObserver((entries)=>{
 	if(entries[0].isIntersecting === true){
-        console.log("visible");
         var count = (start, value, id)=> {
             var localStart = start;
             setInterval(function() {
@@ -58,3 +56,18 @@ var observer = new IntersectionObserver((entries)=>{
 }, { threshold: [1] });
 
 observer.observe(counters[0]);
+
+var explore = document.querySelector(".explore");
+
+explore.addEventListener("click",(e)=>{
+    var about = document.querySelector(".counting");
+    var end = about.getBoundingClientRect().top;
+    var start = explore.getBoundingClientRect().top;
+    console.log("END  : ",end);
+    setInterval(()=>{
+        if(start<end){
+            ++start;
+            window.scrollTo(0,start);
+        }
+    },1);
+});
