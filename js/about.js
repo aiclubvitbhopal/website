@@ -26,9 +26,19 @@ document.addEventListener(
         if (heroText.getBoundingClientRect().top < textTop) {
             heroText.style.opacity = -window.pageYOffset / 350 + 1;
         }  
+        console.log(heroText.getBoundingClientRect().top," : ",textTop);
+        if(textTop-heroText.getBoundingClientRect().top<30){
+            heroText.style.opacity = 1;
+            console.log("true");
+        }
     }, 
     { passive: true }
 );
+
+// if(heroText.getBoundingClientRect().top-textTop<30){
+//     heroText.style.opacity = 1;
+//     console.log("true");
+// }
 
 var counters = document.querySelectorAll(".counter");
 var counter = [];

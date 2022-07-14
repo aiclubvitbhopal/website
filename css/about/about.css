@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&family=Bad+Script&family=Secular+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -59,50 +61,46 @@ body{
     width:100vw;
     height:100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color:white;
-    font-size: 2rem;
     position: relative;
+    padding:40px 1px;
+    gap:0px;
 }
 
-.about p{
+.about .dis{
     margin:50px;
     text-align: justify;
     position: relative;
+    font-size: clamp(1.5rem,2.5vw,3rem);
 }
 
-.about p::before{
-    content: "\"";
-    position:absolute;
-    bottom:170px;
-    left:-30px;
+.about .top{
+    position:relative;
+    bottom:-10%;
     color:orange;
-    font-size: 100px;
-}
-
-.about p::after{
-    content: "\"";
-    position:absolute;
-    top:230px;
-    color:orange;
-    font-size: 100px;
+    font-size: clamp(5rem,20vw,10rem);
+    font-family: 'Secular One', sans-serif;
 }
 
 .text{
     display:flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap:0px;
     padding:10px;
     font-family: 'Alef';
+    width: clamp(240px,90vw,400px);
 }
 
 .wlcm{
     font-family: 'Bad Script';
     font-style: italic;
     font-weight: 400;
-    font-size: 109px;
+    font-size: clamp(3rem,6vw,6rem);
     letter-spacing: 0.07em;
     color: #FEDD49;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);}
@@ -111,7 +109,7 @@ body{
     font-family: 'Alatsi';
     font-style: normal;
     font-weight: 400;
-    font-size: 123px;
+    font-size: clamp(4.5rem,7vw,7rem);
     letter-spacing: 0.10em;
     color: #FFFFFF;
 }
@@ -120,7 +118,7 @@ body{
     font-family: 'Alatsi';
     font-style: normal;
     font-weight: 400;
-    font-size: 31px;
+    font-size: clamp(1.5rem,2vw,2rem);
     letter-spacing: 0.26em;
     color: #FFFFFF;
 }
@@ -129,15 +127,15 @@ body{
     margin:50px auto;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 10px;
-    width: 270px;
+    width: fit-content;
     height: 50px;
     font-family: 'Alatsi';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
+    font-size: clamp(2rem,3vw,5rem);
     letter-spacing: 0.3em;
     color: #000000;
-    padding: 5px;
+    padding: 2px;
     z-index: 1;
 }
 
@@ -156,9 +154,43 @@ body{
     align-items: center;
     color:white;
     flex-wrap: wrap;
+    padding:40px 5px;
 }
 
-.counting h1{
+.count{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:20px;
+    height: 200px;
+    margin-top:20px;
+    width:250px;
+}
+
+.count img{
+    height: 100px;
+}
+
+.count h2{
+    font-weight: 200;
+    text-align: center;
+}
+
+.count h1{
     font-size: 3rem;
-    margin:100px 50px;
+}
+
+@media screen and (max-width: 912px) {
+    .about{
+        height:fit-content;
+    }
+
+    .counting{
+        height:max-content;
+    }
+
+    .count{
+        margin-top: 100px;
+    }
 }
