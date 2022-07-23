@@ -123,14 +123,14 @@
     top: 5%;
     right: 5%;
 
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 
     z-index: 99999;
 
     color: black;
 
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 40px;
+    min-height: 40px;
 
     padding: 2px;
     border-radius: 50px;
@@ -180,12 +180,14 @@
 
 .menu .nav ul {
     opacity: 0;
+    margin: auto;
 }
 
 .menu .nav ul li {
     list-style-type: none;
-    margin: 10% 70%;
-    
+    width: fit-content;
+    margin: 4vh 0;
+    transition: all ease-in-out 0.3s;
 }
 
 .menu .nav ul li a{
@@ -198,4 +200,8 @@
 
 .menu .nav ul li a:hover {
     color: #fff;
+}
+
+.menu .nav ul li:hover {
+    transform: scale(1.2);
 }
