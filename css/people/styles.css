@@ -15,11 +15,11 @@ body{
     height: 90px;
     left: 135px;
     top: 172px;
-    width: 80%;
-
+    height: fit-content;
 }
 
 .lead-title{
+    width: 80%;
     font-family: 'Allerta Stencil';
     font-style: normal;
     margin-top: 0.5rem;
@@ -27,10 +27,13 @@ body{
     padding:100px;
     color: #ffffff;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap:50px;
 }
 
 #teams {
-    margin-top: 20vh;
+    /* margin-top: 20vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,4 +141,29 @@ body{
 
 .blog-box:hover .blog-text p{
     opacity: 1;
+}
+
+@media screen and (max-width: 540px) {
+
+    .lead_teacher{
+        height: 100vh;
+        line-height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lead-title{
+        margin-top:60px;
+        padding:30px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap:80px;
+        width: 100%;
+    }
+
+    .blog-container {
+        margin: 30px 0;
+    }
 }
