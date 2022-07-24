@@ -63,19 +63,19 @@ body{
     cursor: pointer;
 }
 
-.blog-box:nth-child(1) {
+.web {
     background-color: #FF7396;
 }
 
-.blog-box:nth-child(2) {
+.tech {
     background-color: #F4E06D;
 }
 
-.blog-box:nth-child(3) {
+.event {
     background-color: #FFFFDE;
 }
 
-.blog-box:nth-child(4) {
+.design {
     background-color: #C499BA;
 }
 
@@ -136,6 +136,10 @@ body{
     opacity: 0;
 }
 
+.blog-text h1 {
+    font-weight: 500;
+}
+
 .blog-box:hover .blog-text{
     transform: translateY(-80px);
     transition: all 0.3s ease-in-out;
@@ -163,15 +167,27 @@ body{
 }
 
 .members img{
-    height: 200px;
-    width:200px;
+    height: 150px;
+    width:150px;
     border-radius: 500px;
 }
 
 .members h1{
     color:white;
-    line-height: 25px;
+    line-height: 30px;
+    font-family: 'Allerta Stencil';
+    letter-spacing: 5px;
+    text-align: center;
 }
+
+.web-d, .web-m, .web-t{
+    display: none;
+}
+
+.tech-d, .tech-m, .tech-t{
+    display: none;
+}
+
 
 @media screen and (max-width: 540px) {
 
