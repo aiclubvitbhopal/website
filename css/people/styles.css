@@ -66,12 +66,15 @@ body{
 .blog-box:nth-child(1) {
     background-color: #FF7396;
 }
+
 .blog-box:nth-child(2) {
     background-color: #F4E06D;
 }
+
 .blog-box:nth-child(3) {
     background-color: #FFFFDE;
 }
+
 .blog-box:nth-child(4) {
     background-color: #C499BA;
 }
@@ -141,6 +144,33 @@ body{
 
 .blog-box:hover .blog-text p{
     opacity: 1;
+}
+
+.members{
+    width: 240px;
+    margin: 0 10px 10px;
+    border-radius: 10px;
+    /* -webkit-box-shadow: 10px 9px 25px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 9px 25px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 9px 25px -4px rgba(0, 0, 0, 0.75); */
+    height: 350px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+
+.members img{
+    height: 200px;
+    width:200px;
+    border-radius: 500px;
+}
+
+.members h1{
+    color:white;
+    line-height: 25px;
 }
 
 @media screen and (max-width: 540px) {
