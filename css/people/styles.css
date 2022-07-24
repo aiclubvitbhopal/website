@@ -227,6 +227,49 @@ body{
     display: none;
 }
 
+.leads-section{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.leads h1{
+    color:#FF7396;
+}
+
+.leads-t h1{
+    color:#FFFFDE;
+}
+
+.tech-leads h1{
+    color:#F4E06D;
+}
+
+.event-leads h1{
+    color:#FFFFDE;
+}
+
+.design-leads h1{
+    color:#C499BA;
+}
+
+.cont-leads h1{
+    color:#FF7396;
+}
+
+.social-leads h1{
+    color:#F4E06D;
+}
+
+.out-leads h1{
+    color:#FFFFDE;
+}
+
+.video-leads h1{
+    color:#C499BA;
+}
 
 @media screen and (max-width: 540px) {
 
