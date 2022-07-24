@@ -52,7 +52,7 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-image: url('https://aiclub.aivit.tech/images/DrSuthir.jpg');
+    background-image: url('../../images/DrSuthir.jpg');
 }
 
 .teacher2{
@@ -66,7 +66,7 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    background-image: url('/images/DrMayuri.jpg');
+    background-image: url('../../images/DrMayuri.jpg');
 }
 
 .teacher_card img{
