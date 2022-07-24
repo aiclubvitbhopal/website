@@ -38,7 +38,6 @@ body{
     padding: 40px;
     border-bottom: 1px solid black;
     z-index: 100;
-    /* opacity: none; */
 }
 
 .blog-container {
@@ -83,13 +82,11 @@ body{
 }
 
 .blog-img img {
-    /* aspect-ratio: 16/9; */
     max-height: 230px;
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
-    /* border-radius: 10px;     */
 }
 
 .blog-text {
@@ -114,9 +111,7 @@ body{
 
 .blog-text .blog-title {
     font-family: 'Allerta Stencil';
-    /* margin-top: 1rem; */
     font-size: 2rem;
-    /* font-weight: 700; */
     color: #1B0B26;
     text-decoration: none;
  
@@ -124,7 +119,6 @@ body{
 
 .blog-text p {
     color: #1B0B26;
-    /* font-family: 'Quattrocento', serif; */
     font-family: 'Allerta Stencil';
     font-size: 1.3rem;
     display: -webkit-box;
