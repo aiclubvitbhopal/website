@@ -12,23 +12,24 @@ menu.addEventListener("click", function(e){
             ease: "expo.in"
         });
         gsap.to(".navBefore",{
-            duration: 0.7,
-            delay: 0.3,
+            duration: 0.5,
+            delay: 0.1,
             marginLeft: "0",
             ease: "expo.in"
         });
         gsap.to(".nav",{
-            duration: 0.7,
-            delay: 0.5,
+            duration: 0.5,
+            delay: 0.3,
             marginLeft: "0",
             ease: "expo.in"
         });
         gsap.to(".navigation",{
             duration: 0.7,
-            delay: 1.3,
+            delay: 0.7,
             opacity: 1,
             ease: "ease.in"
         });
+        document.body.classList.toggle("scroll-lock");
     } else {
         gsap.to(".navigation",{
             duration: 0.5,
@@ -36,12 +37,12 @@ menu.addEventListener("click", function(e){
             ease: "ease.in"
         });
         gsap.to(".nav",{
-            duration: 0.7,
+            duration: 0.5,
             marginLeft: "100%",
             ease: "expo.in"
         });
         gsap.to(".navBefore",{
-            duration: 0.5,
+            duration: 0.3,
             delay: 0.3,
             marginLeft: "100%",
             ease: "expo.in"
@@ -52,5 +53,6 @@ menu.addEventListener("click", function(e){
             display: "none",
             ease: "expo.in"
         });
+        document.body.classList.toggle("scroll-lock");
     }
 });

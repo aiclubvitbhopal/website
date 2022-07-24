@@ -116,6 +116,9 @@
 
 /* IMPLEMENTED WITH GSAP */
 
+.scroll-lock{
+    overflow-y: hidden;
+}
 
 .nav-button {
     position: fixed;
@@ -123,14 +126,14 @@
     top: 5%;
     right: 5%;
 
-    font-size: 1.2rem;
+    font-size: 1rem;
 
     z-index: 99999;
 
     color: black;
 
-    min-width: 40px;
-    min-height: 40px;
+    min-width: 30px;
+    min-height: 30px;
 
     padding: 2px;
     border-radius: 50px;
