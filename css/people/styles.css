@@ -79,6 +79,21 @@ body{
     background-color: #C499BA;
 }
 
+.cont {
+    background-color: #FF7396;
+}
+
+.social {
+    background-color: #F4E06D;
+}
+
+.out {
+    background-color: #FFFFDE;
+}
+
+.video {
+    background-color: #C499BA;
+}
 
 .blog-img {
     width: 100%;
@@ -193,6 +208,22 @@ body{
 }
 
 .design-d, .design-m, .design-t{
+    display: none;
+}
+
+.cont-d, .cont-m, .cont-t{
+    display: none;
+}
+
+.social-d, .social-m, .social-t{
+    display: none;
+}
+
+.out-d, .out-m, .out-t{
+    display: none;
+}
+
+.video-d, .video-m, .video-t{
     display: none;
 }
 
