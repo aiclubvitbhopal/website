@@ -188,6 +188,14 @@ body{
     display: none;
 }
 
+.event-d, .event-m, .event-t{
+    display: none;
+}
+
+.design-d, .design-m, .design-t{
+    display: none;
+}
+
 
 @media screen and (max-width: 540px) {
 
