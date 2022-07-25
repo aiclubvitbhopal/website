@@ -123,10 +123,10 @@
 .nav-button {
     position: fixed;
 
-    top: 5%;
+    top: 6%;
     right: 5%;
 
-    font-size: 1rem;
+    font-size: 1.1rem;
 
     z-index: 99999;
 
