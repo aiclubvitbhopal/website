@@ -179,6 +179,7 @@ body{
     justify-content: center;
     align-items: center;
     gap:30px;
+    transition: all ease-in-out 200ms;
 }
 
 .members img{
@@ -193,6 +194,10 @@ body{
     font-family: 'Allerta Stencil';
     letter-spacing: 5px;
     text-align: center;
+}
+
+.members:hover{
+    transform: scale(1.1);
 }
 
 .web-d, .web-m, .web-t{
@@ -233,6 +238,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    z-index: 5;
 }
 
 .leads h1{
