@@ -59,7 +59,7 @@ body{
 
 .peck{
     position: absolute; 
-    bottom:0px;
+    bottom:-2px;
     width:100px;
 }
 
@@ -68,7 +68,7 @@ body{
     height:25px;
     position: absolute;
     background-color: #1B0B26;
-    bottom:0px;
+    bottom:-2px;
     /* border: 1px solid red; */
 }
 
@@ -124,7 +124,7 @@ body{
     font-family: 'Alatsi';
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(4.5rem,7vw,7rem);
+    font-size: clamp(4.5rem,7vw,6rem);
     letter-spacing: 0.10em;
     color: #FFFFFF;
 }
@@ -136,6 +136,11 @@ body{
     font-size: clamp(1.5rem,2vw,2rem);
     letter-spacing: 0.26em;
     color: #FFFFFF;
+    text-align: center;
+}
+
+.menu{
+    z-index: 5;
 }
 
 .explore{

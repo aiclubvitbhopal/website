@@ -8,21 +8,41 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <link rel="icon" type="image/png" href="images/club_logo - icon.png">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/people/styles.css">
-    <link rel="stylesheet" href="./css/home/menu.css">
-    <link rel="stylesheet" href="./css/home/style.css">
+    <link rel="stylesheet" href="./css/people/menu.css">
+    <link rel="stylesheet" href="./css/people/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/c457cbbb92.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/home/event_slider.css">
     
     <!-- JS -->
+    <script src="https://kit.fontawesome.com/c457cbbb92.js" crossorigin="anonymous"></script>
     <script defer src="js/people.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="./js/menu.js"></script>
 
-    <title>Document</title>
+    <title>People</title>
 </head>
 
 <body>
+    <header>
+        <div class="Events-slider">
+            <div class="current">Current</div>
+            <div class="eve">AI4U 2021 <span class="orange">26 June</span></div>
+            <div class="eve">FUZZY CLUSTERING <span class="orange">27 June</span></div>
+            <div class="eve">APP DEVELOPMENT <span class="orange">28 June</span></div>
+            <div class="current">Past</div>
+            <div class="eve">THE LAST HUNT <span class="orange">29 June</span></div>
+            <div class="eve">COMPUTER VISION <span class="orange">30 June</span></div>
+            <div class="eve">WEBINAR <span class="orange">25 June</span></div>
+            <div class="current">Upcomming</div>
+            <div class="eve">Industrial Experts <span class="orange">25 June</span></div>
+            <div class="eve">TEDx Speaker <span class="orange">25 June</span></div>
+        </div>
+    </header>
+
     <div class="nav-button">
         <i id="menu-logo" class="fa-solid fa-bars menu-logo"></i>
     </div>
@@ -45,8 +65,6 @@
             </ul>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./js/menu.js"></script>
 
     <section class="lead_teacher">
         <div class="lead-title">
@@ -55,6 +73,20 @@
         </div>
     </section>
     
+    <section class="leads-section">
+        <div class="members">
+            <img src="images/leads/rahul_mandviya.jpeg" alt="">
+            <h1>Rahul<br>Mandviya</h1>
+        </div>
+        <div class="members">
+            <img src="images/leads/Om Rajani.png" alt="">
+            <h1>Om<br>Rajani</h1>
+        </div>
+        <div class="members">
+            <img src="images/leads/KumarPrakhar-19BAI10012.jpg" alt="">
+            <h1>Kumar<br>Prakhar</h1>
+        </div>
+    </section>
     <!-- make cards -->
 
     <section id="teams">
@@ -66,17 +98,12 @@
                 <div class="blog-text">
                     <span>01</span>
                     <h1 class="blog-title">Website Team</h1>
-                    <p>JUST SIT DOWN MATE! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas sed aliquam
-                        assumenda nihil sit asperiores officiis atque, laboriosam nulla. Praesentium at dolores soluta
-                        aliquam ab illo amet, qui cumque!
-                        Nesciunt officiis repellat quo sed corporis voluptatum commodi inventore aliquid blanditiis
-                        iure, incidunt voluptates, pariatur excepturi corrupti ex! Vero, sed fugit! Tenetur animi earum
-                        ipsam iusto nesciunt libero exercitationem voluptas.</p>
+                    <p>We look forward to motivate students to develop skills along with studies which would further help them in their career.</p>
                 </div>
             </div> 
             
             <!-- Website Mobile -->
-            <div class="members web-m">
+            <div class="members web-m leads">
                 <img src="images/Website Team/Rudransh_khandelwal.jpg" alt="">
                 <h1>Rudransh<br>khandelwal</h1>
             </div>
@@ -124,17 +151,12 @@
                 <div class="blog-text">
                     <span>02</span>
                     <h1 class="blog-title">Technical Team</h1>
-                    <p>JUST SIT DOWN MATE! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas sed aliquam
-                        assumenda nihil sit asperiores officiis atque, laboriosam nulla. Praesentium at dolores soluta
-                        aliquam ab illo amet, qui cumque!
-                        Nesciunt officiis repellat quo sed corporis voluptatum commodi inventore aliquid blanditiis
-                        iure, incidunt voluptates, pariatur excepturi corrupti ex! Vero, sed fugit! Tenetur animi earum
-                        ipsam iusto nesciunt libero exercitationem voluptas.</p>
+                    <p>We at technical team provide a competitive environment to improve technical skills of students.</p>
                 </div>
             </div>  
 
             <!-- Technical Mobile -->
-            <div class="members tech-m">
+            <div class="members tech-m tech-leads">
                 <img src="images/leads/Rithuraj Nambiar.jpeg" alt="">
                 <h1>Rithuraj<br>Nambiar</h1>
             </div>
@@ -180,7 +202,7 @@
             </div> 
             
             <!-- Website Tablet -->
-            <div class="members web-t">
+            <div class="members web-t leads">
                 <img src="images/Website Team/Rudransh_khandelwal.jpg" alt="">
                 <h1>Rudransh<br>khandelwal</h1>
             </div>
@@ -222,7 +244,7 @@
             </div>
 
             <!-- Technical Tablet -->
-            <div class="members tech-t">
+            <div class="members tech-t leads">
                 <img src="images/leads/Rithuraj Nambiar.jpeg" alt="">
                 <h1>Rithuraj<br>Nambiar</h1>
             </div>
@@ -265,6 +287,8 @@
             <div class="members tech-t">
                 <img src="images/Technical Team/Shantanu Singh Verma -21BCE11305.jpg" alt="">
                 <h1>Shantanu Singh<br>Verma</h1>
+            </div>
+            <div class="members tech-t">
             </div> 
 
             <div class="blog-box event">
@@ -274,17 +298,12 @@
                 <div class="blog-text">
                     <span>03</span>
                     <h1 class="blog-title">Event Team</h1>
-                    <p>JUST SIT DOWN MATE! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas sed aliquam
-                        assumenda nihil sit asperiores officiis atque, laboriosam nulla. Praesentium at dolores soluta
-                        aliquam ab illo amet, qui cumque!
-                        Nesciunt officiis repellat quo sed corporis voluptatum commodi inventore aliquid blanditiis
-                        iure, incidunt voluptates, pariatur excepturi corrupti ex! Vero, sed fugit! Tenetur animi earum
-                        ipsam iusto nesciunt libero exercitationem voluptas.</p>
+                    <p>We help students to enhance their management skills so as to develop mutual understanding and treat everyone as a whole.</p>
                 </div>
             </div>    
 
             <!-- Event Mobile -->
-            <div class="members event-m">
+            <div class="members event-m event-leads">
                 <img src="images/Event Team/Chetaly Mawal 20BHI10065.jpg" alt="">
                 <h1>Chetaly<br>Mawal</h1>
             </div>
@@ -313,17 +332,12 @@
                 <div class="blog-text">
                     <span>04</span>
                     <h1 class="blog-title">Design Team</h1>
-                    <p>JUST SIT DOWN MATE! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas sed aliquam
-                        assumenda nihil sit asperiores officiis atque, laboriosam nulla. Praesentium at dolores soluta
-                        aliquam ab illo amet, qui cumque!
-                        Nesciunt officiis repellat quo sed corporis voluptatum commodi inventore aliquid blanditiis
-                        iure, incidunt voluptates, pariatur excepturi corrupti ex! Vero, sed fugit! Tenetur animi earum
-                        ipsam iusto nesciunt libero exercitationem voluptas.</p>
+                    <p>We encourage students to be innovative and artistic which would increase problem solving ability and open minds.</p>
                 </div>
             </div> 
 
             <!-- Design Mobile -->
-            <div class="members design-m">
+            <div class="members design-m design-leads">
                 <img src="images/leads/sneha tiwari.jpg" alt="">
                 <h1>Sneha<br>Tiwari</h1>
             </div>
@@ -357,7 +371,7 @@
             </div>  
 
             <!-- Event Tablet -->
-            <div class="members event-t">
+            <div class="members event-t leads-t">
                 <img src="images/Event Team/Chetaly Mawal 20BHI10065.jpg" alt="">
                 <h1>Chetaly<br>Mawal</h1>
             </div>
@@ -380,7 +394,7 @@
 
 
             <!-- Design Tablet -->
-            <div class="members design-t">
+            <div class="members design-t leads-t">
                 <img src="images/leads/sneha tiwari.jpg" alt="">
                 <h1>Sneha<br>Tiwari</h1>
             </div>
@@ -414,7 +428,7 @@
             </div>  
 
             <!-- Website Desktop -->
-            <div class="members web-d">
+            <div class="members web-d leads">
                 <img src="images/Website Team/Rudransh_khandelwal.jpg" alt="">
                 <h1>Rudransh<br>khandelwal</h1>
             </div>
@@ -455,7 +469,7 @@
             </div>
             
             <!-- Technical Desktop -->
-            <div class="members tech-d">
+            <div class="members tech-d leads">
                 <img src="images/leads/Rithuraj Nambiar.jpeg" alt="">
                 <h1>Rithuraj<br>Nambiar</h1>
             </div>
@@ -501,7 +515,7 @@
             </div> 
 
             <!-- Event Desktop -->
-            <div class="members event-d">
+            <div class="members event-d leads">
                 <img src="images/Event Team/Chetaly Mawal 20BHI10065.jpg" alt="">
                 <h1>Chetaly<br>Mawal</h1>
             </div>
@@ -523,7 +537,7 @@
             </div> 
 
             <!-- Design Desktop -->
-            <div class="members design-d">
+            <div class="members design-d leads">
                 <img src="images/leads/sneha tiwari.jpg" alt="">
                 <h1>Sneha<br>Tiwari</h1>
             </div>
@@ -565,17 +579,12 @@
                 <div class="blog-text">
                     <span>05</span>
                     <h1 class="blog-title">Content Team</h1>
-                    <p>JUST SIT DOWN MATE! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas sed aliquam
-                        assumenda nihil sit asperiores officiis atque, laboriosam nulla. Praesentium at dolores soluta
-                        aliquam ab illo amet, qui cumque!
-                        Nesciunt officiis repellat quo sed corporis voluptatum commodi inventore aliquid blanditiis
-                        iure, incidunt voluptates, pariatur excepturi corrupti ex! Vero, sed fugit! Tenetur animi earum
-                        ipsam iusto nesciunt libero exercitationem voluptas.</p>
+                    <p>We integrate students writing skills with their creative minds to get best outputs..</p>
                 </div>
             </div> 
             
             <!-- Content Mobile -->
-            <div class="members cont-m">
+            <div class="members cont-m cont-leads">
                 <img src="images/Content Team/Sakalya Mitra.jpeg" alt="">
                 <h1>Sakalya<br>Mitra</h1>
             </div>
@@ -615,17 +624,12 @@
                 <div class="blog-text">
                     <span>06</span>
                     <h1 class="blog-title">Publicity Team</h1>
-                    <p>JUST SIT DOWN MATE! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas sed aliquam
-                        assumenda nihil sit asperiores officiis atque, laboriosam nulla. Praesentium at dolores soluta
-                        aliquam ab illo amet, qui cumque!
-                        Nesciunt officiis repellat quo sed corporis voluptatum commodi inventore aliquid blanditiis
-                        iure, incidunt voluptates, pariatur excepturi corrupti ex! Vero, sed fugit! Tenetur animi earum
-                        ipsam iusto nesciunt libero exercitationem voluptas.</p>
+                    <p>We over here give students necessary exposure so as to develop talking skills..</p>
                 </div>
             </div>  
 
             <!-- Social Mobile -->
-            <div class="members social-m">
+            <div class="members social-m social-leads">
                 <img src="images/leads/Areena Khan.jpg" alt="">
                 <h1>Areena<br>Khan</h1>
             </div>
@@ -643,11 +647,11 @@
             </div>
             <div class="members social-m">
                 <img src="images/Social Media Team/7af6bd13-c116-41e4-93df-6ed61d140097.jpg" alt="">
-                <h1>Rithuraj<br>Nambiar</h1>
+                <h1>Rishit<br>Chungh</h1>
             </div>
             
             <!-- Content Tablet -->
-            <div class="members cont-t">
+            <div class="members cont-t leads">
                 <img src="images/Content Team/Sakalya Mitra.jpeg" alt="">
                 <h1>Sakalya<br>Mitra</h1>
             </div>
@@ -681,7 +685,7 @@
             </div>
 
             <!-- Social Tablet -->
-            <div class="members social-t">
+            <div class="members social-t leads">
                 <img src="images/leads/Areena Khan.jpg" alt="">
                 <h1>Areena<br>Khan</h1>
             </div>
@@ -699,7 +703,9 @@
             </div>
             <div class="members social-t">
                 <img src="images/Social Media Team/7af6bd13-c116-41e4-93df-6ed61d140097.jpg" alt="">
-                <h1>Rithuraj<br>Nambiar</h1>
+                <h1>Rishit<br>Chungh</h1>
+            </div>
+            <div class="members social-t">
             </div>
 
             <div class="blog-box out">
@@ -709,17 +715,12 @@
                 <div class="blog-text">
                     <span>07</span>
                     <h1 class="blog-title">Outreach Team</h1>
-                    <p>JUST SIT DOWN MATE! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas sed aliquam
-                        assumenda nihil sit asperiores officiis atque, laboriosam nulla. Praesentium at dolores soluta
-                        aliquam ab illo amet, qui cumque!
-                        Nesciunt officiis repellat quo sed corporis voluptatum commodi inventore aliquid blanditiis
-                        iure, incidunt voluptates, pariatur excepturi corrupti ex! Vero, sed fugit! Tenetur animi earum
-                        ipsam iusto nesciunt libero exercitationem voluptas.</p>
+                    <p>We bring students together and improve their social skills..</p>
                 </div>
             </div>    
 
             <!-- Out Mobile -->
-            <div class="members out-m">
+            <div class="members out-m out-leads">
                 <img src="images/leads/Mahika Agrawal .jpg" alt="">
                 <h1>Mahika<br>Agrawal</h1>
             </div>
@@ -772,17 +773,12 @@
                 <div class="blog-text">
                     <span>08</span>
                     <h1 class="blog-title">Video Team</h1>
-                    <p>JUST SIT DOWN MATE! Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quas sed aliquam
-                        assumenda nihil sit asperiores officiis atque, laboriosam nulla. Praesentium at dolores soluta
-                        aliquam ab illo amet, qui cumque!
-                        Nesciunt officiis repellat quo sed corporis voluptatum commodi inventore aliquid blanditiis
-                        iure, incidunt voluptates, pariatur excepturi corrupti ex! Vero, sed fugit! Tenetur animi earum
-                        ipsam iusto nesciunt libero exercitationem voluptas.</p>
+                    <p>Students use their creativity to make videos,add graphics, animations etc...</p>
                 </div>
             </div> 
 
             <!-- Video Mobile -->
-            <div class="members video-m">
+            <div class="members video-m video-leads">
                 <img src="images/Video Team/Rohan chaudhary.jpg"alt="">
                 <h1>Rohan<br>Choudary</h1>
             </div>
@@ -808,7 +804,7 @@
             </div>  
 
             <!-- Out Tablet -->
-            <div class="members out-t">
+            <div class="members out-t leads-t">
                 <img src="images/leads/Mahika Agrawal .jpg" alt="">
                 <h1>Mahika<br>Agrawal</h1>
             </div>
@@ -855,7 +851,7 @@
 
 
             <!-- Video Tablet -->
-            <div class="members video-t">
+            <div class="members video-t leads-t">
                 <img src="images/Video Team/Rohan chaudhary.jpg"alt="">
                 <h1>Rohan<br>Choudary</h1>
             </div>
@@ -881,7 +877,7 @@
             </div>  
 
             <!-- Content Desktop -->
-            <div class="members cont-d">
+            <div class="members cont-d leads">
                 <img src="images/Content Team/Sakalya Mitra.jpeg" alt="">
                 <h1>Sakalya<br>Mitra</h1>
             </div>
@@ -916,7 +912,7 @@
 
             
             <!-- Social Desktop -->
-            <div class="members social-d">
+            <div class="members social-d leads">
                 <img src="images/leads/Areena Khan.jpg" alt="">
                 <h1>Areena<br>Khan</h1>
             </div>
@@ -934,11 +930,11 @@
             </div>
             <div class="members social-d">
                 <img src="images/Social Media Team/7af6bd13-c116-41e4-93df-6ed61d140097.jpg" alt="">
-                <h1>Rithuraj<br>Nambiar</h1>
+                <h1>Rishit<br>Chungh</h1>
             </div>
             
             <!-- Out Desktop -->
-            <div class="members out-d">
+            <div class="members out-d leads">
                 <img src="images/leads/Mahika Agrawal .jpg" alt="">
                 <h1>Mahika<br>Agrawal</h1>
             </div>
@@ -984,7 +980,7 @@
             </div>
 
             <!-- Video Desktop -->
-            <div class="members video-d">
+            <div class="members video-d leads">
                 <img src="images/Video Team/Rohan chaudhary.jpg"alt="">
                 <h1>Rohan<br>Choudary</h1>
             </div>
@@ -1033,7 +1029,8 @@
             </div>
 
             <div class="row">
-                <h2>Made with ❤️ SDC Team AI CLUB</h2><br>
+                <h2>Made with ❤️ SDC Team AI CLUB</h2>
+                <br>
                 Copyright © 2022 AI Club - VIT Bhopal
             </div>
         </div>

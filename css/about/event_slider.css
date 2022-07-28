@@ -1,0 +1,226 @@
+/* Event Slider */
+
+header{
+    position:fixed;
+    top:5px;
+    z-index: 5;
+    background-color: transparent;
+    width: 100vw;
+    /* overflow: hidden; */
+    margin-bottom: 15px;
+    color:white;
+}
+
+.Events-slider {
+    overflow: hidden;
+    display: flex;
+    height: 23px;
+    width: 100vw;
+    margin: 2px auto;
+    border-bottom: 2px solid white;
+}
+
+.Events-slider div span {
+    color: orange;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-2200px, 0, 0);
+    }
+}
+
+.Events-slider div {
+    height: 30px;
+    display: inline;
+    min-width: 400px;
+    margin-left: 10px;
+    animation: slide 25s linear infinite;
+    animation-direction: alternate-reverse;
+}
+
+.Events-slider .current{
+    background-color: orange;
+    border-radius: 3px;
+    outline: 2px white;
+    min-width:100px;
+    color:white;
+    padding:2px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.menu{
+    position:absolute;
+    top:50px;
+    right:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    cursor: pointer;
+}
+
+/* .menu p{
+    color:white;
+    border-bottom: 2px solid white;
+    padding:3px;
+    letter-spacing: 1.5px;
+    position: relative;
+    top:4px;
+    font-size: 15px;
+} */
+
+.loader {
+    position: relative;
+    border-bottom: 2px solid white;
+    padding-bottom: 6px;
+}
+
+.loader span {
+    color: #fff;
+    display: inline-block;
+    color:white;
+    position: relative;
+    top:4px;
+    font-size: 15px
+}
+
+.loader:hover span {
+  animation: jumping 0.8s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes jumping {
+
+    0%,
+    40%,
+    100% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
+}
+
+.menu-btn{
+    height:35px;
+    width: 35px;
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-btn .menu-logo{
+    height:20px;
+}
+
+.socials{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    position:fixed;
+    right:20px;
+    bottom:100px;
+}
+
+.soc-link{
+    width:35px;
+    height:35px;
+    background-color: #FD9207;
+    border-radius: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.soc-link svg{
+    height:25px;
+}
+
+@media screen and (max-width: 540px) {
+    .menu{
+        top:30px;
+        right:15px;
+    }
+
+    .menu p{
+        border-bottom: 2px solid white;
+        padding:2px;
+        letter-spacing: 1.5px;
+        position: relative;
+        top:3px;
+        font-size: 15px;
+    }
+
+    .menu-btn{
+        height:30px;
+        width:30px;
+    }
+
+    .socials{
+        display:flex;
+        flex-direction: row;
+        gap:20px;
+        position:absolute;
+        right:20px;
+        bottom:35px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .Events-slider{
+        border: none;
+    }
+    /* .Events-slider{
+        border: none;
+        flex-direction: column;
+        position: fixed;
+        top:100px;
+        right:0px;
+        height:80vh;
+        margin-right: 0px;
+        width:40px;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translate3d(0, 0, 0) rotate(-90deg);
+        }
+        100% {
+            transform: translate3d(0, -4000px, 0) rotate(-90deg);
+        }
+    }
+
+    .Events-slider div{
+        min-height: 400px;
+        width:150px;
+    }
+
+    .Events-slider .current{
+        min-height: 100px;
+        width:90px;
+        border-radius: 10px;
+        outline: 2px white;
+        min-width:100px;
+        color:white;
+        padding:2px;
+        text-align: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+
+    header{
+        overflow: visible;
+    } */
+}
+
+/* Event Slider end */
