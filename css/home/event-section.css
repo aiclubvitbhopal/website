@@ -147,3 +147,11 @@ div .sticky {
     }
     
 }
+@media screen and (max-width: 280px) {
+  div .sticky{
+    height: 60vh;
+  }
+  .img-container img{
+  margin-right: 140px;
+  }
+}

@@ -200,4 +200,14 @@
     }
 }
 
+
+@media (max-width: 280px){
+    .jumbotron{
+        height: 40vh;;
+    }
+    .content h1{
+        font-size:30px;
+      }
+}
+
 /* Quick_events ends */
