@@ -95,6 +95,10 @@ body{
     background-color: #C499BA;
 }
 
+.edt{
+    background-color: #FF7396;
+}
+
 .blog-img {
     width: 100%;
     height: auto;
@@ -153,6 +157,7 @@ body{
 
 .blog-text h1 {
     font-weight: 500;
+    width:195px;
 }
 
 .blog-box:hover .blog-text{
@@ -228,6 +233,10 @@ body{
     display: none;
 }
 
+.edt-d, .edt-m, .edt-t{
+    display: none;
+}
+
 .video-d, .video-m, .video-t{
     display: none;
 }
@@ -275,6 +284,10 @@ body{
 
 .video-leads h1{
     color:#C499BA;
+}
+
+.edt-leads h1{
+    color:#FF7396;
 }
 
 @media screen and (max-width: 540px) {

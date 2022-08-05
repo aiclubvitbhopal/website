@@ -41,7 +41,12 @@ const video_m = document.querySelectorAll(".video-m")
 const video_t = document.querySelectorAll(".video-t")
 const video_btn = document.querySelector(".blog-box.video");
 
-const members = [".web-d",".web-m",".web-t",".tech-d",".tech-m",".tech-t",".event-d",".event-m",".event-t",".design-d",".design-m",".design-t",".cont-d",".cont-m",".cont-t",".social-d",".social-m",".social-t",".out-d",".out-m",".out-t",".video-d",".video-m",".video-t"];
+const editorial_d = document.querySelectorAll(".edt-d")
+const editorial_m = document.querySelectorAll(".edt-m")
+const editorial_t = document.querySelectorAll(".edt-t")
+const editorial_btn = document.querySelector(".blog-box.edt");
+
+const members = [".web-d",".web-m",".web-t",".tech-d",".tech-m",".tech-t",".event-d",".event-m",".event-t",".design-d",".design-m",".design-t",".cont-d",".cont-m",".cont-t",".social-d",".social-m",".social-t",".out-d",".out-m",".out-t",".video-d",".video-m",".video-t",".edt-d",".edt-m",".edt-t"];
 
 const close_all = (ele)=>{
     members.forEach(element =>{
@@ -201,5 +206,24 @@ video_btn.addEventListener("click",(e)=>{
             element.style.display="flex";
         });     
         close_all(".video-d");
+    }
+});
+
+editorial_btn.addEventListener("click",(e)=>{
+    if(m.matches){
+        editorial_m.forEach(element => {
+            element.style.display="flex";
+        });
+        close_all(".edt-m");
+    }else if(t.matches){
+        editorial_t.forEach(element => {
+            element.style.display="flex";
+        });
+        close_all(".edt-t");
+    }else{
+        editorial_d.forEach(element => {
+            element.style.display="flex";
+        });     
+        close_all(".edt-d");
     }
 });
