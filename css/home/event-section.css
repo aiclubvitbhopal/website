@@ -155,3 +155,15 @@ div .sticky {
   margin-right: 140px;
   }
 }
+
+@media screen and (min-width: 700px) and (max-width:800px){
+  .event-section{
+  margin-left: -61px;
+  }
+  .flex{
+    
+    border-radius: 30px 30px 30px 30px;
+  }
+
+
+}
