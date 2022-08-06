@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
 * {
     margin: 0;
@@ -295,6 +296,20 @@ section {
 .tagline p {
     font-size: clamp(3rem, 40vw, 1rem);
     width: min(500px, 70vw);
+    
+}
+
+/* Arbaz */
+.tagline .container .title p{
+    font-size:25px;
+    margin-bottom:15px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width:920px) {
+    .tagline .container .title p{
+        display:none;
+    }
 }
 
 .get {
