@@ -210,3 +210,6 @@
 .menu .nav ul li:hover {
     transform: scale(1.2);
 }
+::-webkit-scrollbar{
+    display: none;
+}

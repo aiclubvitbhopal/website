@@ -14,6 +14,9 @@ body {
     background-color: #1B0B26;
     /* cursor: none; */
 }
+::-webkit-scrollbar{
+    display: none;
+}
 
 #circle {
     position: absolute;
@@ -93,11 +96,11 @@ section {
     background: #333;
 }
 
-.socials .facebook:hover .soc-link,
+.socials .discord:hover .soc-link,
 .socials .soc-link:hover .text-box,
 .socials .soc-link:hover .tilted,
 .socials .soc-link:hover .text-box::before {
-    background: #3B5999;
+    background:#7289da;
 }
 
 .socials .instagram:hover .soc-link,

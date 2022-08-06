@@ -196,9 +196,10 @@ body{
 .members h1{
     color:white;
     line-height: 30px;
-    font-family: 'Allerta Stencil';
-    letter-spacing: 5px;
+    letter-spacing: 1px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    text-decoration: none;
 }
 
 .members:hover{
@@ -289,6 +290,7 @@ body{
 .edt-leads h1{
     color:#FF7396;
 }
+
 
 @media screen and (max-width: 540px) {
 
