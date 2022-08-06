@@ -10,6 +10,10 @@ body{
     background-color: #1B0B26;
 }
 
+.members a{
+    text-decoration: none;
+}
+
 .lead_teacher{
     padding: 10px;
     height: 90px;
