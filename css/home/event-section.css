@@ -132,8 +132,17 @@ div .sticky {
 .econtent, .text p{
   font-size: 15px;
 }
+@media screen and (max-width: 600px)and (min-width: 570px) {
+.img-container img{
+  margin-left: -44px;
+}
+}
 
 @media screen and (max-width: 580px) {
+
+  .img-container img{
+    margin-left: -44px;
+  }
     div.sticky {
         width: 100%;
     }
@@ -145,15 +154,16 @@ div .sticky {
     .flex-img {
         width: 100%;        
     }
-    
-}
+    .overlay {
+      margin-left:-40px;
+      width:250%;
+    }
+  }
 @media screen and (max-width: 280px) {
   div .sticky{
     height: 60vh;
   }
-  .img-container img{
-  margin-right: 140px;
-  }
+  
 }
 
 @media screen and (min-width: 700px) and (max-width:800px){
