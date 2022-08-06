@@ -361,6 +361,11 @@ section {
     position:relative;
     left:-70px;
 }
+@media screen and (min-height: 500px) and (max-height:550px){
+    .logo-head {
+        width: clamp(150px, 30%, 100px) !important;
+    }
+}
 
 @media screen and (max-width: 912px) {
     .logo-head {
