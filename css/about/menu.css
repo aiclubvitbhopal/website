@@ -198,6 +198,7 @@
 .menu .nav ul li a{
     position: relative;
     font-size: max(1rem,2vmax);
+    font-family: "Roboto" ,sans-serif;
     text-decoration: none;
     color: rgb(196, 193, 193);
     width: fit-content;
