@@ -24,7 +24,7 @@ body{
 
 .lead-title{
     width: 80%;
-    font-family: 'Allerta Stencil';
+    font-family: "Poppins", sans-serif;
     font-style: normal;
     margin-top: 0.5rem;
     font-size: 2rem;
@@ -118,7 +118,7 @@ body{
 }
 
 .blog-text {
-    font-family: 'Allerta Stencil';
+    font-family: "Poppins", sans-serif;
     padding: 110px 30px 2px;
     display: flex;
     flex-direction: column;
@@ -132,13 +132,13 @@ body{
 }
 
 .blog-text span {
-    font-family: 'Allerta Stencil';
+    font-family: "Poppins", sans-serif;
     color: #1B0B26;
     font-size: 1.2rem;
 }
 
 .blog-text .blog-title {
-    font-family: 'Allerta Stencil';
+    font-family: "Poppins", sans-serif;
     font-size: 2rem;
     color: #1B0B26;
     text-decoration: none;
@@ -147,7 +147,7 @@ body{
 
 .blog-text p {
     color: #1B0B26;
-    font-family: 'Allerta Stencil';
+    font-family: "Poppins", sans-serif;
     font-size: 1.3rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
