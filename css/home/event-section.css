@@ -12,16 +12,16 @@
     min-height: 500px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
-    @media screen and (max-width: 580px) {
-      .flex{
-        flex-direction: column;
-        margin-left: 0px;
-        margin-top: 40px;
-        } 
-      div .sticky {
-        height: min-content;
-      }
-    }    
+@media screen and (max-width: 580px) {
+  .flex{
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 40px;
+    } 
+  div .sticky {
+    height: min-content;
+  }
+}    
 .sticky h2{
       font-family: 'Raleway';
       font-style: normal;
@@ -32,26 +32,26 @@
       align-items: center;
       letter-spacing: 0.09em;
       color: #FFFFFF;
-    }
-    .sticky p{
-      font-family: 'Raleway';
-      font-style: normal;
-      font-weight: 300;
-      font-size: max(2vw,1rem);
-      line-height: 3vmax;
-      display: flex;
-      align-items: center;
-      margin-top: 20px;
-      letter-spacing: 0.09em;
-      color: #FFFFFF;
-    }
+}
+.sticky p{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 300;
+  font-size: max(2vw,1rem);
+  line-height: 3vmax;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  letter-spacing: 0.09em;
+  color: #FFFFFF;
+}
 div .sticky {
       top: 0;
       height:50vh;
       padding: 50px;
       font-size: 20px;
       width: 50%;
-    }
+}
 .img-container img{
       width: 200px;
       height: 266px;
@@ -132,6 +132,21 @@ div .sticky {
 .econtent, .text p{
   font-size: 15px;
 }
+
+.desc-text {
+  background: linear-gradient(#00000000, rgb(0, 0, 0));
+  color: #FFFFFF;
+  position: sticky;
+  bottom: 0;
+  z-index: 3;
+  width: 100%;
+  min-height: fit-content;
+  height: 6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 600px)and (min-width: 570px) {
 .img-container img{
   margin-left: -44px;

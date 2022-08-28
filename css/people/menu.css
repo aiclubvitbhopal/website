@@ -204,13 +204,18 @@
     width: fit-content;
 }
 
-.menu .nav ul li a:hover {
+.menu .nav ul li.link a:hover {
     color: #fff;
 }
 
-.menu .nav ul li:hover {
+.coming-soon{
+    color: rgb(133, 131, 131) !important;
+}
+
+.menu .nav ul li.link:hover {
     transform: scale(1.2);
 }
+
 ::-webkit-scrollbar{
     display: none;
 }
