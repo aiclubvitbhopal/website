@@ -177,7 +177,7 @@ header{
 
 @media screen and (max-width: 420px){
     .Events-slider{
-        border: none;
+        /* border: none; */
     }
     /* .Events-slider{
         border: none;
