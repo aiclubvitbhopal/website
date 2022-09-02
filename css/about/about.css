@@ -10,7 +10,12 @@
 body{
     width:100vw;
     overflow-x: hidden;
+    overflow-y: scroll;
     background-color: #1B0B26;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 #circle {

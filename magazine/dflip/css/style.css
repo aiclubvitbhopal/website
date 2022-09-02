@@ -1,5 +1,6 @@
 body{
     background-color: #1B0B26;
+    overflow: hidden;
 }
 * {
     font-family: "Poppins", sans-serif;
