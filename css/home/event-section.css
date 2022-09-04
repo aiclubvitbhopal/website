@@ -23,7 +23,7 @@
   }
 }    
 .sticky h2{
-      font-family: 'Raleway';
+      font-family: "Poppins", sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: max(5vw,2rem);
@@ -37,7 +37,7 @@
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 300;
-  font-size: max(2vw,1rem);
+  font-size: max(1.4vw,0.9rem);
   line-height: 3vmax;
   display: flex;
   align-items: center;
@@ -145,6 +145,8 @@ div .sticky {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
 }
 
 @media screen and (max-width: 600px)and (min-width: 570px) {
