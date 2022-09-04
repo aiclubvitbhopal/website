@@ -1,3 +1,16 @@
 body{
     background-color: #1B0B26;
+    overflow: hidden;
+}
+* {
+    font-family: "Poppins", sans-serif;
+}
+@media  only screen and (max-width:450px){
+    .df-floating .df-ui-controls {
+        bottom:60px;
+    }
+    .df-page-content .df-page-content-right{
+        height: 1px !important;
+        width: 1px !important;
+    }
 }

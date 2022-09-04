@@ -9,7 +9,9 @@ body{
     overflow-x: hidden;
     background-color: #1B0B26;
 }
-
+.Events-slider{
+    font-family: "Poppins", sans-serif;
+}
 .members a{
     text-decoration: none;
 }
