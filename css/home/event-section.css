@@ -150,9 +150,9 @@ div .sticky {
 }
 
 @media screen and (max-width: 600px)and (min-width: 570px) {
-.img-container img{
-  margin-left: -44px;
-}
+  .img-container img{
+    margin-left: -44px;
+  }
 }
 
 @media screen and (max-width: 580px) {
@@ -160,22 +160,27 @@ div .sticky {
   .img-container img{
     margin-left: -44px;
   }
-    div.sticky {
-        width: 100%;
-    }
 
-    .econtent, .text {
-        left: 50%;
-    }
-
-    .flex-img {
-        width: 100%;        
-    }
-    .overlay {
-      margin-left:-40px;
-      width:250%;
-    }
+  div.sticky {
+      width: 100%;
   }
+
+  .econtent, .text {
+      left: 50%;
+  }
+
+  .flex-img {
+      width: 100%;        
+  }
+  .overlay {
+    margin-left:-40px;
+    width:250%;
+  }
+
+  .sticky p{
+    line-height: 25px;
+  }
+}
 @media screen and (max-width: 280px) {
   div .sticky{
     height: 60vh;
@@ -188,7 +193,6 @@ div .sticky {
   margin-left: -61px;
   }
   .flex{
-    
     border-radius: 30px 30px 30px 30px;
   }
 

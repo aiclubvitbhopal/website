@@ -65,7 +65,7 @@
 }
 
 .lead-card h3, .lead-card p {
-  margin: 0;
+  margin: 3px;
   font-size: max(1vw,0.8rem);
 }
 
@@ -73,6 +73,7 @@
   width: 60%;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .lead-card a {
