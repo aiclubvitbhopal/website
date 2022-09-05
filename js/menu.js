@@ -1,11 +1,12 @@
-menu = document.getElementById("menu-logo");
+const menu = document.getElementById("menu-logo");
+const links = document.querySelectorAll(".navigation a");
 
-menu.addEventListener("click", function(e){
-    this.classList.toggle("fa-bars");
-    this.classList.toggle("fa-xmark");
-    this.classList.toggle("active");
+function menuToggle(elem){
+    elem.classList.toggle("fa-bars");
+    elem.classList.toggle("fa-xmark");
+    elem.classList.toggle("active");
 
-    if (this.classList.contains("active")) {
+    if (elem.classList.contains("active")) {
         gsap.to(".menu",{
             duration: 0.1,
             display: "block",
@@ -55,4 +56,14 @@ menu.addEventListener("click", function(e){
         });
         document.body.classList.toggle("scroll-lock");
     }
+}
+
+menu.addEventListener("click", function(e){
+    menuToggle(this);
+});
+
+links.forEach(link => {
+    link.addEventListener("click", function(e){
+        menuToggle(menu);
+    });
 });
