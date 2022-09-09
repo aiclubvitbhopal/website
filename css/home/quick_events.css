@@ -170,7 +170,8 @@
     }
 
     .content::after{
-      right:-90px;
+      right:-125px;
+      top:20px;
       clip-path: ellipse(24% 12% at 50% 50%);
   
     }
