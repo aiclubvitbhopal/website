@@ -29,6 +29,7 @@
     position:relative;
     overflow:hidden;
     z-index: 1;
+    flex-direction: column;
 }
   
 .jumbotron::before{
@@ -97,6 +98,31 @@
     transform: scale(1.2);
     cursor:pointer;
 }
+
+.collaboration{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width:90vw; */
+    align-items: center;
+    gap: 5px;
+    bottom:0px;
+    right: 10px;
+}
+
+.collaboration h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    letter-spacing: 0.09em;
+    transition: all .2s ease-in-out;
+}
+
+.collaboration img{
+    height: 20px;
+}
   
 .status{
   
@@ -130,6 +156,26 @@
 @keyframes blinker {  
     from { opacity: 1; }
     to { opacity: 0; }
+}
+
+@media (max-width:920px){
+    .jumbotron{
+        height: min(50vh,500px);
+    }
+
+    .collaboration{
+        width:70vw;
+        right: -2%;
+        bottom:5px;
+    }
+
+    .collaboration h3{
+        font-size: 25px;
+    }
+
+    .collaboration img{
+        height: 20px;
+    }
 }
   
 @media(max-width:650px){
@@ -184,9 +230,27 @@
         width: 140.57px;
         height: 140.41px;
     }
+
+    .collaboration{
+        bottom:0px;
+        right:-10%;
+        width: 75vw;
+    }
+
+    .collaboration h3{
+        font-size: 20px;
+    }
+
+    .collaboration img{
+        height: 18px;
+    }
 }
   
 @media (max-width: 400px){
+    .jumbotron{
+        height: 90vw;
+    }
+
     .jumbotron::before{
         clip-path: circle(18% at 90% 12%);
     }
@@ -204,11 +268,23 @@
 
 @media screen and (max-width: 290px){
     .jumbotron{
-        height: 40vh;;
+        height: 70vh;;
     }
     .content h1{
         font-size:30px;
       }
+    
+    .collaboration{
+        width:70vw;
+        right: -2%;
+        bottom:5px;
+    }
+
+    .content::after{
+        right:-120px;
+        top:25px;
+        clip-path: ellipse(24% 12% at 50% 50%);
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width:800px){
@@ -216,5 +292,7 @@
     font-size: 50px;
 }
 }
+
+
 
 /* Quick_events ends */
