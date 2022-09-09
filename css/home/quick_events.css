@@ -173,17 +173,18 @@
     }
 
     .collaboration{
-        width:70vw;
+        width:80vw;
         right: -2%;
         bottom:5px;
     }
 
     .collaboration h3{
         font-size: 25px;
+        font-weight: 400;
     }
 
     .collaboration img{
-        height: 20px;
+        height: 30px;
     }
 }
   
@@ -242,7 +243,7 @@
 
     .collaboration{
         bottom:0px;
-        right:-10%;
+        right:-0%;
         width: 75vw;
     }
 
@@ -251,13 +252,18 @@
     }
 
     .collaboration img{
-        height: 18px;
+        height: 25px;
+    }
+
+    .content{
+        position: relative;
+        bottom: 30px;
     }
 }
   
 @media (max-width: 400px){
     .jumbotron{
-        height: 90vw;
+        height: 110vw;
     }
 
     .jumbotron::before{
@@ -272,12 +278,27 @@
     .content::after{
         top: 5px
     }
+
+    .collaboration{
+        bottom:0px;
+        right:-0%;
+        width: 75vw;
+    }
+
+    .collaboration h3{
+        font-size: 17px;
+    }
+
+    .collaboration img{
+        height: 25px;
+    }
+
 }
 
 
 @media screen and (max-width: 290px){
     .jumbotron{
-        height: 70vh;;
+        height: 80vh;;
     }
     .content h1{
         font-size:30px;
@@ -285,14 +306,28 @@
     
     .collaboration{
         width:70vw;
-        right: -2%;
-        bottom:5px;
+        right: 5%;
+        bottom:20px;
+    }
+
+    .content{
+        position: relative;
+        bottom: 50px;
+        right:0;
     }
 
     .content::after{
-        right:-120px;
+        right:-100px;
         top:25px; 
         clip-path: ellipse(24% 12% at 50% 50%);
+    }
+
+    .collaboration h3{
+        font-size: 20px;
+    }
+
+    .collaboration img{
+        height: 21px;
     }
 }
 
