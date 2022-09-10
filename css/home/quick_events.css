@@ -4,7 +4,7 @@
     display:grid;
     place-items:center;
     height: 70vh;
-    /* padding: 4rem; */
+    padding: 1rem;
     width:100vw;
     background-color: #1B0B26;
     transition:none;
@@ -19,7 +19,7 @@
     backdrop-filter: blur(5.9px);
     -webkit-backdrop-filter: blur(5.9px);
     border: 1px solid rgba(41, 28, 51, 0.24);
-    min-width: 98vw;
+    min-width: 90vw;
     height:52vh;    
     display:flex;
     align-items:center;
@@ -116,11 +116,13 @@
     padding-bottom: 5px;
     gap: 5px;
     bottom:0px;
-    right: 8vw;
+    right: 4vw;
+    cursor: pointer;
 }
 
 .collaboration h3{
-    font-family: 'Inter';
+    /* font-family: 'Inter'; */
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 200;
     font-size: 23px;
@@ -173,9 +175,13 @@
     }
 
     .collaboration{
-        width:80vw;
+        /* width:80vw;
         right: -2%;
-        bottom:5px;
+        bottom:5px; */
+
+        width: 80vw;
+        right: -7%;
+        bottom: 89px;
     }
 
     .collaboration h3{
@@ -185,6 +191,13 @@
 
     .collaboration img{
         height: 30px;
+    }
+
+    .content {
+        position: relative;
+        z-index: 10;
+        right: 10vw;
+        bottom: 35px;
     }
 }
   
@@ -227,9 +240,13 @@
 
     .content::after{
       right:-125px;
-      top:20px;
+      top:0px;
       clip-path: ellipse(24% 12% at 50% 50%);
-  
+      font-size: 24px;
+    }
+
+    .jumbotron {
+        height: min(48vh, 500px);
     }
 
     .jumbotron::before{
@@ -242,9 +259,14 @@
     }
 
     .collaboration{
-        bottom:0px;
+        /* bottom:0px;
         right:-0%;
+        width: 75vw; */
+
+        bottom: 12px;
+        right: -7%;
         width: 75vw;
+        gap: 10px;
     }
 
     .collaboration h3{
@@ -259,6 +281,7 @@
         position: relative;
         bottom: 30px;
     }
+
 }
   
 @media (max-width: 400px){
@@ -280,9 +303,10 @@
     }
 
     .collaboration{
-        bottom:0px;
-        right:-0%;
+        bottom: 16px;
+        right: -3%;
         width: 75vw;
+        gap: 10px;
     }
 
     .collaboration h3{
@@ -305,9 +329,13 @@
       }
     
     .collaboration{
-        width:70vw;
+        /* width:70vw;
         right: 5%;
-        bottom:20px;
+        bottom:20px; */
+
+        width: 70vw;
+        right: 5%;
+        bottom: 45px;
     }
 
     .content{
