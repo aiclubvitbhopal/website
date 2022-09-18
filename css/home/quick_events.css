@@ -4,7 +4,7 @@
     display:grid;
     place-items:center;
     height: 70vh;
-    /* padding: 4rem; */
+    padding: 1rem;
     width:100vw;
     background-color: #1B0B26;
     transition:none;
@@ -14,13 +14,13 @@
     margin-top: 30px;
     padding:1rem 0 ;
     background: rgba(41, 28, 51, 0.85);
-    border-radius: 16px;
+    border-radius: 55px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5.9px);
     -webkit-backdrop-filter: blur(5.9px);
     border: 1px solid rgba(41, 28, 51, 0.24);
     min-width: 90vw;
-    height:45vh;    
+    height:52vh;    
     display:flex;
     align-items:center;
     justify-content:center;
@@ -29,6 +29,7 @@
     position:relative;
     overflow:hidden;
     z-index: 1;
+    flex-direction: column;
 }
   
 .jumbotron::before{
@@ -56,14 +57,19 @@
 .content{   
     position:relative; 
     z-index: 10;
+    right: 10vw;
+    
+   
 }
   
 .content h1{
+    /* position: relative; */
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 85px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    font-size: 55px;
+    line-height: 75px;
     transition: all .2s ease-in-out;
 }
 
@@ -71,21 +77,23 @@
    font-family: 'Inter';
     font-style: normal;
     font-weight: 300;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 0.09em;
     transition: all .2s ease-in-out;  
 }
   
 .content::after{
-    content: 'Register';
+    content: 'Register!';
     color:'white';
     position: absolute;
-    width:266px;
-    height:249px;
+    font-size: 30px;
+    width:296px;
+    height:269px;
     top: 0;
     display:grid;
     place-items:center;
-    right: -130px;
+    right: -19vw;
+    top: -4vw;
     background: #E0518A;
     transform: rotate(-15.44deg);
     text-align:center;
@@ -96,6 +104,35 @@
 .content:hover::after{
     transform: scale(1.2);
     cursor:pointer;
+}
+
+.collaboration{
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width:90vw; */
+    align-items: center;
+    padding-bottom: 5px;
+    gap: 5px;
+    bottom:0px;
+    right: 4vw;
+    cursor: pointer;
+}
+
+.collaboration h3{
+    /* font-family: 'Inter'; */
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 23px;
+    letter-spacing: 0.09em;
+    transition: all .2s ease-in-out;
+
+}
+
+.collaboration img{
+    height: 40px;
 }
   
 .status{
@@ -130,6 +167,38 @@
 @keyframes blinker {  
     from { opacity: 1; }
     to { opacity: 0; }
+}
+
+@media (max-width:920px){
+    .jumbotron{
+        height: min(50vh,500px);
+    }
+
+    .collaboration{
+        /* width:80vw;
+        right: -2%;
+        bottom:5px; */
+
+        width: 80vw;
+        right: -7%;
+        bottom: 89px;
+    }
+
+    .collaboration h3{
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .collaboration img{
+        height: 30px;
+    }
+
+    .content {
+        position: relative;
+        z-index: 10;
+        right: 10vw;
+        bottom: 35px;
+    }
 }
   
 @media(max-width:650px){
@@ -170,9 +239,14 @@
     }
 
     .content::after{
-      right:-90px;
+      right:-125px;
+      top:0px;
       clip-path: ellipse(24% 12% at 50% 50%);
-  
+      font-size: 24px;
+    }
+
+    .jumbotron {
+        height: min(48vh, 500px);
     }
 
     .jumbotron::before{
@@ -183,9 +257,38 @@
         width: 140.57px;
         height: 140.41px;
     }
+
+    .collaboration{
+        /* bottom:0px;
+        right:-0%;
+        width: 75vw; */
+
+        bottom: 12px;
+        right: -7%;
+        width: 75vw;
+        gap: 10px;
+    }
+
+    .collaboration h3{
+        font-size: 20px;
+    }
+
+    .collaboration img{
+        height: 25px;
+    }
+
+    .content{
+        position: relative;
+        bottom: 30px;
+    }
+
 }
   
 @media (max-width: 400px){
+    .jumbotron{
+        height: 110vw;
+    }
+
     .jumbotron::before{
         clip-path: circle(18% at 90% 12%);
     }
@@ -198,16 +301,62 @@
     .content::after{
         top: 5px
     }
+
+    .collaboration{
+        bottom: 16px;
+        right: -3%;
+        width: 75vw;
+        gap: 10px;
+    }
+
+    .collaboration h3{
+        font-size: 17px;
+    }
+
+    .collaboration img{
+        height: 25px;
+    }
+
 }
 
 
 @media screen and (max-width: 290px){
     .jumbotron{
-        height: 40vh;;
+        height: 80vh;;
     }
     .content h1{
         font-size:30px;
       }
+    
+    .collaboration{
+        /* width:70vw;
+        right: 5%;
+        bottom:20px; */
+
+        width: 70vw;
+        right: 5%;
+        bottom: 45px;
+    }
+
+    .content{
+        position: relative;
+        bottom: 50px;
+        right:0;
+    }
+
+    .content::after{
+        right:-100px;
+        top:25px; 
+        clip-path: ellipse(24% 12% at 50% 50%);
+    }
+
+    .collaboration h3{
+        font-size: 20px;
+    }
+
+    .collaboration img{
+        height: 21px;
+    }
 }
 
 @media screen and (min-width: 700px) and (max-width:800px){
@@ -215,5 +364,7 @@
     font-size: 50px;
 }
 }
+
+
 
 /* Quick_events ends */
