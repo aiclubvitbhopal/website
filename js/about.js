@@ -17,23 +17,23 @@
 //     { passive: true }
 // );
 
-const heroText = document.querySelector(".text");
-const textTop = heroText.getBoundingClientRect().top;
+// const heroText = document.querySelector(".text");
+// const textTop = heroText.getBoundingClientRect().top;
 
-document.addEventListener(
-    'scroll',
-    (event) => {
-        if (heroText.getBoundingClientRect().top < textTop) {
-            heroText.style.opacity = -window.pageYOffset / 350 + 1;
-        }  
-        console.log(heroText.getBoundingClientRect().top," : ",textTop);
-        if(textTop-heroText.getBoundingClientRect().top<30){
-            heroText.style.opacity = 1;
-            console.log("true");
-        }
-    }, 
-    { passive: true }
-);
+// document.addEventListener(
+//     'scroll',
+//     (event) => {
+//         if (heroText.getBoundingClientRect().top < textTop) {
+//             heroText.style.opacity = -window.pageYOffset / 350 + 1;
+//         }  
+//         console.log(heroText.getBoundingClientRect().top," : ",textTop);
+//         if(textTop-heroText.getBoundingClientRect().top<30){
+//             heroText.style.opacity = 1;
+//             console.log("true");
+//         }
+//     }, 
+//     { passive: true }
+// );
 
 // if(heroText.getBoundingClientRect().top-textTop<30){
 //     heroText.style.opacity = 1;
@@ -67,17 +67,17 @@ var observer = new IntersectionObserver((entries)=>{
 
 observer.observe(counters[0]);
 
-var explore = document.querySelector(".explore");
+// var explore = document.querySelector(".explore");
 
-explore.addEventListener("click",(e)=>{
-    var about = document.querySelector(".about");
-    var end = about.getBoundingClientRect().top;
-    var start = explore.getBoundingClientRect().top;
-    console.log("END  : ",end);
-    setInterval(()=>{
-        if(start<end){
-            ++start;
-            window.scrollTo(0,start);
-        }
-    },1);
-});
+// explore.addEventListener("click",(e)=>{
+//     var about = document.querySelector(".about");
+//     var end = about.getBoundingClientRect().top;
+//     var start = explore.getBoundingClientRect().top;
+//     console.log("END  : ",end);
+//     setInterval(()=>{
+//         if(start<end){
+//             ++start;
+//             window.scrollTo(0,start);
+//         }
+//     },1);
+// });
