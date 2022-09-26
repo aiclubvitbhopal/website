@@ -240,6 +240,7 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width: 420px) {
+
     .wave {
         display: none;
     }
@@ -493,7 +494,7 @@ body::-webkit-scrollbar {
     /* border: 1px solid red; */
 }
 
-.about{
+/* .about{
     margin-top: 10%;
     width:55vw;
     height:100vh;
@@ -544,7 +545,65 @@ body::-webkit-scrollbar {
     height: 600px;
     width: 600px;
     top:-3%;
+} */
+
+.about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+
+    color:white;
+    font-size: clamp(1.2rem,2vw,10rem);
+    font-family: 'Secular One', sans-serif;
+
+    padding: 10rem 0 0 0;
 }
+
+/* .about .dis::before {
+    content: '"';
+    color: #fb9007;
+    font-size: clamp(5rem,20vw,10rem);
+
+    position: absolute;
+    top: -100px;
+    left: -5px;
+} */
+
+.about .dis {
+    width: 50%;
+    position: relative;
+}
+
+/* .about .dis::after {
+    content: '"';
+    color: #fb9007;
+    font-size: clamp(5rem,20vw,10rem);
+
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+} */
+
+.about .ci {
+    width: 40%;
+}
+
+@media  only screen and (max-width: 720px) {
+    .about {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .about .dis {
+        width: 80%;
+    }
+    
+    .about .ci {
+        width: 80%;
+    }
+}
+
 .text{
     display:flex;
     justify-content: center;
@@ -659,16 +718,60 @@ body::-webkit-scrollbar {
         margin-top: 100px;
     }
 }
-.mid .image{
+
+.mid {
+    width:100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+
+    flex-wrap: wrap;
+}
+
+.mid p {
+    font-size: clamp(6rem, 10vw, 12rem);
+    color: white;
+    position: relative;
+}
+
+.mid p::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+/* Change the position of transformed element */
+    transform-origin: bottom;
+/*  Rotates around x-axis */
+    transform: rotateX(180deg);
+    line-height: 0.85em;
+/* linear-gradient defined by up,down,left ,right ,diagonal */
+    background-image: linear-gradient(0deg, #ffffff 0, transparent 95%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;         
+    opacity: 0.7;
+}
+
+/* .mid .image{
     display: inline;
     flex-direction: row;
     position: relative;
-}
+} */
 .space{
-    margin-left: -12%;
-    margin-right: 2%;
-    width: 100%;
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.overlay{
+    width: 20%;
+}
+
 .overlay1{
     position: absolute;
     animation: rotation 7s infinite linear;
@@ -689,9 +792,28 @@ body::-webkit-scrollbar {
     animation: rotation 30s infinite linear;
 }
 
-.overlay{
+@media only screen and ( max-width: 539px ) {
+    .space {
+        width: 100%;
+    }
+
+    .overlay { 
+        width: 100%;
+    }
+
+    .mid {
+        gap: 10%;
+    }
+
+    .mid p {
+        display: none;
+    }
+
+}
+
+.overlay-logo{
     position: absolute;
-    margin-left: 6.5%;
+    /* margin-left: 6.5%; */
 }
 @keyframes rotation {
     from {
