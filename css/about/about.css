@@ -732,9 +732,11 @@ body::-webkit-scrollbar {
 }
 
 .mid p {
-    font-size: clamp(6rem, 10vw, 12rem);
+    font-size: clamp(8rem, 15vw, 20rem);
     color: white;
     position: relative;
+
+    align-self: start;
 }
 
 .mid p::after {
@@ -790,6 +792,12 @@ body::-webkit-scrollbar {
 .overlay4{
     position: absolute;
     animation: rotation 30s infinite linear;
+}
+
+@media only screen and ( max-width: 1280px ) {
+    .mid p {
+        align-self: center;
+    }
 }
 
 @media only screen and ( max-width: 539px ) {
