@@ -228,6 +228,9 @@ body::-webkit-scrollbar {
     height: 100%;
 }
 
+.dis{
+    text-align: justify;
+}
 @media screen and (max-width: 912px) {
     .bg-txt {
         right: 33%;
