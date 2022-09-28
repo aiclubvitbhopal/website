@@ -59,9 +59,9 @@ body::-webkit-scrollbar {
 }
 
 .socials .soc-link {
-    /* position: relative; */
-
+    position: relative;
     background: #fff;
+    z-index: 15;
 }
 
 .socials .icon .soc-link {
