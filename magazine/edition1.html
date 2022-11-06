@@ -65,13 +65,15 @@
 </div>
 
 <div class="container">
-
   <div class="row">
     <div class="col-xs-12">
-      
-
       <pre>
-
+    </div>
+    <div class="counter-card">
+      <div class="counter">
+        <h1>NUMBER OF VIEWS</h1>
+        <h3 id="visits" data-target="">0</h3>
+      </div>
     </div>
     <div class="col-xs-12" style="padding-bottom:30px">
       <!--Normal FLipbook-->
@@ -79,7 +81,6 @@
               source="./edition1/example-assets/books/Edition_1.pdf"
               id="df_manual_book">
       </div>
-
     </div>
   </div>
 </div>
@@ -88,6 +89,48 @@
 <script src="./dflip/js/libs/jquery.min.js" type="text/javascript"></script>
 <!-- Flipbook main Js file -->
 <script src="./dflip/js/dflip.min.js" type="text/javascript"></script>
+<script>
+  const popularityFactor = 1;
+  
+  function cb(response) {
+    const target = response.value * popularityFactor;
+    const visit = document.getElementById('visits');
+
+    let updateCount = setInterval(() => {
+      if ((+visit.innerHTML) <= target){
+        visit.innerHTML = (+visit.innerHTML) + 1;
+      } else {
+        clearInterval(updateCount);
+      }
+    }, 0.1);
+
+    // let html =`
+    // <h1>NUMBER OF VIEWS</h1>
+    // <h3 id="visits" data-target="${target}">0</h3>
+    // `
+    // document.querySelector('.counter').innerHTML = html;
+
+    // console.log(response);
+
+    console.log("b"+"a"+ + "a" + "a");
+  }
+
+  // function cb (response) {
+  //     var localStart = 0;
+  //     var value = reponse.value;
+  //     console.log(value);
+  //     setInterval(function() {
+  //       if (localStart < value) {
+  //         localStart++;
+  //         element.innerHTML = localStart;
+  //       }
+  //     }, 1);
+  // }
+  
+</script>
+<script async src="https://api.countapi.xyz/hit/aiclub.aivit.tech/websitemagzineedition1.html?callback=cb"></script>
+
+
 
 </body>
 </html>

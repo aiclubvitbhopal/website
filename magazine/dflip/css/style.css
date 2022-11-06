@@ -1,15 +1,33 @@
-body{
+body {
     background-color: #1B0B26;
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
 * {
     font-family: "Poppins", sans-serif;
 }
-@media  only screen and (max-width:450px){
+
+.counter-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.counter {
+    background: greenyellow;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+@media only screen and (max-width:450px) {
     .df-floating .df-ui-controls {
-        bottom:60px;
+        bottom: 60px;
     }
-    .df-page-content .df-page-content-right{
+
+    .df-page-content .df-page-content-right {
         height: 1px !important;
         width: 1px !important;
     }
