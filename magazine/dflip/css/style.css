@@ -16,10 +16,27 @@ body {
 }
 
 .counter {
-    background: greenyellow;
+    color: white;
     border-radius: 20px;
-    overflow: hidden;
     text-align: center;
+}
+
+.counter-card img {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.counter *{
+    margin: 0;
+}
+
+.counter h2{
+    font-weight: 200;
+    text-align: center;
+}
+
+.counter h1{
+    font-size: 3rem;
 }
 
 @media only screen and (max-width:450px) {
