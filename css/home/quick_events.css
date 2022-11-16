@@ -83,7 +83,7 @@
 }
   
 .content::after{
-    content: 'Register!';
+    content: 'Know More!';
     color:'white';
     position: absolute;
     font-size: 30px;
@@ -132,7 +132,7 @@
 }
 
 .collaboration img{
-    height: 40px;
+    height: 200px;
 }
   
 .status{
@@ -180,8 +180,8 @@
         bottom:5px; */
 
         width: 80vw;
-        right: -7%;
-        bottom: 89px;
+        right: -20%;
+        bottom: -60px;
     }
 
     .collaboration h3{
@@ -190,7 +190,7 @@
     }
 
     .collaboration img{
-        height: 30px;
+        height: 190px;
     }
 
     .content {
@@ -198,6 +198,12 @@
         z-index: 10;
         right: 10vw;
         bottom: 35px;
+    }
+
+    .content::after{
+        left:70%;
+        top:0px;
+        padding: 30px;
     }
 }
   
@@ -243,6 +249,8 @@
       top:0px;
       clip-path: ellipse(24% 12% at 50% 50%);
       font-size: 24px;
+      left:10px;
+      padding:30px;
     }
 
     .jumbotron {
@@ -263,10 +271,10 @@
         right:-0%;
         width: 75vw; */
 
-        bottom: 12px;
-        right: -7%;
+        bottom: -40px;
+        right: -15%;
         width: 75vw;
-        gap: 10px;
+        /* gap: 10px; */
     }
 
     .collaboration h3{
@@ -274,12 +282,13 @@
     }
 
     .collaboration img{
-        height: 25px;
+        height: 130px;
     }
 
     .content{
         position: relative;
         bottom: 30px;
+        left: 10px;
     }
 
 }
@@ -299,14 +308,15 @@
     }
 
     .content::after{
-        top: 5px
+        top: 5px;
+        padding:20px;
+        left:5px;
     }
 
     .collaboration{
-        bottom: 16px;
-        right: -3%;
+        bottom: -40px;
+        right: -15%;
         width: 75vw;
-        gap: 10px;
     }
 
     .collaboration h3{
@@ -314,9 +324,12 @@
     }
 
     .collaboration img{
-        height: 25px;
+        height: 120px;
     }
 
+    .content{
+        left:10px;
+    }
 }
 
 
