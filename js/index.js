@@ -70,3 +70,15 @@
 // }
 
 // registerButton.addEventListener('click',redirectFunc);
+
+const HackExchange = document.querySelector("#HackExchange").addEventListener('click',()=>{
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSfYf2OPwNan7Dg1k9oksmi6kOXUyjPXalpQFkR3layGRcYvww/viewform";
+});
+
+const Breakdown = document.querySelector("#Breakdown").addEventListener('click',()=>{
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLScZZvPSNZuuVSXdNLG54QypX7lGnBrT3crH3dDurQxnOgWIow/viewform";
+});
+
+const Charcha = document.querySelector("#Charcha").addEventListener('click',()=>{
+    window.location.href = "https://docs.google.com/forms/d/e/1FAIpQLSeiN_2-2o0LEgeDBDe4_FcWJmjnVRak9v0_ze7PiftbmLruvw/viewform";
+});

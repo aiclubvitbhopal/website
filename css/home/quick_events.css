@@ -258,13 +258,13 @@
     background-color: #bbb;
     color: rgba(255, 255, 255, 0.9);
     border-radius: 50px;
-    /* cursor: pointer; */
+    cursor: pointer;
     transition: 0.5s;
 }
-/* .quick-event-card .right button:hover {
+.quick-event-card .right button:hover {
     color: white;
     background-color: #ef654a;  
-} */
+}
 .quick-event-card:hover {
     transform: translateY(-10px);
 }
