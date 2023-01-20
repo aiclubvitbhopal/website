@@ -263,7 +263,8 @@
 }
 .quick-event-card .right button:hover {
     color: white;
-    background-color: #ef654a;  
+    background-color: #ef654a;
+    cursor: pointer;
 }
 .quick-event-card:hover {
     transform: translateY(-10px);
