@@ -62,11 +62,11 @@
 
 // document.querySelector(".hero-section").addEventListener("mousemove", move);
 
-const registerButton = document.querySelector(".jumbotron");
-console.log(registerButton);
+// const registerButton = document.querySelector(".jumbotron");
+// console.log(registerButton);
 
-const redirectFunc = ()=>{
-    window.location.href = "https://aivit.tech/";
-}
+// const redirectFunc = ()=>{
+//     window.location.href = "https://aivit.tech/";
+// }
 
-registerButton.addEventListener('click',redirectFunc);
+// registerButton.addEventListener('click',redirectFunc);

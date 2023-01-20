@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="css/home/quick_events.css">
     <link rel="stylesheet" href="css/home/teachers.css">
     <link rel="stylesheet" href="css/home/leads-section.css">
-
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  
     <!-- Js -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!--Lottie Files CDN-->
@@ -27,6 +29,7 @@
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <!-- Needed for navbar -->
     <script src="https://kit.fontawesome.com/c457cbbb92.js" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
@@ -239,7 +242,7 @@
     <main>
 
         <section class="quick_event Quickies">
-            <div class="jumbotron highlight">
+            <!-- <div class="jumbotron highlight">
                 <div class="status">
                     <div class="status_indicator"></div>
                     <p>Live Now</p>
@@ -250,10 +253,108 @@
                     <h3>18-21 Nov</h3>
                 </div>
                 <div class="collaboration">
-                    <!-- <h3>In collaboration with </h3> -->
                     <a href="https://aivit.tech/"><img src="./images/ Logo_White.png" alt=""></a>
                 </div>
+            </div> -->
+            <h1>Live Now At</h1>
+            <img src="images\Advitya\Advitya Logo.png" class="event-logo">
+            <div class="events-slider swiper">
+                <div class="swiper-wrapper">
+                    <div class="cards swiper-slide">
+                        <div class="quick-event-card fadeIn animated">
+                            <div class="left zoomIn animated">
+                                <img src="images\Advitya\AIC Advitya Posters 3.png" class="cover">
+                            </div>
+                            <div class="right">
+                                <h2>HackExchange</h2>
+                                <h4>Date: 9 February 2023</h4>
+                                <h4>Online/Offline</h4>
+                                <h4>Participation:  Team-based (1-5 members)</h4>
+                                <h4>Duration  - 3 days</h4>
+                                <div class="price">Rs 50</div>
+                                <button class="add">
+                                    Coming Soon
+                                </button>
+                            </div>
+                        </div>
+                    </div>  
+    
+                    <div class="cards swiper-slide">
+                        <div class="quick-event-card fadeIn animated">
+                            <div class="left zoomIn animated">
+                                <img src="images\Advitya\AIC Advitya Posters 2.png" class="cover">
+                            </div>
+                            <div class="right">
+                                <h2>A.I. Breakdown</h2>
+                                <h4>Date: 8 February 2023</h4>
+                                <h4>Offline</h4>
+                                <h4>Participation:  Team-based (3-5 members)</h4>
+                                <h4>Duration  - 3 hrs</h4>
+                                <div class="price">Rs 50</div>
+                                <button class="add">
+                                    Coming Soon
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="cards swiper-slide">
+                        <div class="quick-event-card fadeIn animated">
+                            <div class="left zoomIn animated">
+                                <img src="images\Advitya\AIC Advitya Posters.png" class="cover">
+                            </div>
+                            <div class="right">
+                                <h2>ChA.I. pe Charcha</h2>
+                                <h4>Date: 7 February 2023</h4>
+                                <h4>Offline</h4>
+                                <h4>Participation:  Individual</h4>
+                                <h4>Duration  - 2 hrs</h4>
+                                <div class="price">Rs 50</div>
+                                <button class="add">
+                                    Coming Soon
+                                </button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
             </div>
+
+            
+            <!-- Swiper JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js" integrity="sha512-s/ili339Sh6gM9omfUC6fRwZPU6MPcGJxvDqlbBzPcFcD649iqeO96YQr3VKj/jZSMd2/T9Qr2mp2w4DyCIOPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script>
+                const swiper = new Swiper('.swiper', {
+                        // Default parameters
+                        slidesPerView: 1,
+                        spaceBetween: 0,
+                        // Responsive breakpoints
+                        navigation : {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev'
+                        },
+                        breakpoints: {
+                            // when window width is >= 320px
+                            320: {
+                                slidesPerView: 1,
+                                spaceBetween: 20
+                            },
+                            // when window width is >= 480px
+                            920: {
+                                slidesPerView: 2,
+                                spaceBetween: 30
+                            },
+                            // when window width is >= 640px
+                            1400: {
+                                slidesPerView: 3,
+                                spaceBetween: 40
+                        }
+                    }
+                })
+            </script>
         </section>
 
 

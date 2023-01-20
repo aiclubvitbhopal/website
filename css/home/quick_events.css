@@ -3,7 +3,7 @@
 .quick_event{
     display:grid;
     place-items:center;
-    height: 70vh;
+    /* height: 70vh; */
     padding: 1rem;
     width:100vw;
     background-color: #1B0B26;
@@ -162,6 +162,107 @@
     width:10px;
     padding-left:10px;
     transition: all .2s ease-in-out;    
+}
+
+.events-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.quick_event h1 {
+    color: whitesmoke;
+    font-size: clamp(2rem,3vw,4rem);
+}
+
+.event-logo {
+    max-width: clamp(15rem,50vw,30rem);
+}
+
+.cards {
+    /* height: 350px!important; */
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    transition: 0.5s, left 0s;
+    position: relative;
+}
+  
+.quick-event-card {
+    /* margin: 60px; */
+    display: flex;
+    width: 80%;
+    height: 250px;
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 20px;
+    padding-bottom: 0;
+    color: #3e3d43;
+    transition: 0.5s;
+    /* cursor: pointer; */
+}
+.quick-event-card .left {
+    flex: 1;
+}
+.quick-event-card .left .cover {
+    width: 180px;
+    height: 240px;
+    top: -50px;
+    border-radius: 5px;
+    position: relative;
+    transition: 0.5s 0.1s;
+    box-shadow: 0px 5px 25px 5px rgba(0, 0, 0, 0.25);
+}
+.quick-event-card .right {
+    flex: 2;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+.quick-event-card .right h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    color: #444;
+}
+.quick-event-card .right h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    font-weight: normal;
+}
+.quick-event-card .right p {
+    font-size: 13px;
+    line-height: 1.3;
+    text-align: justify;
+    opacity: 0.8;
+    min-height: 5em;
+}
+.quick-event-card .right .price {
+    display: inline-block;
+    margin-right: 20px;
+}
+.quick-event-card .right button {
+    padding: 5px 10px;
+    background-color: #bbb;
+    color: rgba(255, 255, 255, 0.9);
+    border-radius: 50px;
+    /* cursor: pointer; */
+    transition: 0.5s;
+}
+/* .quick-event-card .right button:hover {
+    color: white;
+    background-color: #ef654a;  
+} */
+.quick-event-card:hover {
+    transform: translateY(-10px);
+}
+.quick-event-card:hover .left .cover {
+    transform: translateY(-10px);
 }
   
 @keyframes blinker {  
