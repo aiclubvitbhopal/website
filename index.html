@@ -1,57 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/club_logo - icon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/club_logo - icon.png" />
     <title>HOME</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="css/home/event-section.css">
-    <link rel="stylesheet" href="css/home/style.css">
-    <link rel="stylesheet" href="css/home/event_slider.css">
-    <link rel="stylesheet" href="css/home/word_slider.css">
-    <link rel="stylesheet" href="css/home/menu.css">
-    <link rel="stylesheet" href="css/home/quick_events.css">
-    <link rel="stylesheet" href="css/home/teachers.css">
-    <link rel="stylesheet" href="css/home/leads-section.css">
+    <link rel="stylesheet" href="css/home/event-section.css" />
+    <link rel="stylesheet" href="css/home/style.css" />
+    <link rel="stylesheet" href="css/home/event_slider.css" />
+    <link rel="stylesheet" href="css/home/word_slider.css" />
+    <link rel="stylesheet" href="css/home/menu.css" />
+    <link rel="stylesheet" href="css/home/quick_events.css" />
+    <link rel="stylesheet" href="css/home/teachers.css" />
+    <link rel="stylesheet" href="css/home/leads-section.css" />
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
     <!-- Js -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!--Lottie Files CDN-->
     <script defer src="js/index.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/b13707494f.js" crossorigin="anonymous"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b13707494f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Needed for navbar -->
-    <script src="https://kit.fontawesome.com/c457cbbb92.js" crossorigin="anonymous"></script>
-    
-</head>
+    <script
+      src="https://kit.fontawesome.com/c457cbbb92.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
     <!-- <div id="circle">
         <div class="dot"></div>
     </div> -->
     <header>
-        <div class="Events-slider">
-            <div class="current">Current</div>
-            <div class="eve">AI4U 2021 <span class="orange">26 June</span></div>
-            <div class="eve">FUZZY CLUSTERING <span class="orange">27 June</span></div>
-            <div class="eve">APP DEVELOPMENT <span class="orange">28 June</span></div>
-            <div class="current">Past</div>
-            <div class="eve">THE LAST HUNT <span class="orange">29 June</span></div>
-            <div class="eve">COMPUTER VISION <span class="orange">30 June</span></div>
-            <div class="eve">WEBINAR <span class="orange">25 June</span></div>
-            <div class="current">Upcoming</div>
-            <div class="eve">Industrial Experts <span class="orange">25 June</span></div>
-            <div class="eve">TEDx Speaker <span class="orange">25 June</span></div>
+      <div class="Events-slider">
+        <div class="current">Current</div>
+        <div class="eve">AI4U 2021 <span class="orange">26 June</span></div>
+        <div class="eve">
+          FUZZY CLUSTERING <span class="orange">27 June</span>
         </div>
-        <div class="menu">
-            <!-- <div class="loader">
+        <div class="eve">
+          APP DEVELOPMENT <span class="orange">28 June</span>
+        </div>
+        <div class="current">Past</div>
+        <div class="eve">THE LAST HUNT <span class="orange">29 June</span></div>
+        <div class="eve">
+          COMPUTER VISION <span class="orange">30 June</span>
+        </div>
+        <div class="eve">WEBINAR <span class="orange">25 June</span></div>
+        <div class="current">Upcoming</div>
+        <div class="eve">
+          Industrial Experts <span class="orange">25 June</span>
+        </div>
+        <div class="eve">TEDx Speaker <span class="orange">25 June</span></div>
+      </div>
+      <div class="menu">
+        <!-- <div class="loader">
                 <span style="--i:1;">L</span>
                 <span style="--i:2;">E</span>
                 <span style="--i:3;">A</span>
@@ -63,7 +84,7 @@
                 <span style="--i:9;">R</span>
                 <span style="--i:10;">E</span>
             </div> -->
-            <!-- <div class="menu-btn" tabindex="1">
+        <!-- <div class="menu-btn" tabindex="1">
                 <div class="menu-items blur"></div>
                 <svg class="menu-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
@@ -87,162 +108,182 @@
                     <h4 class="menu-items menu-link">MAGZINE</h4>
                 </div>
             </div> -->
+      </div>
+      <div class="nav-button">
+        <i id="menu-logo" class="fa-solid fa-bars menu-logo"></i>
+      </div>
+      <div class="menu">
+        <div class="navBefore"></div>
+        <div class="nav">
+          <ul class="navigation">
+            <li class="link"><a href="./index.html">HOME</a></li>
+            <li class="link">
+              <a href="https://medium.com/ai-club-vit-bhopal">BLOGS</a>
+            </li>
+            <li class="link"><a href="./people.html">PEOPLE</a></li>
+            <li class="link"><a href="./about.html">ABOUT</a></li>
+            <li><a class="coming-soon">PROJECTS</a></li>
+          </ul>
+          <ul class="navigation">
+            <li><a class="coming-soon">ACHIEVEMENTS</a></li>
+            <li><a class="coming-soon">EVENTS</a></li>
+            <li class="link"><a href="#core-team">CORE TEAM</a></li>
+            <li><a class="coming-soon">TESTIMONIALS</a></li>
+            <li class="link">
+              <a href="./magazine/edition1.html">MAGAZINE</a>
+            </li>
+          </ul>
         </div>
-        <div class="nav-button">
-            <i id="menu-logo" class="fa-solid fa-bars menu-logo"></i>
+      </div>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+        integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+      <script src="./js/menu.js"></script>
+      <div class="socials">
+        <div class="icon github">
+          <a href="https://github.com/aiclubvitbhopal" class="soc-link">
+            <span><i class="fab fa-github"></i></span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> -->
+            <div class="soc-popup">
+              <div class="text-box">GitHub</div>
+              <div class="tilted"></div>
+            </div>
+          </a>
         </div>
-        <div class="menu">
-            <div class="navBefore"></div>
-            <div class="nav">
-                <ul class="navigation">
-                    <li class="link"><a href="./index.html">HOME</a></li>
-                    <li class="link"><a href="https://medium.com/ai-club-vit-bhopal">BLOGS</a></li>
-                    <li class="link"><a href="./people.html">PEOPLE</a></li>
-                    <li class="link"><a href="./about.html">ABOUT</a></li>
-                    <li><a class="coming-soon">PROJECTS</a></li>
-                </ul>
-                <ul class="navigation">
-                    <li><a class="coming-soon">ACHIEVEMENTS</a></li>
-                    <li><a class="coming-soon">EVENTS</a></li>
-                    <li class="link"><a href="#core-team">CORE TEAM</a></li>
-                    <li><a class="coming-soon">TESTIMONIALS</a></li>
-                    <li class="link"><a href="./magazine/edition1.html">MAGAZINE</a></li>
-                </ul>
+        <div class="icon discord">
+          <a href="https://discord.gg/CnhaxT8k" class="soc-link">
+            <span><i class="fab fa-discord"></i></span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg> -->
+            <div class="soc-popup">
+              <div class="text-box">Discord</div>
+              <div class="tilted"></div>
             </div>
+          </a>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
-            integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./js/menu.js"></script>
-        <div class="socials">
-            <div class="icon github">
-                <a href="https://github.com/aiclubvitbhopal" class="soc-link ">
-                    <span><i class="fab fa-github"></i></span>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> -->
-                    <div class="soc-popup">
-                        <div class="text-box">GitHub</div>
-                        <div class="tilted"></div>
-                    </div>
-                </a>
+        <div class="icon instagram">
+          <a
+            href="https://www.instagram.com/aiclub.vitb/?hl=en"
+            class="soc-link"
+          >
+            <span><i class="fab fa-instagram"></i></span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> -->
+            <div class="soc-popup">
+              <div class="text-box">Instagram</div>
+              <div class="tilted"></div>
             </div>
-            <div class="icon discord">
-                <a href="https://discord.gg/CnhaxT8k" class="soc-link">
-                    <span><i class="fab fa-discord"></i></span>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg> -->
-                    <div class="soc-popup">
-                        <div class="text-box">Discord</div>
-                        <div class="tilted"></div>
-                    </div>
-                </a>
-            </div>
-            <div class="icon instagram">
-                <a href="https://www.instagram.com/aiclub.vitb/?hl=en" class="soc-link">
-                    <span><i class="fab fa-instagram"></i></span>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> -->
-                    <div class="soc-popup">
-                        <div class="text-box">Instagram</div>
-                        <div class="tilted"></div>
-                    </div>
-                </a>
-            </div>
-            <div class="icon linkedin">
-                <a href="https://www.linkedin.com/company/aiclub-vitb/mycompany/" class="soc-link">
-                    <span><i class="fab fa-linkedin"></i></span>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg> -->
-                    <div class="soc-popup">
-                        <div class="text-box">Linkedin</div>
-                        <div class="tilted"></div>
-                    </div>
-                </a>
-            </div>
+          </a>
         </div>
+        <div class="icon linkedin">
+          <a
+            href="https://www.linkedin.com/company/aiclub-vitb/mycompany/"
+            class="soc-link"
+          >
+            <span><i class="fab fa-linkedin"></i></span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg> -->
+            <div class="soc-popup">
+              <div class="text-box">Linkedin</div>
+              <div class="tilted"></div>
+            </div>
+          </a>
+        </div>
+      </div>
     </header>
 
-
     <section class="hero-section">
-        <div class="socials">
-            <div class="icon github">
-                <a href="https://github.com/aiclubvitbhopal" class="soc-link ">
-                    <span><i class="fab fa-github"></i></span>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> -->
-                    <div class="soc-popup">
-                        <div class="text-box">GitHub</div>
-                        <div class="tilted"></div>
-                    </div>
-                </a>
+      <div class="socials">
+        <div class="icon github">
+          <a href="https://github.com/aiclubvitbhopal" class="soc-link">
+            <span><i class="fab fa-github"></i></span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg> -->
+            <div class="soc-popup">
+              <div class="text-box">GitHub</div>
+              <div class="tilted"></div>
             </div>
-            <div class="icon discord">
-                <a href="https://discord.gg/CnhaxT8k" class="soc-link">
-                    <span><i class="fab fa-discord"></i></span>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg> -->
-                    <div class="soc-popup">
-                        <div class="text-box">Discord</div>
-                        <div class="tilted"></div>
-                    </div>
-                </a>
-            </div>
-            <div class="icon instagram">
-                <a href="https://www.instagram.com/aiclub.vitb/?hl=en" class="soc-link">
-                    <span><i class="fab fa-instagram"></i></span>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> -->
-                    <div class="soc-popup">
-                        <div class="text-box">Instagram</div>
-                        <div class="tilted"></div>
-                    </div>
-                </a>
-            </div>
-            <div class="icon linkedin">
-                <a href="https://www.linkedin.com/company/aiclub-vitb/mycompany/" class="soc-link">
-                    <span><i class="fab fa-linkedin"></i></span>
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg> -->
-                    <div class="soc-popup">
-                        <div class="text-box">Linkedin</div>
-                        <div class="tilted"></div>
-                    </div>
-                </a>
-            </div>
+          </a>
         </div>
-        <img class="logo-head" src="./images/club_logo.png" />
-        <div class="tagline">
-            <p>A place to share one’s Passion for AI</p>
-            <div class="container">
-                <span class="title">
-                    <p>AI Club is the fastest growing club in VIT Bhopal imparting knowledge about AI and pioneering AI
-                        based advanced education to students.</p>
-                    <div class="text-slider">
-                        <ul class="text-slider-words">
-                            <li class="t1">Communities</li>
-                            <li class="t2">Sessions</li>
-                            <li class="t3">Webinars</li>
-                            <li class="t4">Workshops</li>
-                            <li class="t5">Projects</li>
-                            <li class="t6">Hackathons</li>
-                        </ul>
-                    </div>
-                </span>
+        <div class="icon discord">
+          <a href="https://discord.gg/CnhaxT8k" class="soc-link">
+            <span><i class="fab fa-discord"></i></span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg> -->
+            <div class="soc-popup">
+              <div class="text-box">Discord</div>
+              <div class="tilted"></div>
             </div>
-            <div class="get">
-                <div class="get-btn"></div>
-                <p>GET TO KNOW US +</p>
+          </a>
+        </div>
+        <div class="icon instagram">
+          <a
+            href="https://www.instagram.com/aiclub.vitb/?hl=en"
+            class="soc-link"
+          >
+            <span><i class="fab fa-instagram"></i></span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg> -->
+            <div class="soc-popup">
+              <div class="text-box">Instagram</div>
+              <div class="tilted"></div>
             </div>
+          </a>
         </div>
-        <div class="hero-bottom">
-            <img class="wave one" src="./images/wave 1.png" />
-            <img class="wave two" src="./images/wave2 1.png" />
+        <div class="icon linkedin">
+          <a
+            href="https://www.linkedin.com/company/aiclub-vitb/mycompany/"
+            class="soc-link"
+          >
+            <span><i class="fab fa-linkedin"></i></span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M180.5,74.262C80.813,74.262,0,155.633,0,256S80.819,437.738,180.5,437.738,361,356.373,361,256,280.191,74.262,180.5,74.262Zm288.25,10.646c-49.845,0-90.245,76.619-90.245,171.095s40.406,171.1,90.251,171.1,90.251-76.619,90.251-171.1H559C559,161.5,518.6,84.908,468.752,84.908Zm139.506,17.821c-17.526,0-31.735,68.628-31.735,153.274s14.2,153.274,31.735,153.274S640,340.631,640,256C640,171.351,625.785,102.729,608.258,102.729Z"/></svg> -->
+            <div class="soc-popup">
+              <div class="text-box">Linkedin</div>
+              <div class="tilted"></div>
+            </div>
+          </a>
         </div>
-        <div class="bg-txt">
-            <img class="A" src="./images/A.png" />
-            <img class="I" src="./images/I.png" />
-            <!-- <div class="interactive"> 
+      </div>
+      <img class="logo-head" src="./images/club_logo.png" />
+      <div class="tagline">
+        <p>A place to share one’s Passion for AI</p>
+        <div class="container">
+          <span class="title">
+            <p>
+              AI Club is the fastest growing club in VIT Bhopal imparting
+              knowledge about AI and pioneering AI based advanced education to
+              students.
+            </p>
+            <div class="text-slider">
+              <ul class="text-slider-words">
+                <li class="t1">Communities</li>
+                <li class="t2">Sessions</li>
+                <li class="t3">Webinars</li>
+                <li class="t4">Workshops</li>
+                <li class="t5">Projects</li>
+                <li class="t6">Hackathons</li>
+              </ul>
+            </div>
+          </span>
+        </div>
+        <div class="get">
+          <div class="get-btn"></div>
+          <p>GET TO KNOW US +</p>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <img class="wave one" src="./images/wave 1.png" />
+        <img class="wave two" src="./images/wave2 1.png" />
+      </div>
+      <div class="bg-txt">
+        <img class="A" src="./images/A.png" />
+        <img class="I" src="./images/I.png" />
+        <!-- <div class="interactive"> 
                 <img src="./images/Paz.gif" alt="">
             </div> -->
-        </div>
+      </div>
     </section>
 
     <main>
-
-        <section class="quick_event Quickies" id="quick_event">
-            <!-- <div class="jumbotron highlight">
+      <section class="quick_event Quickies" id="quick_event">
+        <!-- <div class="jumbotron highlight">
                 <div class="status">
                     <div class="status_indicator"></div>
                     <p>Live Now</p>
@@ -256,452 +297,610 @@
                     <a href="https://aivit.tech/"><img src="./images/ Logo_White.png" alt=""></a>
                 </div>
             </div> -->
-            <div class="top-quick">
-                <h1>Live Now At</h1>
-                <img src="images\Advitya\Advitya Logo.png" class="event-logo">
-            </div>
-            
-            <div class="events-slider swiper" id="swiper-wrapper">
-                <div class="swiper-wrapper" >
-                    <div class="cards swiper-slide">
-                        <div class="quick-event-card fadeIn animated">
-                            <div class="left zoomIn animated">
-                                <img src="images\Advitya\AIC Advitya Posters 3.png" class="cover">
-                            </div>
-                            <div class="right">
-                                <h2>HackExchange</h2>
-                                <h4>Date: 8-10 February 2023</h4>
-                                <h4>Online/Offline</h4>
-                                <h4>Participation:  Team-based (1-5 members)</h4>
-                                <h4>Duration  - 3 days</h4>
-                                <div class="price">Rs 50 per person</div>
-                                <button class="add" id="HackExchange">
-                                    Register
-                                </button>
-                            </div>
-                        </div>
-                    </div>  
-    
-                    <div class="cards swiper-slide">
-                        <div class="quick-event-card fadeIn animated">
-                            <div class="left zoomIn animated">
-                                <img src="images\Advitya\AIC Advitya Posters 2.png" class="cover">
-                            </div>
-                            <div class="right">
-                                <h2>A.I. Breakdown</h2>
-                                <h4>Date: 9 February 2023</h4>
-                                <h4>Offline</h4>
-                                <h4>Participation:  Team-based (3-5 members)</h4>
-                                <h4>Duration  - 3 hrs</h4>
-                                <div class="price">Rs 50 per person</div>
-                                <button class="add" id="Breakdown">
-                                    Register
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="cards swiper-slide">
-                        <div class="quick-event-card fadeIn animated">
-                            <div class="left zoomIn animated">
-                                <img src="images\Advitya\AIC Advitya Posters.png" class="cover">
-                            </div>
-                            <div class="right">
-                                <h2>ChA.I. pe Charcha</h2>
-                                <h4>Date: 10 February 2023</h4>
-                                <h4>Offline</h4>
-                                <h4>Participation:  Individual</h4>
-                                <h4>Duration  - 2 hrs</h4>
-                                <div class="price">Rs 50 per person</div>
-                                <button class="add" id="Charcha">
-                                    Register
-                                </button>
-                            </div>
-                        </div>
-                    </div> 
+        <div class="top-quick">
+          <h1>Live Now At</h1>
+          <img src="images\Advitya\Advitya Logo.png" class="event-logo" />
+        </div>
+
+        <div class="events-slider swiper" id="swiper-wrapper">
+          <div class="swiper-wrapper">
+            <div class="cards swiper-slide">
+              <div class="quick-event-card fadeIn animated">
+                <div class="left zoomIn animated">
+                  <img
+                    src="images\Advitya\AIC Advitya Posters 3.png"
+                    class="cover"
+                  />
                 </div>
-
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-
-            </div>
-
-            
-            <!-- Swiper JS -->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js" integrity="sha512-s/ili339Sh6gM9omfUC6fRwZPU6MPcGJxvDqlbBzPcFcD649iqeO96YQr3VKj/jZSMd2/T9Qr2mp2w4DyCIOPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script>
-                const swiper = new Swiper('.swiper', {
-                        // Default parameters
-                        slidesPerView: 1,
-                        spaceBetween: 0,
-                        // Responsive breakpoints
-                        navigation : {
-                            nextEl: '.swiper-button-next',
-                            prevEl: '.swiper-button-prev'
-                        },
-                        breakpoints: {
-                            // when window width is >= 320px
-                            320: {
-                                slidesPerView: 1,
-                                spaceBetween: 20
-                            },
-                            // when window width is >= 480px
-                            920: {
-                                slidesPerView: 2,
-                                spaceBetween: 30
-                            },
-                            // when window width is >= 640px
-                            1400: {
-                                slidesPerView: 3,
-                                spaceBetween: 40
-                        }
-                    }
-                })
-            </script>
-        </section>
-
-
-        <section class="teacher_section">
-
-            <div class="teacher_contents">
-                <h1>Teachers that Believed in Us 🚀</h1>
-            </div>
-            <div class="teacher_cards-container">
-                <div class="teacher_card highlight">
-                    <div class="teacher1">
-                        <div class="teacher_info">
-                            <h1> Dr. S Suthir</h1>
-                            <p> Club Co-ordinator</p>
-                        </div>
-                    </div>
-                    <img src="https://qoohoo.in/assets/images/doodle-strings.svg" />
+                <div class="right">
+                  <h2>HackExchange</h2>
+                  <h4>Date: 8-10 February 2023</h4>
+                  <h4>Online/Offline</h4>
+                  <h4>Participation: Team-based (1-5 members)</h4>
+                  <h4>Duration - 3 days</h4>
+                  <div class="price">Rs 50 per person</div>
+                  <button class="add" id="HackExchange">Register</button>
                 </div>
-                <div class="teacher_card highlight">
-                    <div class="teacher2">
-                        <div class="teacher_info">
-                            <h1> Dr. AVR Mayuri</h1>
-                            <p> Club Co-ordinator</p>
-                        </div>
-                    </div>
-                    <img src="https://qoohoo.in/assets/images/doodle-strings.svg" />
-                </div>
+              </div>
             </div>
-        </section>
 
+            <div class="cards swiper-slide">
+              <div class="quick-event-card fadeIn animated">
+                <div class="left zoomIn animated">
+                  <img
+                    src="images\Advitya\AIC Advitya Posters 2.png"
+                    class="cover"
+                  />
+                </div>
+                <div class="right">
+                  <h2>A.I. Breakdown</h2>
+                  <h4>Date: 9 February 2023</h4>
+                  <h4>Offline</h4>
+                  <h4>Participation: Team-based (3-5 members)</h4>
+                  <h4>Duration - 3 hrs</h4>
+                  <div class="price">Rs 50 per person</div>
+                  <button class="add" id="Breakdown">Register</button>
+                </div>
+              </div>
+            </div>
 
+            <div class="cards swiper-slide">
+              <div class="quick-event-card fadeIn animated">
+                <div class="left zoomIn animated">
+                  <img
+                    src="images\Advitya\AIC Advitya Posters.png"
+                    class="cover"
+                  />
+                </div>
+                <div class="right">
+                  <h2>ChA.I. pe Charcha</h2>
+                  <h4>Date: 10 February 2023</h4>
+                  <h4>Offline</h4>
+                  <h4>Participation: Individual</h4>
+                  <h4>Duration - 2 hrs</h4>
+                  <div class="price">Rs 50 per person</div>
+                  <button class="add" id="Charcha">Register</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script
+          src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"
+          integrity="sha512-s/ili339Sh6gM9omfUC6fRwZPU6MPcGJxvDqlbBzPcFcD649iqeO96YQr3VKj/jZSMd2/T9Qr2mp2w4DyCIOPQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        ></script>
+        <script>
+          const swiper = new Swiper(".swiper", {
+            // Default parameters
+            slidesPerView: 1,
+            spaceBetween: 0,
+            // Responsive breakpoints
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+              // when window width is >= 320px
+              320: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              // when window width is >= 480px
+              920: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              // when window width is >= 640px
+              1400: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            },
+          });
+        </script>
+      </section>
+
+      <section class="teacher_section">
+        <div class="teacher_contents">
+          <h1>Teachers that Believed in Us 🚀</h1>
+        </div>
+        <div class="teacher_cards-container">
+          <div class="teacher_card highlight">
+            <div class="teacher1">
+              <div class="teacher_info">
+                <h1>Dr. S Suthir</h1>
+                <p>Club Co-ordinator</p>
+              </div>
+            </div>
+            <img src="https://qoohoo.in/assets/images/doodle-strings.svg" />
+          </div>
+          <div class="teacher_card highlight">
+            <div class="teacher2">
+              <div class="teacher_info">
+                <h1>Dr. AVR Mayuri</h1>
+                <p>Club Co-ordinator</p>
+              </div>
+            </div>
+            <img src="https://qoohoo.in/assets/images/doodle-strings.svg" />
+          </div>
+        </div>
+      </section>
     </main>
 
     <section id="event" class="event-section">
-        <div class="flex">
-            <div class="sticky">
-                <h2>And here comes our events...</h2>
-                <p>Grab your chance to showcase your talent with our exciting and challenging events happening and get a
-                    chance to win exciting prizes and certificates 😎</p>
-            </div>
-            <div class="flex-img">
-                <div class="flexbox-img">
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="./images/event_thumbnails/Event_1-min.png" />
-                            <div class="overlay">
-                                <div class="econtent">
-
-                                    <h5><i class="fa fa-calendar"></i> 24th and 25th December 2021</h5>
-                                    <h3><i class="fa fa-globe"></i> Virtual</h3>
-                                    <p>AI Division @ VIT Bhopal presents to you a weekend full of excitement, packed
-                                        with guidance, gaining insights and many more opportunities
-                                        <span>more....</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="./images/event_thumbnails/Event_2-min.png" />
-                            <div class="overlay">
-                                <div class="text">
-                                    <h5><i class="fa fa-calendar"></i> 24th and 25th December 2021</h5>
-                                    <h3><i class="fa fa-globe"></i> Virtual</h3>
-                                    <p>AI Division @ VIT Bhopal presents to you a weekend full of excitement, packed
-                                        with guidance, gaining insights and many more opportunities
-                                        <span>more....</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flexbox-img">
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="./images/event_thumbnails/Event_3-min.jpg" />
-                            <div class="overlay">
-                                <div class="text">
-                                    <h5><i class="fa fa-calendar"></i> 24th and 25th December 2021</h5>
-                                    <h3><i class="fa fa-globe"></i> Virtual</h3>
-                                    <p>AI Division @ VIT Bhopal presents to you a weekend full of excitement, packed
-                                        with guidance, gaining insights and many more opportunities
-                                        <span>more....</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="./images/event_thumbnails/Event_4-min.png" />
-                            <div class="overlay">
-                                <div class="text">
-                                    <h5><i class="fa fa-calendar"></i> 24th and 25th December 2021</h5>
-                                    <h3><i class="fa fa-globe"></i> Virtual</h3>
-                                    <p>AI Division @ VIT Bhopal presents to you a weekend full of excitement, packed
-                                        with guidance, gaining insights and many more opportunities
-                                        <span>more....</span>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flexbox-img">
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="./images/event_thumbnails/Event_5.png" />
-                            <div class="overlay">
-                                <div class="text">
-                                    <h5><i class="fa fa-calendar"></i> 24th and 25th December 2021</h5>
-                                    <h3><i class="fa fa-globe"></i> Virtual</h3>
-                                    <p>AI Division @ VIT Bhopal presents to you a weekend full of excitement, packed
-                                        with guidance, gaining insights and many more opportunities
-                                        <span>more....</span>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="./images/event_thumbnails/Event_6.jpg" />
-                            <div class="overlay">
-                                <div class="text">
-                                    <h5><i class="fa fa-calendar"></i> 24th and 25th December 2021</h5>
-                                    <h3><i class="fa fa-globe"></i> Virtual</h3>
-                                    <p>AI Division @ VIT Bhopal presents to you a weekend full of excitement, packed
-                                        with guidance, gaining insights and many more opportunities
-                                        <span>more....</span>
-                                    </p>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="flexbox-img">
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="./images/event_thumbnails/Event_7.jpg" />
-                            <div class="overlay">
-                                <div class="text">
-                                    <h5><i class="fa fa-calendar"></i> 24th and 25th December 2021</h5>
-                                    <h3><i class="fa fa-globe"></i> Virtual</h3>
-                                    <p>AI Division @ VIT Bhopal presents to you a weekend full of excitement, packed
-                                        with guidance, gaining insights and many more opportunities
-                                        <span>more....</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="img-container">
-                            <img src="./images/event_thumbnails/Event_8-min.png" />
-                            <div class="overlay">
-                                <div class="text">
-                                    <h5><i class="fa fa-calendar"></i> 24th and 25th December 2021</h5>
-                                    <h3><i class="fa fa-globe"></i> Virtual</h3>
-                                    <p>AI Division @ VIT Bhopal presents to you a weekend full of excitement, packed
-                                        with guidance, gaining insights and many more opportunities
-                                        <span>more....</span>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="desc-text">
-                    <p>* Scroll Here for More! *</p>
-                </div>
-
-            </div>
+      <div class="flex">
+        <div class="sticky">
+          <h2>And here comes our events...</h2>
+          <p>
+            Grab your chance to showcase your talent with our exciting and
+            challenging events happening and get a chance to win exciting prizes
+            and certificates 😎
+          </p>
         </div>
+        <div class="flex-img">
+          <div class="flexbox-img">
+            <div class="card">
+              <div class="img-container">
+                <img src="./images/event_thumbnails/Event_1-min.png" />
+                <div class="overlay">
+                  <div class="econtent">
+                    <h5>
+                      <i class="fa fa-calendar"></i> 24th and 25th December 2021
+                    </h5>
+                    <h3><i class="fa fa-globe"></i> Virtual</h3>
+                    <p>
+                      AI Division @ VIT Bhopal presents to you a weekend full of
+                      excitement, packed with guidance, gaining insights and
+                      many more opportunities
+                      <span>more....</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container">
+                <img src="./images/event_thumbnails/Event_2-min.png" />
+                <div class="overlay">
+                  <div class="text">
+                    <h5>
+                      <i class="fa fa-calendar"></i> 24th and 25th December 2021
+                    </h5>
+                    <h3><i class="fa fa-globe"></i> Virtual</h3>
+                    <p>
+                      AI Division @ VIT Bhopal presents to you a weekend full of
+                      excitement, packed with guidance, gaining insights and
+                      many more opportunities
+                      <span>more....</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flexbox-img">
+            <div class="card">
+              <div class="img-container">
+                <img src="./images/event_thumbnails/Event_3-min.jpg" />
+                <div class="overlay">
+                  <div class="text">
+                    <h5>
+                      <i class="fa fa-calendar"></i> 24th and 25th December 2021
+                    </h5>
+                    <h3><i class="fa fa-globe"></i> Virtual</h3>
+                    <p>
+                      AI Division @ VIT Bhopal presents to you a weekend full of
+                      excitement, packed with guidance, gaining insights and
+                      many more opportunities
+                      <span>more....</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container">
+                <img src="./images/event_thumbnails/Event_4-min.png" />
+                <div class="overlay">
+                  <div class="text">
+                    <h5>
+                      <i class="fa fa-calendar"></i> 24th and 25th December 2021
+                    </h5>
+                    <h3><i class="fa fa-globe"></i> Virtual</h3>
+                    <p>
+                      AI Division @ VIT Bhopal presents to you a weekend full of
+                      excitement, packed with guidance, gaining insights and
+                      many more opportunities
+                      <span>more....</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flexbox-img">
+            <div class="card">
+              <div class="img-container">
+                <img src="./images/event_thumbnails/Event_5.png" />
+                <div class="overlay">
+                  <div class="text">
+                    <h5>
+                      <i class="fa fa-calendar"></i> 24th and 25th December 2021
+                    </h5>
+                    <h3><i class="fa fa-globe"></i> Virtual</h3>
+                    <p>
+                      AI Division @ VIT Bhopal presents to you a weekend full of
+                      excitement, packed with guidance, gaining insights and
+                      many more opportunities
+                      <span>more....</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container">
+                <img src="./images/event_thumbnails/Event_6.jpg" />
+                <div class="overlay">
+                  <div class="text">
+                    <h5>
+                      <i class="fa fa-calendar"></i> 24th and 25th December 2021
+                    </h5>
+                    <h3><i class="fa fa-globe"></i> Virtual</h3>
+                    <p>
+                      AI Division @ VIT Bhopal presents to you a weekend full of
+                      excitement, packed with guidance, gaining insights and
+                      many more opportunities
+                      <span>more....</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flexbox-img">
+            <div class="card">
+              <div class="img-container">
+                <img src="./images/event_thumbnails/Event_7.jpg" />
+                <div class="overlay">
+                  <div class="text">
+                    <h5>
+                      <i class="fa fa-calendar"></i> 24th and 25th December 2021
+                    </h5>
+                    <h3><i class="fa fa-globe"></i> Virtual</h3>
+                    <p>
+                      AI Division @ VIT Bhopal presents to you a weekend full of
+                      excitement, packed with guidance, gaining insights and
+                      many more opportunities
+                      <span>more....</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="img-container">
+                <img src="./images/event_thumbnails/Event_8-min.png" />
+                <div class="overlay">
+                  <div class="text">
+                    <h5>
+                      <i class="fa fa-calendar"></i> 24th and 25th December 2021
+                    </h5>
+                    <h3><i class="fa fa-globe"></i> Virtual</h3>
+                    <p>
+                      AI Division @ VIT Bhopal presents to you a weekend full of
+                      excitement, packed with guidance, gaining insights and
+                      many more opportunities
+                      <span>more....</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="desc-text">
+            <p>* Scroll Here for More! *</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="leads-section" id="core-team">
-        <div class="lead-container">
-            <div class="medium circle"></div>
-            <div class="small circle"></div>
-            <div class="large circle"></div>
-            <lottie-player class="animation" src="https://assets2.lottiefiles.com/packages/lf20_ljotbiif.json"
-                background="transparent" style="width: 180px; height: 180px;" speed="1" loop autoplay></lottie-player>
-            <h1>Our Committee</h1>
-            <div class="card-container">
-                <div class="lead-card">
-                    <a href="https://bit.ly/3Q3lVUU" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Leads/chinmay_president.jpeg" alt="">
-                        <h3>Chinmay Inamdar</h3>
-                        <p>President</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="https://linktr.ee/om_rajani_" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Leads/Meghavi Jadav_VicePresident_21BCE11156.jpg" alt="">
-                        <h3>Meghavi Jadav</h3>
-                        <p>Vice President</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="https://linktr.ee/kprakhar27" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Leads/Aniruddha_Kumar_General-Secratery_21BAI10054.png" alt="">
-                        <h3>Aniruddha Kumar</h3>
-                        <p>General Secretary</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa    fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="https://linktr.ee/rudransh20" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Website Team/Piyush_Karmhe_21BAI10447.jpeg" alt="">
-                        <h3>Piyush Karmhe</h3>
-                        <p>Web Devlopment Lead</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="https://linktr.ee/rithuraj" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Tech team/Tech team Lead image/Manas Oak_Team Lead.jpg" alt="">
-                        <h3>Manas Oak</h3>
-                        <p>Technical Lead</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="https://linktr.ee/chetalym" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Event Team/Aadi Verma _ 21BCE10970_Events.jpg" alt="">
-                        <h3>Aadi Verma</h3>
-                        <p>Event Lead</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="https://linktr.ee/argish" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/leads/IMG_1908232309.png" alt="">
-                        <h3>Argish Abhangi</h3>
-                        <p>Editorial Lead</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="https://linktr.ee/areenakhan" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Social Media Team SMM/Picture Upload (File responses)/IMG_1394.JPG" alt="">
-                        <h3>Rishit Chugh</h3>
-                        <p>Social Media and Publicity Lead</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="javascript:void(0)"style="pointer-events: none; text-decoration:none ;" target="_blank">
-                        <img src="./images/AI Club 2023-24 photos/Design+video team/Vidushi Gupta 21BCE11153.jpeg" alt="">
-                        <h3>Vidushi Gupta</h3>
-                        <p>Design Lead</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="https://linktr.ee/sakalya_mitra" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Content Team/Devang Giri Goswami.jpeg" alt="">
-                        <h3>Devang</h3>
-                        <p>Content Lead</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>   
-                <div class="lead-card">
-                    <a href="https://linktr.ee/sakalya_mitra" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Community Team/Nantha Bala 21BCE10611.jpg" alt="">
-                        <h3>Nantha</h3>
-                        <p>Community Manager</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>    
-                <div class="lead-card">
-                    <a href="https://linktr.ee/sakalya_mitra" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/PR Outreach Team/Pratistha Singh.jpeg" alt="">
-                        <h3>Pratistha Singh</h3>
-                        <p>Outreach Lead</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div> 
-                <div class="lead-card">
-                    <a href="https://linktr.ee/sakalya_mitra" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Partnership Team/Aayushi Jain.jpeg" alt="">
-                        <h3>Aayushi Jain</h3>
-                        <p>Partnership Lead </p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div> 
-                <div class="lead-card">
-                    <a href="https://bit.ly/3Q3lVUU" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Operating Managers/Pushpendra Kushwaha_.jpg" alt="">
-                        <h3>Pushpendra Kushwaha</h3>
-                        <p>Operational Manager</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>
-                <div class="lead-card">
-                    <a href="https://bit.ly/3Q3lVUU" target="_blank" style="text-decoration:none ;">
-                        <img src="./images/AI Club 2023-24 photos/Operating Managers/Jyotsna Bhatia.jpeg" alt="">
-                        <h3>Jyotsna Bhatia</h3>
-                        <p>Operational Manager</p>
-                    </a>
-                    <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
-                </div>                        
-            </div>
+      <div class="lead-container">
+        <div class="medium circle"></div>
+        <div class="small circle"></div>
+        <div class="large circle"></div>
+        <lottie-player
+          class="animation"
+          src="https://assets2.lottiefiles.com/packages/lf20_ljotbiif.json"
+          background="transparent"
+          style="width: 180px; height: 180px"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <h1>Our Committee</h1>
+        <div class="card-container">
+          <div class="lead-card">
+            <a
+              href="https://bit.ly/3Q3lVUU"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Leads/chinmay_president.jpeg"
+                alt=""
+              />
+              <h3>Chinmay Inamdar</h3>
+              <p>President</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/om_rajani_"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Leads/Meghavi Jadav_VicePresident_21BCE11156.jpg"
+                alt=""
+              />
+              <h3>Meghavi Jadav</h3>
+              <p>Vice President</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/kprakhar27"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Leads/Aniruddha_Kumar_General-Secratery_21BAI10054.png"
+                alt=""
+              />
+              <h3>Aniruddha Kumar</h3>
+              <p>General Secretary</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa    fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/rudransh20"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Website Team/Piyush_Karmhe_21BAI10447.jpeg"
+                alt=""
+              />
+              <h3>Piyush Karmhe</h3>
+              <p>Web Devlopment Lead</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/rithuraj"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Tech team/Tech team Lead image/Manas Oak_Team Lead.jpg"
+                alt=""
+              />
+              <h3>Manas Oak</h3>
+              <p>Technical Lead</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/chetalym"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Event Team/Aadi Verma _ 21BCE10970_Events.jpg"
+                alt=""
+              />
+              <h3>Aadi Verma</h3>
+              <p>Event Lead</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/argish"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img src="./images/leads/IMG_1908232309.png" alt="" />
+              <h3>Argish Abhangi</h3>
+              <p>Editorial Lead</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/areenakhan"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Social Media Team SMM/Picture Upload (File responses)/IMG_1394.JPG"
+                alt=""
+              />
+              <h3>Rishit Chugh</h3>
+              <p>Social Media and Publicity Lead</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="javascript:void(0)"
+              style="pointer-events: none; text-decoration: none"
+              target="_blank"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Design+video team/Vidushi Gupta 21BCE11153.jpeg"
+                alt=""
+              />
+              <h3>Vidushi Gupta</h3>
+              <p>Design Lead</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/sakalya_mitra"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Content Team/Devang Giri Goswami.jpeg"
+                alt=""
+              />
+              <h3>Devang</h3>
+              <p>Content Lead</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/sakalya_mitra"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Community Team/Nantha Bala 21BCE10611.jpg"
+                alt=""
+              />
+              <h3>Nantha</h3>
+              <p>Community Manager</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/sakalya_mitra"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/PR Outreach Team/Pratistha Singh.jpeg"
+                alt=""
+              />
+              <h3>Pratistha Singh</h3>
+              <p>Outreach Lead</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://linktr.ee/sakalya_mitra"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Partnership Team/Aayushi Jain.jpeg"
+                alt=""
+              />
+              <h3>Aayushi Jain</h3>
+              <p>Partnership Lead</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://bit.ly/3Q3lVUU"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Operating Managers/Pushpendra Kushwaha_.jpg"
+                alt=""
+              />
+              <h3>Pushpendra Kushwaha</h3>
+              <p>Operational Manager</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
+          <div class="lead-card">
+            <a
+              href="https://bit.ly/3Q3lVUU"
+              target="_blank"
+              style="text-decoration: none"
+            >
+              <img
+                src="./images/AI Club 2023-24 photos/Operating Managers/Jyotsna Bhatia.jpeg"
+                alt=""
+              />
+              <h3>Jyotsna Bhatia</h3>
+              <p>Operational Manager</p>
+            </a>
+            <!-- <p> <a href=""><i class="fa fa-linkedin"></i></a> &nbsp; <a href=""><i class="fa fa-instagram"></i></a> &nbsp; <a href=""><i class="fa fa-github"></i></a> </p> -->
+          </div>
         </div>
+      </div>
     </section>
 
     <footer>
-        <div class="footer">
-            <h1><img src="./images/club_logo.png" width="105px" height="105px" margin-top="-22px"></h1>
+      <div class="footer">
+        <h1>
+          <img
+            src="./images/club_logo.png"
+            width="105px"
+            height="105px"
+            margin-top="-22px"
+          />
+        </h1>
 
-            <div class="row">
-                <ul>
-                    <li><a href="./index.html">HOME</a></li>
-                    <li><a href="./about.html">ABOUT</a></li>
-                    <li><a href="./magazine/edition1.html">MAGAZINE</a></li>
-                    <li><a href="#event">EVENTS</a></li>
-                    <li><a href="javascript:void(0)"style="pointer-events: none">PROJECTS</a></li>
-                </ul>
-            </div>
-
-            <div class="row">
-                <a href="https://discord.gg/CnhaxT8k"><i class="fab fa-discord"></i></a>
-                <a href="https://www.instagram.com/aiclub.vitb/?hl=en"><i class="fa fa-instagram"></i></a>
-                <a href="https://github.com/aiclubvitbhopal"><i class="fa fa-github"></i></a>
-                <a href="https://www.linkedin.com/company/aiclub-vitb/mycompany/"><i class="fa fa-linkedin"></i></a>
-            </div>
-
-            <div class="row">
-                <h2>Made with ❤️ SDC Team AI CLUB</h2><br>
-                Copyright © 2022 AI Club - VIT Bhopal
-            </div>
+        <div class="row">
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./magazine/edition1.html">MAGAZINE</a></li>
+            <li><a href="#event">EVENTS</a></li>
+            <li>
+              <a href="javascript:void(0)" style="pointer-events: none"
+                >PROJECTS</a
+              >
+            </li>
+          </ul>
         </div>
+
+        <div class="row">
+          <a href="https://discord.gg/CnhaxT8k"
+            ><i class="fab fa-discord"></i
+          ></a>
+          <a href="https://www.instagram.com/aiclub.vitb/?hl=en"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="https://github.com/aiclubvitbhopal"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/company/aiclub-vitb/mycompany/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+        </div>
+
+        <div class="row">
+          <h2>Made with ❤️ SDC Team AI CLUB</h2>
+          <br />
+          Copyright © 2022 AI Club - VIT Bhopal
+        </div>
+      </div>
     </footer>
-
-
-</body>
-
+  </body>
 </html>
