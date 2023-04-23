@@ -45,7 +45,7 @@ section {
 }
 
 .Quickies {
-    background: linear-gradient(317.44deg, #1B0B26 23.92%, #1A012A 49.85%, #2A0242 100%);
+    background: linear-gradient(340deg, rgb(27, 11, 38) 23.92%, #1A012A 80%, #2A0242 100%);
 }
 
 .highlight:hover {
@@ -305,6 +305,7 @@ section {
     margin-bottom:15px;
     color: #fff;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 }
 @media screen and (max-width:920px) {
     .tagline .container .title p{
