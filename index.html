@@ -19,8 +19,10 @@
     <!-- Swiper CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+
 
     <!-- Js -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -43,16 +45,21 @@
       src="https://kit.fontawesome.com/c457cbbb92.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 
     <!-- AI Crypt quick-event section -->
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-    <link rel="stylesheet" href="./css/quick-event/aicrypt.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap" rel="stylesheet">
 
+    <!-- for quick events AI Conclave merch -->
+    <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi" rel="stylesheet">
+    <link rel="stylesheet" href="./css/quick-event/aiconc-merch.css">
   </head>
 
   <body>
@@ -294,120 +301,118 @@
     <main>
       <section class="quick_event Quickies" id="quick_event">
 
-        <script>
-            function btnclick(){
-              window.open("https://konfhub.com/mbm")
-            }
+        <section class="merch-section">
+          <!-- Insert Cards and Content -->
+          <section class="merch-contents">
+            <!-- AI Conclave logo -->
+            <div class="merch-org">
+              <img class="ai-logo" src="./images/club_logo.png" alt="" />
+              <hr>
+              <img class="conc-logo" src="./images/ Logo_White.png" alt="" />
+            </div>
+            <!-- Title: Join us at AdVITya with brand new AI Club Merch! -->
+            <h2>Join us at AI Conclave with brand new AI Club Merch!</h2>
+            <!-- div for cards -->
+            <div class="merch-card-container">
+              <div class="wrapper">
+                <div class="product-img swiper">
+                  <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="./images/conclave-merch/black red front.png" height="420" width="327">
+                    <img class="swiper-slide" src="./images/conclave-merch/black red back.png" height="420" width="327">
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <div class="product-info">
+                  <div class="product-text">
+                    <h1>AI Conclave - Black</h1>
+                    <h2>T-Shirt | Oversized T-Shirt</h2>
+                    <p>Available Sizes: </p>
+                    <select class="select-size" name="size" id="size">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                      <option value="XXL">XXL</option>
+                    </select>
+                    <p>Type: </p>
+                    <select class="select-type" name="type" id="type">
+                      <option value="Normal">Normal Sized T-Shirt - Rs. 400</option>
+                      <option value="Oversized">Oversized T-Shirt - Rs. 500</option>
+                    </select>
+                  </div>
+                  <div class="product-price-btn">
+                    <!-- <p><span>78</span>$</p> -->
+                    <button id="merch-black" type="button">buy now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="wrapper">
+                <div class="product-img swiper">
+                  <div class="swiper-wrapper">
+                    <img class="swiper-slide" src="./images/conclave-merch/blue white front.png" height="420" width="327">
+                    <img class="swiper-slide" src="./images/conclave-merch/blue white back.png" height="420" width="327">
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+                <div class="product-info">
+                  <div class="product-text">
+                    <h1>AI Conclave - White</h1>
+                    <h2>T-Shirt | Oversized T-Shirt</h2>
+                    <p>Available Sizes: </p>
+                    <select class="select-size" name="size" id="size white">
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                      <option value="XXL">XXL</option>
+                    </select>
+                    <p>Type: </p>
+                    <select class="select-type" name="type" id="type white">
+                      <option value="Normal">Normal Sized T-Shirt - Rs. 400</option>
+                      <option value="Oversized">Oversized T-Shirt - Rs. 500</option>
+                    </select>
+                  </div>
+                  <div class="product-price-btn">
+                    <!-- <p><span>78</span>$</p> -->
+                    <button id="merch-white" type="button">buy now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+        <script defer>
+          const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 1,
+            autoplay: {
+              delay: 3000,
+            },
+            navigation: {
+              nextEl: '.swiper-button-next',
+              prevEl: '.swiper-button-prev',
+            },
+          })
         </script>
-        
-        <section id="about">
-            <div class="logo">
-                <div class="log1" id="lg1">
-                    <img src="./images/AICrypt/clublogo.png" alt="AI Club" class="log">
-                    Presents
-                </div>
-                <div class="log1" id="lg2">
-                    <img src="./images/AICrypt/cyberpeace.png" alt="Cyber Peace" class="log">
-                    Sponsored by
-                </div>
-                <div class="log1" id="lg3">
-                    <img src="./images/vitlogo.png" alt="VIT Bhopal" class="log clglogo">
-                    In Association
-                </div>
-            </div>
-            <div class="titlelogo">
-                <img src="./images/AICrypt/aicrypt.png" alt="AI Crypt" id="tlog">
-            </div>
-            <div class="data">
-                <h3>
-                    AICrypt is a one-day event with two sessions - a sit-down interactive dialogue session with Mr. Smith Gonsalves - a renowned Expert in AI-based Cyber Security who has prior entrepreneurial experience with him being the direct of his company ‘CyberSmithSecure’, and an advanced level workshop conducted by Mr Nitin Pandey - Senior Cyber Crime Consultant and coordinator of the Cyberpeace Foundation on  Offensive and defensive security for enterprises using GANs, which will provide a hands on experience on important skills required in the corporate computer science domain to all the participants, who will mostly include 2nd 3rd and 4th year students. It will encourage students to increase their interest and their keenness to dive into the world of cyber security and artificial intelligence.
-                </h3>
+        <script>
+          const size = document.getElementById('size');
+          const type = document.getElementById('type');
+          const size_white = document.getElementById('size white');
+          const type_white = document.getElementById('type black');
+          const link = document.getElementById('merch-black')
+          const link_white = document.getElementById('merch-white')
 
-                <h2>
-                    28th April, 2023 | Auditorium, VIT Bhopal
-                </h2>
-            </div>
-        </section>
-        <section class="event-cards">
-            <div class="container">
-                <div class="card-container">
-                    <div class="image-container">
-                        <img src="./images/AICrypt/session1.jpg" alt="Event image">
-                    </div>
-    
-                    <div class="body-container">
-                        <div class="card-overlay"></div>
-    
-                        <div class="event-info overlay-fix">
-                            <p class="event-title">Talk Show</p>
-                            <div class="separator"></div>
-                            <p class="info">VIT Bhopal, Madhya Pradesh</p>
-                            <p class="price">Rs 75</p>
-    
-                            <div class="additional-info">
-                                <p class="info">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Auditorium, VIT Bhopal
-                                </p>
-                                <p class="info">
-                                    <i class="far fa-calendar-alt"></i>
-                                    28 April 2023, 11:00 AM - 1:00 PM
-                                </p>
-    
-                                <p class="info-description">
-                                    A sit-down interactive dialogue session with <b>Smith Gonslaves</b>, a renowned AI-based
-                                    Cyber
-                                    Security expert with prior entrepreneurial experience with his own company
-                                    CYBERSMITHSECURE
-                                    PRIVATE
-                                    LIMITED.
-                                </p>
-    
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-    
-                <div class="card-container">
-                    <div class="image-container">
-                        <img src="./images/AICrypt/session2.jpg" alt="Event image">
-                    </div>
-    
-                    <div class="body-container">
-                        <div class="card-overlay"></div>
-    
-                        <div class="event-info">
-                            <p class="event-title" id="sectitle">Hands on workshop</p>
-                            <div class="separator"></div>
-                            <p class="info">VIT Bhopal, Madhya Pradesh</p>
-                            <p class="price">Rs 75</p>
-    
-                            <div class="additional-info">
-                                <p class="info">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    Auditorium, VIT Bhopal
-                                </p>
-                                <p class="info">
-                                    <i class="far fa-calendar-alt"></i>
-                                    28 April 2023, 2:00 PM - 5:30 PM
-                                </p>
-    
-                                <p class="info-description">
-                                    Project on defensive and offensive security of enterprises using GANs.
-                                </p>
-                            </div>
-                        </div>
-    
-                    </div>
-                </div>
-            </div>
-            <div class="register-button">
-                <button class="action" onclick="btnclick()">Register Now!!!</button>
-            </div>
-        </section>
-        
+          link_white.addEventListener('click', ()=>{
+            window.location.href = `https://docs.google.com/forms/d/e/1FAIpQLSdzX7zdGPz9ziH-fEB1PnjE7LTtBgY5RIrNFIvm06FxJgj81Q/viewform?usp=pp_url&entry.217624640=${type.options[type.selectedIndex].value === 'Normal'? "Normal+Fit+White+t-shirt+(200+GSM)+INR+400" : "Oversized+White+t-shirt+(220+GSM)+INR+500"}&entry.${type.options[type.selectedIndex].value === 'Normal'? "1021208672" : "1445181987"}=${size.options[size.selectedIndex].value}`            
+          })
 
+          link.addEventListener('click', ()=>{
+            window.location.href = `https://docs.google.com/forms/d/e/1FAIpQLSdpoME1rrPbhb7M6THUeYA5Wa6ywGs-TU73JGb8__5nqe4Wog/viewform?usp=pp_url&entry.557791790=${type.options[type.selectedIndex].value === 'Normal'? "Normal+Fit+Black+t-shirt+(200+GSM)+INR+400" : "Oversized+Black+t-shirt+(220+GSM)+INR+500"}&entry.${type.options[type.selectedIndex].value === 'Normal'? "1906753020" : "1791548458"}=${size.options[size.selectedIndex].value}`
+          })
+        </script>
       </section>
 
       <section class="teacher_section">
