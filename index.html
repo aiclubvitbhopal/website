@@ -337,13 +337,13 @@
                     </select>
                     <p>Type: </p>
                     <select class="select-type" name="type" id="type">
-                      <option value="Normal">Normal Sized T-Shirt - Rs. 400</option>
+                      <option value="Normal">Normal T-Shirt - Rs. 400</option>
                       <option value="Oversized">Oversized T-Shirt - Rs. 500</option>
                     </select>
                   </div>
                   <div class="product-price-btn">
                     <!-- <p><span>78</span>$</p> -->
-                    <button id="merch-black" type="button">buy now</button>
+                    <button id="merch-black" type="button">Buy Now</button>
                   </div>
                 </div>
               </div>
@@ -361,7 +361,7 @@
                     <h1>AI Conclave - White</h1>
                     <h2>T-Shirt | Oversized T-Shirt</h2>
                     <p>Available Sizes: </p>
-                    <select class="select-size" name="size" id="size white">
+                    <select class="select-size" name="size" id="size-white">
                       <option value="S">S</option>
                       <option value="M">M</option>
                       <option value="L">L</option>
@@ -369,14 +369,14 @@
                       <option value="XXL">XXL</option>
                     </select>
                     <p>Type: </p>
-                    <select class="select-type" name="type" id="type white">
-                      <option value="Normal">Normal Sized T-Shirt - Rs. 400</option>
+                    <select class="select-type" name="type" id="type-white">
+                      <option value="Normal">Normal T-Shirt - Rs. 400</option>
                       <option value="Oversized">Oversized T-Shirt - Rs. 500</option>
                     </select>
                   </div>
                   <div class="product-price-btn">
                     <!-- <p><span>78</span>$</p> -->
-                    <button id="merch-white" type="button">buy now</button>
+                    <button id="merch-white" type="button">Buy Now</button>
                   </div>
                 </div>
               </div>
@@ -400,13 +400,13 @@
         <script>
           const size = document.getElementById('size');
           const type = document.getElementById('type');
-          const size_white = document.getElementById('size white');
-          const type_white = document.getElementById('type white');
-          const link = document.getElementById('merch-black')
-          const link_white = document.getElementById('merch-white')
+          const size_white = document.getElementById('size-white');
+          const type_white = document.getElementById('type-white');
+          const link = document.getElementById('merch-black');
+          const link_white = document.getElementById('merch-white');
 
           link_white.addEventListener('click', ()=>{
-            window.location.href = `https://docs.google.com/forms/d/e/1FAIpQLSdzX7zdGPz9ziH-fEB1PnjE7LTtBgY5RIrNFIvm06FxJgj81Q/viewform?usp=pp_url&entry.217624640=${type.options[type.selectedIndex].value === 'Normal'? "Normal+Fit+White+t-shirt+(200+GSM)+INR+400" : "Oversized+White+t-shirt+(220+GSM)+INR+500"}&entry.${type.options[type.selectedIndex].value === 'Normal'? "1021208672" : "1445181987"}=${size.options[size.selectedIndex].value}`            
+            window.location.href = `https://docs.google.com/forms/d/e/1FAIpQLSdzX7zdGPz9ziH-fEB1PnjE7LTtBgY5RIrNFIvm06FxJgj81Q/viewform?usp=pp_url&entry.217624640=${type_white.options[type_white.selectedIndex].value === 'Normal'? "Normal+Fit+White+t-shirt+(200+GSM)+INR+400" : "Oversized+White+t-shirt+(220+GSM)+INR+500"}&entry.${type_white.options[type_white.selectedIndex].value === 'Normal'? "1021208672" : "1445181987"}=${size_white.options[size_white.selectedIndex].value}`            
           })
 
           link.addEventListener('click', ()=>{
