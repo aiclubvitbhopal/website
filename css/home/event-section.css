@@ -113,7 +113,6 @@ div .sticky {
   opacity: 0.1;
   transition: .5s ease;
 }
-
 .econtent, .text {
   color: white;
   position: absolute;
@@ -124,6 +123,7 @@ div .sticky {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
 .econtent, .text h3{
   font-size: 20px;
 
@@ -131,6 +131,32 @@ div .sticky {
 }
 .econtent, .text p{
   font-size: 15px;
+}
+.button-parent{
+display: flex;
+justify-content: flex-end;
+padding: 10px 5px;
+}
+.econtent{
+  display: grid;
+  gap: 5px;
+}
+.econtent .event-mode{
+  margin-bottom:5px ;
+}
+.econtent .event-open-button {
+  padding: 1.5px 5px;
+  border: 1px solid #f58d08;
+  border-radius: 45px;
+  transition: all 0.2s;
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+.econtent .event-open-button:hover {
+  background: #f58d08;
+  color: white;
 }
 
 .desc-text {

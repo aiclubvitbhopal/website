@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.event-modal {
+  top: 0;
+  position: fixed;
+  z-index: 30;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  background-color: #291c33;
+  padding: 30px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.event-modal .modal-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.2px);
+  -webkit-backdrop-filter: blur(5.2px);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+}
+.event-modal.active {
+  visibility: visible;
+  opacity: 1;
+}
+.event-modal .closebutton {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  cursor: pointer;
+}/*# sourceMappingURL=modal.css.map */
