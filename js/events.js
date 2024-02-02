@@ -254,10 +254,25 @@ const setModalHandlers = () => {
       imageSection.innerHTML = "";
 
       eventData.images.forEach((src) => {
+        const cont = document.createElement("div");
         const img = document.createElement("img");
         img.src = `./images/eventimages/${eventId}/${src}`;
 
-        imageSection.appendChild(img);
+        cont.appendChild(img);
+        cont.classList.add("event-image-container");
+
+        imageSection.appendChild(cont);
+
+        img.onload = () => {
+          var naturalWidth = img.naturalWidth || img.width; // For modern browsers
+          var naturalHeight = img.naturalHeight || img.height; // For modern browsers
+          console.log(src, naturalHeight, naturalWidth);
+          if (naturalHeight > naturalWidth) {
+            img.style.height = "100%";
+          } else {
+            img.style.width = "100%";
+          }
+        };
       });
       modal.classList.add("active");
     });
