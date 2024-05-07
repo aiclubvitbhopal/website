@@ -75,6 +75,9 @@
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   margin-bottom: 15px;
+   object-fit: contain;
+    background: #ffffff17;
+    backdrop-filter: drop-shadow(2px 4px 6px black);
 }
 
 .lead-card a {
@@ -82,7 +85,7 @@
 }
 
 .lead-card:hover {
-  transform: scale(1.12);
+  transform: scale(1.25);
 }
 
 .animation {
