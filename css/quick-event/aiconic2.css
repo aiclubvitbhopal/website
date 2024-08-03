@@ -18,10 +18,10 @@
 
 .aiconic2-section {
 	display: flex;
+	min-height: 100vh;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	padding: 2rem;
+	padding: 0.5rem;
 }
 
 .container-ai {
@@ -35,9 +35,12 @@
 	overflow: hidden;
 	box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
 	backdrop-filter: blur(10px);
+	padding: 1rem;
+	margin: 0 auto;
 }
 
 .content-ai {
+	width: 100%;
 	padding: 2.5rem;
 	text-align: center;
 	background: rgba(43, 0, 59, 0.6);
@@ -46,6 +49,7 @@
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
 	border-right: 1px solid rgba(255, 255, 255, 0.1);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 0.5rem;
 }
 
 .main-heading-ai {
@@ -81,12 +85,16 @@
 	width: 100%;
 	position: relative;
 	overflow: hidden;
+	display: block;
+	margin-bottom: 0.5rem;
 }
 
 .poster-img-ai {
 	display: block;
 	width: 100%;
 	height: auto;
+	max-height: 300px;
+	object-fit: cover;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -333,6 +341,11 @@
 		width: 50%;
 	}
 
+	.poster-img-ai {
+		max-height: none;
+		height: 100%;
+	}
+
 	.content-ai {
 		width: 50%;
 		display: flex;
@@ -343,21 +356,16 @@
 
 @media (max-width: 768px) {
 	.container-ai {
-		display: flex;
-		flex-direction: column;
-		width: calc(100% - 2rem);
-		margin: 1rem;
-	}
-
-	.poster-wrapper-ai {
-		width: 100%;
+		padding: 0.5rem;
 	}
 
 	.content-ai {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		padding: 1.5rem;
+	}
+
+	.poster-wrapper-ai,
+	.content-ai {
+		width: 100%;
 	}
 
 	.main-heading-ai {
@@ -394,5 +402,15 @@
 	.register-btn-ai {
 		padding: 0.7rem 1.3rem;
 		font-size: 0.9rem;
+		margin-bottom: 1rem;
+	}
+
+	.aiconic2-section {
+		min-height: 150vh;
+		padding: 1rem;
+	}
+
+	.poster-img-ai {
+		max-height: none;
 	}
 }
